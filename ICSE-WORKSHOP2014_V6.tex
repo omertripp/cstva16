@@ -1,0 +1,385 @@
+\documentclass{sig-alternate}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\begin{document}
+
+\title{Workshop on Constraints in Software Testing, Verification, and
+  Analysis (CSTVA'14)}
+
+\numberofauthors{2}
+
+\author{
+\alignauthor
+Vijay Ganesh\\
+       \affaddr{University of Waterloo}\\
+       \affaddr{200 University Ave. West}\\
+       \affaddr{Waterloo, Ontario, Canada}\\
+       \email{vganesh@uwaterloo.ca}\\
+      \affaddr{Tel: +1-519-888-4567 ext. 32866}\\
+      \affaddr{\url{https://ece.uwaterloo.ca/~vganesh}}
+% 2nd. author
+\alignauthor
+Nicky Williams\\
+       \affaddr{CEA, LIST, Software Reliability Laboratory}\\
+       \affaddr{Point Courrier no. 174}\\
+       \affaddr{91191 Gif sur Yvette, France}\\
+       \email{nicky.williams@cea.fr}\\
+      \affaddr{Tel: +33-1-69080286}\\
+      \affaddr{\url{http://pathcrawler-online.com}}
+}
+\date{October 23, 2013}
+
+\maketitle
+\toappear{}
+
+\section{Main contact}
+\vspace{0.2cm}
+Vijay Ganesh (see above for contact details).
+
+\section{Workshop length}
+\vspace{0.2cm}
+One day
+
+\section{Workshop dates}
+\vspace{0.2cm}
+Preferably before the start of the ICSE conference.
+
+\section{Workshop Open or Closed}
+\vspace{0.2cm}
+Open.
+
+\section{Min/Max Number of Participants}
+\vspace{0.2cm} 
+
+Minimum: 15, and Maximum: 50. We may not organize the workshop if
+there are fewer than 15 participants.
+\vspace{0.2cm}
+
+\begin{abstract}
+\vspace{0.2cm}
+The last decade has seen a revolutionary improvement in the efficiency
+and expressive power of Boolean SAT, SMT and Constraint Programming
+(CSP/CP) solvers, with a consequent impact on all manner of software
+engineering (SE) applications and research programs. A prime example
+of this is the rapid development and adoption of solver-based
+symbolic-execution techniques in myriad applications such as test
+generation, security, and analysis. Despite this increasing use of
+solvers, there are few venues that are solely dedicated to bringing
+together the broader SE and solver communities in one place. This
+workshop at the flagship SE conference is designed precisely to fill
+this gap. The aim of the workshop is to highlight use of solvers in
+novel applications, new solver features, and encourage their use in
+fresh solutions to long-standing SE problems. Furthermore, as current
+users become more sophisticated they demand richer solver interfaces
+that are extensible, tunable and programmable. Designing such
+interfaces requires deeper interaction between solver developers and
+users. Hence, this workshop will also act as a venue for feedback from
+users to developers.
+
+\end{abstract}
+
+\section{Workshop theme and goals}
+\vspace{0.2cm} Recent years have seen an increasing interest in the
+application of constraint solving techniques to testing, verification
+and analysis of software systems. The reason for this interest is the
+dramatic improvement in efficiency and expressive power of Boolean
+SAT, SMT and CP solvers, thus making it considerably easier to build
+and maintain software engineering (SE) applications. Significant
+number of constraint-based techniques have been proposed and
+investigated in model-based testing, code-based testing,
+property-oriented testing, statistical testing, equivalence checking,
+model checking, fault localization, verification, and program
+analysis.  What is even more interesting is that as solvers become
+more efficient and expressive, newer applications are being developed
+in diverse areas such as security, synthesis, type systems and
+software product lines. In the past, solvers were largely used as
+black boxes. However, more recently a central idea in solver-based SE
+applications is a deep integration of solver and application. The
+benefits of deep integration over a black box approach are many. An
+example benefit of deeper integration is that it can enable
+applications to better utilize the adaptive features of modern
+solvers. Often the resulting SE techniques are far more powerful and
+effective than before.
+
+\vspace{0.2cm} It is within this context of increasing use of solvers
+in SE, especially through deep integration of extensible solvers with
+applications, that we propose a new workshop on solvers and software
+engineering at ICSE, the flagship SE conference. The goal of the
+workshop is to bring together in one place the largely distinct
+communities of solver and broader SE researchers. We expect a very
+intense and positive cross-community interaction between the members
+of the two communities. Such interaction could lead to completely new
+approaches to long-standing SE problems, and current users of solvers
+can discuss their experience and provide rapid feedback to solver
+developers. The workshop could also influence new research directions
+into easily extensible, tunable and programmable solvers. Finally, the
+workshop can help showcase the breadth and depth of the influence of
+solvers in SE research.
+
+\vspace{0.2cm} A prime example of how interaction between solver
+researchers and the SE community can lead to impactful research is
+``symbolic execution and its application to testing, verification and
+analysis''. Symbolic execution for software testing was proposed by
+Lori Clarke and J.C. King in the 1970's. However, it didn't really
+pick up until nearly thirty years later in the mid-2000's, in large
+measure due to dramatic improvement in solver technology. Thanks to
+SAT solvers like MiniSAT, Lingeling, ManySAT, and SMT solvers like Z3,
+Yices, CVC4, MathSAT, STP, and HAMPI, a variety of symbolic-execution
+engines have been developed. Examples of the most successful such
+tools include SAGE, PathCrawler, KLEE (and its predecessor EXE),
+BitBlaze, WebBlaze, S2E, Java PathFinder and KINT.
+
+\vspace{0.2cm} Another example of deep integration of solver and
+application is the recently proposed model-checking algorithm IC3.  In
+this approach, not only is a solver used by the model- checker, but
+also the design of the IC3 algorithm itself is influenced by ideas
+from SAT solving.
+
+\vspace{0.2cm} A third example comes from the development of
+specialised CP techniques for constraints on floating-point numbers
+which could not be accurately resolved using the mathematical tools
+developed for real numbers. This is a significant recent advance in
+solver technology with huge potential for impact in automated testing
+and verification of numerical software.
+
+\vspace{0.2cm} We believe that the success we have seen of the
+combination of solvers and above-mentioned SE fields can be replicated
+in other areas of SE. It is with this goal of increasing the awareness
+of solvers in the broader SE community, and increasing interaction
+between solver and SE researchers that the workshop is being proposed.
+
+\vspace{0.2cm} The workshop will focus on a broad range of topics
+where solvers have already made an impact, e.g., symbolic-execution
+based testing, as well as newer ones where their use is still nascent,
+e.g., synthesis and software product lines.
+
+\subsection*{Topics for the Workshop}
+\vspace{0.2cm}
+\noindent{The topics for the workshop include, but are not limited to,
+  the following:}
+
+\begin{itemize}
+\item Constraint-based analysis of programs and models
+\item Constraint-based test input generation
+\item SMT solvers for testing, verification, analysis, and synthesis
+\item SMT solvers and their applications in computer security
+\item Programmable SMT solvers
+\item Combinations of constraint solvers
+\item Constraint programming and software engineering
+\item Solvers and software product lines
+\item Solvers and fault localization
+\end{itemize}
+
+\section{Relevance to the field of SE}
+\vspace{0.2cm} The idea of capturing software behavior through logic
+constraints is an old but very important idea that has always played a
+role in SE.  However, in the past SE researchers didn't have access to
+efficient solvers, and instead had to develop their own solutions to
+process the constraints generated by their applications. All that
+changed in the last 15 years. Armed with increasingly powerful SAT/SMT
+solvers, researchers tackled many hard SE problems. As mentioned
+above, many areas of SE have been transformed thanks to solvers and we
+expect that the broader SE community will benefit greatly from
+continued improvement in solver technology, and deeper integration of
+solver and application.
+
+\vspace{0.2cm} \sloppypar{In addition to the above-mentioned
+  applications that have been impacted by solvers, new and emerging
+  areas where solvers are used heavily include software product lines,
+  constraint-based program analysis and fault localization. These
+  application domains are quite distinct from each other, and yet they
+  all rely on powerful solvers. For example, in software product lines
+  (SPL) research the goal is to show that the user-selected features
+  and configuration can lead to a valid product, that does not violate
+  important safety and security properties. On the surface, the SPL
+  research area seems very different from the problem of fault
+  localization, where the problem is to isolate the root cause(s) of
+  an error given a program and an error-revealing input. In the
+  constraint-based program analysis field, the paradigm is to express
+  the progam analysis problem as constraints in declarative languages
+  such as Prolog. These constraints are then interpreted by powerful
+  solvers to perform analysis on input programs. In the past,
+  researchers in each of these application areas had to develop
+  individual specialised solutions to address their problems. As
+  already highlighted in the above Section, thanks to the advent of
+  efficient and expressive solvers, a new class of systematic methods
+  is being explored to solve these knotty problems.}
+
+\section{Generating discussion}
+\vspace{0.2cm} We expect a very robust attendance at the workshop. We
+plan to organize a panel discussion on the future of solvers in SE
+that will bring together 2 leading solver developers and 2 leading
+users to present their views on how we can build solvers that better
+serve SE research needs. We expect to hold the panel towards the end
+of the workshop. We also hope to invite a leading SE researcher to
+give a keynote address on his/her experience in using solvers.
+
+\vspace{0.2cm} We are also considering the possibility of
+presentation-only papers (e.g., tool papers) that can generate a lot
+of interest. Such papers can be shorter, say, 6 pages and will not be
+included in any proceedings.
+
+%% \section{Limits on no. of participants}
+
+%% The workshop will not be held if there are fewer than 15 participants
+%% and applications to participate will be refused if there are more than
+%% 50.
+
+\section{Preliminary web site}
+\vspace{0.2cm} \url{https://ece.uwaterloo.ca/~vganesh/cstva14.html}
+
+\section{Program Committee}
+\vspace{0.2cm} We are fortunate that many of the leading researchers
+in the field of SAT/SMT solvers, CP and SE applications have agreed to
+be part of the program committee of the proposed workshop. We believe
+that this reflects the increasing recognition of the fact that the
+broader community needs a workshop or conference where developers of
+different constraint solving techniques and their users can meet and
+exchange ideas.
+
+\vspace{0.2cm}
+The following people have all already agreed to be on the Program
+Committee.
+
+\begin{enumerate}
+\item Vijay Ganesh, University of Waterloo, Canada
+\item Nicky Williams, CEA LIST, France
+\item Kapil Vaswani, Microsoft Research, India
+\item Aditya Nori, Microsoft Research, India
+\item Rupak Majumdar, Max Planck Institute for Software Systems, Germany
+\item Koushik Sen, University of California, Berkeley, USA
+\item Frank Tip, University of Waterloo, Canada
+\item Joxan Jaffar, National University of Singapore, Singapore
+\item Nikolaj Bjorner, Microsoft Research, USA
+\item Leonardo DeMoura, Microsoft Research, USA
+\item Cristian Cadar, Imperial College London, UK
+\item Arnaud Gotlieb, Simula, Norway and INRIA, France
+\item Frederic Dadeau, FEMTO-ST/INRIA, France
+\item Krzysztof Czarnecki, University of Waterloo, USA
+\item Julian Dolby, IBM TJ Watson Center, USA
+\item Ofer Strichman, Technion, Israel
+\item Fran{\c c}ois Bobot, CEA LIST, France
+\item S{\'e}bastien Bardin, CEA LIST, France
+\item Sylvain Conchon, Universit{\'e} Paris Sud, France
+\item Emina Torlak, University of California, Berkeley, USA
+\item Daniel LeBerre, Universit{\'e} d'Artois, France
+\item Cesare Tinelli, University of Iowa, USA
+\item Chris Wintersteiger, Microsoft Research, UK
+\item Patrick Heymans, University of Namur, Belgium
+\item Marsha Chechik, University of Toronto, Canada
+\item Xiangyu Zhang, Purdue University, USA
+\end{enumerate}
+
+\section{Participant solicitation}
+\vspace{0.2cm} Participants will be solicited through a mailshot of
+the Call For Papers and a poster. This should reach a wide audience
+thanks to the diversity of the program committee.  The workshop will
+be open to all participants until the maximum number of participants
+is reached.
+
+\section{Proceedings}
+\vspace{0.2cm} Accepted papers (except presentation-only papers) will
+be published in the workshop proceedings.  The ideal number of papers
+is around 12 and expected length is 10 pages with 1-2 additional pages
+for references in standard ICSE format.
+
+\section{Expected attendance}
+\vspace{0.2cm} This proposed workshop will be the 6th of the CSTVA
+(Constraints in Software Testing, Verification and Analysis) workshop
+series, held for the last few years alongside ICST (IEEE International
+Conference on Software Testing).
+
+\vspace{0.2cm} \sloppypar{The first CSTVA meeting was held alongside
+  the CP conference (Principles and Practice of Constraint
+  Programming) in Nantes, France, in 2006 and attracted more than 25
+  participants. It also featured an invited presentation by Andy King
+  (University of Kent). See
+  \url{http://www.irisa.fr/manifestations/2006/CSTVA06/} for more
+  details.
+
+\vspace{0.2cm} The second edition took place in conjunction with the
+ICST 2010 in Paris, France, attracting more than 30 participants. It
+also featured an invited presentation by Peli de Halleux (senior
+researcher at Microsoft Research).  See
+\url{http://www.st.cs.uni-saarland.de/cstva10} for more details.
+
+\vspace{0.2cm} A third meeting at ICST 2011 in Berlin, Germany, also
+attracted a similar number of attendees, and featured an invited
+presentation of Patrice Godefroid (principal researcher at Microsoft
+Research).  See \url{http://www.st.cs.uni-saarland.de/cstva11} for
+more details.
+
+\vspace{0.2cm} A fourth edition was held at ICST 2012 in Montreal,
+Canada which attracted close to 40 participants. It also featured a
+keynote presentation by Vijay Ganesh (an assistant professor at the
+University of Waterloo, and a co-organizer of the proposed workshop.)
+See \url{http://srg.doc.ic.ac.uk/cstva12/} for more details.
+
+\vspace{0.2cm} A fifth edition was held at ICST 2013 in Luxembourg
+which attracted more than 40 participants. It featured a keynote
+address by Sarfraz Kurshid (University of Texas, Austin). See
+\url{http://cstva2013.univ-fcomte.fr/index.php?aim} for more details.
+}
+
+\vspace{0.2cm} Given the success of the previous editions of this
+workshop we believe that the current version we are proposing will
+also be successful. We believe that by co-locating with ICSE and
+broadening the scope of the workshop to go beyond testing,
+verification and analysis, and include synthesis, security and
+software product lines etc., will increase the chances of success of
+the workshop dramatically. We are hopeful that we will attract more
+than 40 participants.
+
+\vspace{0.2cm} As mentioned before, we informally discussed the idea
+of organizing such an ICSE workshop with many leading SE researchers,
+and found that most were very enthusiastic about it. Most of the
+researchers we contacted gladly accepted our invitation to join the
+program committee.
+
+\section{Logistic constraints}
+\vspace{0.2cm} The room should be covered by wifi if possible, in case
+of videos or on-line demonstrations.
+
+\section{Organizer background}
+\vspace{0.2cm}
+\begin{enumerate}
+\item {\bf Vijay Ganesh} is an assistant professor at the University
+  of Waterloo, Ontario, Canada. His primary research interests are
+  SAT/SMT solvers and their applications to testing, formal methods
+  and SE in general. He has developed leading SMT solvers, and also
+  worked on their application to testing and formal verification. His
+  award-winning solvers STP and HAMPI are currently being used in more
+  than 100 research projects.
+
+  On the organizational front, Vijay organized one of the first summer
+  schools on SAT/SMT solvers in 2011 at the Massachusetts Institute of
+  Technology. The summer school featured 36 lectures by leading solver
+  developers and their users over a period of 6 days. The total number
+  of participants exceeded 230, and included participants from all
+  over the world. The profile of the pariticipants ranged from
+  theoreticians interested in understanding why SAT solvers work so
+  well, to hackers who wanted to use solvers for a variety of security
+  applications. This summer school has started trend, and now it is
+  held every year alongside the SAT or CAV conferences. More details
+  can be found at:
+  \url{http://people.csail.mit.edu/vganesh/summerschool/index.html}. Vijay
+  has also served on the program committee of many conferences and
+  workshops including FroCos, IEEE NCA, and SMT (usually co-held with
+  CAV).
+
+\item {\bf Nicky Williams} is a leading researcher in symbolic
+  execution based methods for testing and verification. She is a
+  research engineer in the CEA LIST Software Reliability Lab, which
+  works closely with industry on the application of new techniques to
+  the verification and validation of software systems. Nicky initiated
+  the development of the CLP-based PathCrawler test generation tool
+  and has worked for several years on its extension and application to
+  different industrial problems.
+
+  Nicky has been a member of the program committee for several
+  conferences and workshops in the domain, such as ICTSS, QSIC, AFADL
+  and several previous editions of the CSTVA workshop and this year
+  decided to participate for the first time in the organisation of
+  this workshop.
+\end{enumerate}
+
+\end{document}
