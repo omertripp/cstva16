@@ -58,7 +58,8 @@ feedback from users to solver developers.
 Important Dates
 ---------------
 
-* Workshop paper submissions due April 22, 2016 (AOE)
+* Workshop paper submissions due April 22, 2016 (AOE),
+  at https://easychair.org/conferences/?conf=cstvaissta2016
 * Notification to authors May 17, 2016
 * Camera-ready copies of authors' papers May 24, 2016
 
@@ -82,7 +83,8 @@ provide additional access to important developments that CSTVA attendees may be
 unaware of. If accepted, papers in this category cannot be promoted to another
 category. 
 
-Submission site: Papers should be submitted via EasyChair.
+Submission site: Papers should be submitted via EasyChair at
+https://easychair.org/conferences/?conf=cstvaissta2016
 
 Submitted papers must be in PDF format, formatted according to the EPiC
 Formatting Guidelines (see http://www.easychair.org/publications/for_authors),
