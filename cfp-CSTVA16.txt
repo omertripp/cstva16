@@ -1,0 +1,106 @@
+(We apologize if you receive multiple copies of this message)
+
+======================================================================
+
+International workshop on Constraints in Software Testing, Verification and
+Analysis 2016 (CSTVA'16)
+
+A workshop of ISSTA'16, the International Symposium on Software Testing and
+Analysis, Saarbruecken, Germany
+
+July 17th, 2016
+Saarbruecken, Germany
+
+http://research.microsoft.com/cstva2016/
+
+======================================================================
+
+
+Topics, scope and aims
+----------------------
+
+Recent years have seen an increasing usage and consequent impact of Boolean
+SAT, SMT and Constraint Programming (CP or CSP) solvers in testing,
+verification and analysis of software systems. The primary reason for this is
+the dramatic improvement in the efficiency and expressive power of solvers. As
+newer and more powerful solvers are built, software-engineering (SE) &
+programming-languages (PL) researchers dramatically scale existing applications
+such as symbolic-execution methods, or find unexpected applications for them,
+e.g., software product lines or fault localization methods. 
+
+This workshop will bring together researchers in solvers, software test and
+analysis, and other PL/SE areas, in order to raise the awareness of constraint
+solving in the broader PL/SE research community, and encourage development of
+new applications based on tunable, extensible, and programmable solvers. The
+workshop will focus on a broad range of topics where solvers have already made
+an impact, e.g., symbolic-execution-based testing, verification and analysis,
+as well as newer applications whose use is still nascent, e.g., synthesis,
+software product lines and fault localization. Submission topics include, but
+are not limited to, the following: 
+
+* Constraint-based analysis of programs and models
+* Constraint-based test input generation and fault localization
+* Solvers and computer security
+* SMT and CP solvers for testing, verification, analysis, and synthesis
+* Programmable SMT and CP solvers
+* Combinations of constraint solvers
+* Solvers for software product lines
+* Solvers and fault-localization
+
+Following the 6 previous editions of this workshop, held first at CP, then at
+the ICST conferences, and in 2014 at ICSE, this year's CSTVA workshop will be
+held at ISSTA with the goal of strengthening the links between the solver and
+software-engineering & programming-languages research communities. The workshop
+aims to encourage new applications of solvers, showcase their rich extensible
+APIs, and act as a forum for feedback from users to solver developers. 
+
+ 
+Important Dates
+---------------
+
+* Workshop paper submissions due April 22, 2016 (AOE, )
+* Notification to authors May 17, 2016
+* Camera-ready copies of authors' papers May 24, 2016
+
+
+Submission Details
+------------------
+
+We invite three categories of submissions:
+
+Research papers: Original contributions, presenting novel ideas, results or
+systems in constraint-based software engineering. Papers should not be
+published or submitted elsewhere during the time of evaluation. 
+
+Tool demonstration, short papers, fast abstracts: Propose tool demonstrations,
+brief notes, or abstracts, presenting new tools, new challenges or
+groundbreaking results in constraint-based software engineering.  
+
+Presentation-only papers: describe work recently published or submitted
+elsewhere and will not be included in the proceedings. We see this as a way to
+provide additional access to important developments that CSTVA attendees may be
+unaware of. If accepted, papers in this category cannot be promoted to another
+category. 
+
+Submission site: Papers should be submitted via EasyChair.
+
+Submitted papers must be in PDF format, formatted according to the EPiC
+Formatting Guidelines (see http://www.easychair.org/publications/for_authors),
+and must not exceed the following size limits:
+
+- Research papers: max 10 pages for the main text, including figures, tables
+  and appendices, where references may occupy up to 2 additional pages 
+- Tool demonstration or fast abstract: max 6 pages
+
+Papers in all three categories will be peer-reviewed. All accepted papers
+(except presentation-only) will be published in CEUR workshop proceedings (see
+http://ceur-ws.org/). 
+
+
+Organization:
+
+Christoph M. Wintersteiger, Microsoft Research, cwinter@microsoft.com
+Omer Tripp, IBM Research, New York, otripp@us.ibm.com
+
+Program committee:
+
