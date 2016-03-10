@@ -50,9 +50,9 @@ are not limited to, the following:
 Following the 6 previous editions of this workshop, held first at CP, then at
 the ICST conferences, and in 2014 at ICSE, this year's CSTVA workshop will be
 held at ISSTA with the goal of strengthening the links between the solver and
-software-engineering & programming-languages research communities. The workshop
-aims to encourage new applications of solvers, showcase their rich extensible
-APIs, and act as a forum for feedback from users to solver developers. 
+SE & PL research communities. The workshop aims to encourage new applications
+of solvers, showcase their rich extensible APIs, and act as a forum for
+feedback from users to solver developers.  
 
  
 Important Dates
@@ -72,9 +72,9 @@ Research papers: Original contributions, presenting novel ideas, results or
 systems in constraint-based software engineering. Papers should not be
 published or submitted elsewhere during the time of evaluation. 
 
-Tool demonstration, short papers, fast abstracts: Propose tool demonstrations,
-brief notes, or abstracts, presenting new tools, new challenges or
-groundbreaking results in constraint-based software engineering.  
+Tool demonstrations, short papers & fast abstracts: Propose tool
+demonstrations, brief notes, or abstracts, presenting new tools, new challenges
+or groundbreaking results in constraint-based software engineering.
 
 Presentation-only papers: describe work recently published or submitted
 elsewhere and will not be included in the proceedings. We see this as a way to
