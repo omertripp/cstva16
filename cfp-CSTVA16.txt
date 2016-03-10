@@ -58,7 +58,7 @@ APIs, and act as a forum for feedback from users to solver developers.
 Important Dates
 ---------------
 
-* Workshop paper submissions due April 22, 2016 (AOE, )
+* Workshop paper submissions due April 22, 2016 (AOE)
 * Notification to authors May 17, 2016
 * Camera-ready copies of authors' papers May 24, 2016
 
