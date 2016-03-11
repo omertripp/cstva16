@@ -1,0 +1,50 @@
+Dear [*FIRST-NAME*],
+
+As program chairs of the 7th Edition of the International workshop on
+Constraints in Software Testing, Verification and Analysis (CSTVA), we would
+like to invite you to serve on the program committee for CSTVA 2016. CSTVA is
+a forum that brings together researchers in constraint and SMT solving,
+software test and analysis, and other
+programming-languages/software-engineering (PL/SE) areas, in order to promote 
+the relevance of constraint and SMT solving in the broader PL/SE research
+community, and encourage development of new applications based on tunable,
+extensible, and programmable solvers.
+
+CSTVA will take place on July 17th, 2016 in Saarbrücken, Germany. The tentative
+schedule leading up to the workshop is as follows:
+
+Full papers due: April 22nd
+Assignments to PC: April 25th
+Final reviews due: May 9th
+Online discussion: May 9-16th
+Notification to authors: May 17th
+
+The workshop website is at: http://research.microsoft.com/cstva2016
+
+We are planning to have a broad PC to cover a wide spectrum of paper topics,
+and are aiming to keep the reviewer load to less than 3 papers. After papers are
+submitted, there will be a short period for PC members to bid on papers of
+interest, which we will do our best to assign to you. Most discussion will be
+handled virtually, with additional discussion via phone calls or video chats as
+need be. The review process will consist of a single round.
+
+We encourage PC members to submit papers to the workshop and suggest that you
+encourage others to submit as well. The PC chairs are excluded from submitting
+papers, however.
+
+We do ask that PC members perform their own reviews and not outsource their
+reviews to others. We would of course be happy to consider additional external
+expert reviewers when the need arises. 
+
+Please let us know as soon as possible, preferably before March 14th, whether
+you can accept this invitation. If you accept, please send us your name and
+professional affiliation as you would like it to appear on the website and in
+the proceedings, as well as your preferred email address. 
+
+We look forward to working with you to create a high quality, dynamic, and
+interesting technical program for the 7th edition of CSTVA! 
+
+Best regards,
+
+Christoph Wintersteiger and Omer Tripp
+CSTVA 2016 Program Chairs
