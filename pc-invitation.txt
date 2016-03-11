@@ -10,7 +10,7 @@ the relevance of constraint and SMT solving in the broader PL/SE research
 community, and encourage development of new applications based on tunable,
 extensible, and programmable solvers.
 
-CSTVA will take place on July 17th, 2016 in Saarbrücken, Germany. The tentative
+CSTVA will take place on July 17th, 2016 in Saarbruecken, Germany. The tentative
 schedule leading up to the workshop is as follows:
 
 Full papers due: April 22nd
