@@ -1,0 +1,26 @@
+Dear [*NAME*], 
+
+We are pleased to inform you that your submission 
+
+[*NUMBER*]: [*TITLE*] 
+
+to CSTVA 2016 has been _conditionally_ accepted with shepherding. Your shepherd will serve as the liaison between you and the program committee; your paper will appear in the conference if approved by the shepherd. Attached please find reviewer comments regarding your submission. Please take them carefully into account when preparing your camera-ready paper, which is to be submitted on EasyChair. In particular, please refer to the request to include a reference example as well as the comments regarding the formal presentation. Your shepherd will contact you within the next couple of days to walk you through the process of addressing these and other comments.
+
+The deadline for uploading your final, camera-ready version on EasyChair is: 
+ May 24, 2016, AOE. 
+
+--------------------- 
+POSSIBLE PROCEEDINGS: 
+--------------------- 
+
+We are planning to publish electronic proceedings as a CEUR Workshop Proceedings volume as announced in the call for papers. As communicated earlier, the ISSTA organization offered to publish all workshop proceedings formally with ACM, but due to copyright complications with some submissions we decided not to take them up on this offer.
+
+------------------------------------- 
+REGISTRATION AND WORKSHOP ATTENDANCE: 
+------------------------------------- 
+
+Please note that the ISSTA conference and workshop registration is now open, with an early registration deadline of June 15, 2016. We hope that all of you will be able to attend the workshop in person.
+
+Thank you and best regards, 
+Omer & Christoph
+CSTVA 2016 chairs

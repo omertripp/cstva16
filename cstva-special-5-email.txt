@@ -1,0 +1,19 @@
+Dear [*NAME*], 
+
+We are pleased to inform you that your submission
+
+[*NUMBER*]: [*TITLE*] 
+
+has been _conditionally_ accepted for _presentation-only_ at CSTVA 2016. Attached please find reviewer comments regarding your submission.
+
+As you can see from the reviews, there have been concerns about the presentation quality of your submission as well as some technical issues. Since we nevertheless consider your work as relevant for the CSTVA audience and we believe there would be a significant benefit to both the audience and your research, our programme committee has opted to accept your submission only for presentation, and on the condition that the experimental results are extended and shepherded by one of our PC members. We hope that this compromise is acceptable you, and we kindly ask you to confirm or reject as soon as possible.
+
+------------------------------------- 
+REGISTRATION AND WORKSHOP ATTENDANCE: 
+------------------------------------- 
+
+Please note that the ISSTA conference and workshop registration is now open, with an early registration deadline of June 15, 2016.
+
+Thank you and best regards, 
+Omer & Christoph
+CSTVA 2016 chairs
