@@ -38,7 +38,7 @@ these proceedings, please send a signed and completed copyright form (agreement
 to publication) directly to cwinter@microsoft.com The copyright form can be
 found at 
 
-http://research.microsoft.com/cstva16/copyright.txt
+http://research.microsoft.com/cstva2016/copyright.txt
 
 It is sufficient for one of the authors to sign the copyright form. You can
 scan the form into PDF or any other standard image format. 
