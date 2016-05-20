@@ -1,0 +1,52 @@
+Paper   : [*NUMBER*]
+Authors : [*AUTHORS*]
+Title   : [*TITLE*]
+
+-------------------------------------------------------
+
+Dear [*FIRST-NAME*],
+
+You have already received the comments by the reviewers in a previous
+email. Please take them carefully into account when preparing your
+camera-ready paper for the proceedings. The final paper is due on
+
+   May 24, 2016
+
+This is a firm deadline for the production of the proceedings.
+You should submit your paper using your EasyChair author account.
+
+
+1. FINAL PAPER: Please submit the files belonging to your camera-ready paper
+using your EasyChair author account. Follow the instructions after the login
+for uploading two files: 
+
+   (a) either a zipped file containing all your LaTeX sources
+       or a Word file in the RTF format, and
+   (b) PDF version of your camera-ready paper.
+
+For regular papers and extended abstracts, the page limit is 10 pages
+using the easychair.cls class file. To give you some extra space,
+references do NOT count toward the page limit.
+
+For presentation-only papers, please submit a document with only title
+and abstract of your presentation (maximum 1 page).
+
+
+2. COPYRIGHT: We will publish the CSTVA 2016 proceedings as a CEUR volume
+(http://ceur-ws.org/). If you would like your submission to be included in
+these proceedings, please send a signed and completed copyright form (agreement
+to publication) directly to cwinter@microsoft.com The copyright form can be
+found at 
+
+http://research.microsoft.com/cstva16/copyright.txt
+
+It is sufficient for one of the authors to sign the copyright form. You can
+scan the form into PDF or any other standard image format. 
+
+
+We greatly appreciate your cooperation in these matters. Thank you
+again for your contribution to CSTVA 2016.
+
+Sincerely,
+Omer Tripp
+Christoph Wintersteiger
