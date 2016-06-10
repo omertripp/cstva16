@@ -1,0 +1,37 @@
+<toc>
+    <paper>
+        <title>Design of a Modified Concolic Testing Algorithm with Smaller Constraints</title>
+        <pages from="1" to="12"/>
+        <authors>
+            <author>Yavuz Koroglu</author>
+            <author>Alper Sen</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>A CHR-Based Solver for Weak Memory Behaviors</title>
+        <pages from="13" to="20"/>
+        <authors>
+            <author>Allan Blanchard</author>
+            <author>Nikolai Kosmatov</author>
+            <author>Frederic Loulergue</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>A Constraint Solving Problem Towards Unified Combinatorial Interaction Testing</title>
+        <pages from="21" to="27"/>
+        <authors>
+            <author>Hanefi Mercan</author>
+            <author>Cemal Yilmaz</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Towards automated bounded model checking of API implementations</title>
+        <pages from="28" to="39"/>
+        <authors>
+            <author>Daniel Neville</author>
+            <author>Andrew Malton</author>
+            <author>Martin Brain</author>
+            <author>Daniel Kroening</author>
+        </authors>
+    </paper>
+</toc>

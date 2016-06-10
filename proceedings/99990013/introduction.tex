@@ -1,0 +1,62 @@
+%% \commentNK{ TODO tous ?
+
+%% - Introduction here 
+%% }
+
+Concurrent programs are hard to design and implement, especially when
+running on multiprocessor architectures. Multiprocessors implement
+weak memory models~\cite{AG1996:IEEEC} that allow, for example,
+instruction reordering or store buffering. Thus multiprocessors
+exhibit more behaviors than Lamport’s \emph{Sequential Consistency}
+(SC)~\cite{L79:IEEE}, a theoretical model where the execution of a
+program corresponds to an interleaving of the different threads.
+
+Recent years have seen many works on formalization of weak memory
+models, both on hardware and software
+sides~\cite{%AAS2003:TDPS,
+Yang:2005,AM2006:ISCA,SJM2007:PPOPP,BA2008:PLDI,Boudol:2009,AMT2014:TPLS,Abe:2014}.
+These formal models give us a way to compute, given a program and a
+memory model, the set of concrete executions allowed by the
+model. We can determine for example whether all executions of a program 
+under a certain model are admitted under SC, and therefore, whether we can
+reason about this program using an interleaving semantics.
+
+We propose a constraint solving based technique that allows to
+determine all admissible executions of a program under a memory
+model. This technique relies on Prolog and CHR (Constraint Handling
+Rules)~\cite{Fruhwirth1998}.  A CHR program is a list of rules that act
+on a store of constraints, by adding or removing constraints in this
+store. The rules are activated if a combination of constraints in the
+store match the head of the rule (and satisfy an optional Prolog predicate called the \emph{guard}).  In our
+case, constraints are relations between instructions that are
+basically related to their order of execution.  Rules are used to
+propagate information and to produce, from a given set of relations,
+more relations (characterizing the instruction ordering) that were
+previously unknown in the execution.
+
+{\bf The contributions} of this paper include a novel CHR-based technique
+for detection of admissible behaviors under memory models and a
+constraint solver prototype\footnote{Available at \url{http://frederic.loulergue.eu/CHR/wmm.tar.gz}.}
+implementing this technique for SC, TSO and PSO
+models.  We discuss the benefits and limitations of this approach, and
+show how the use of CHR allows us to define our model in a concise and
+intuitive way, taking advantage of a well-established specification
+and solving mechanism.
+
+{\bf Outline.} %The paper is organized as follows. 
+Section~\ref{sect:weakMemoryModels} presents weak memory models vs. SC
+model.  Section~\ref{sect:solver} presents the solver, 
+explains its functionality and optimizations, 
+%the way we implement the rules for a given model and
+%compute all admissible executions of a program using the solver, 
+and points out some soundness and performance aspects.
+Section~\ref{sect:discussion} discusses its benefits and limitations, and gives future work.
+
+
+%% Local Variables: ***
+%% eval: (ispell-change-dictionary "english" nil) ***
+%% mode: latex ***
+%% eval: (flyspell-buffer) ***
+%% End: ***
+
+% LocalWords: CHR Prolog SC TSO

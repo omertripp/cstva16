@@ -1,0 +1,239 @@
+% easychair.tex,v 3.4 2015/12/10
+%\documentclass{easychair}
+\documentclass[EPiC]{easychair}
+%\documentclass[debug]{easychair}
+%\documentclass[verbose]{easychair}
+%\documentclass[notimes]{easychair}
+%\documentclass[withtimes]{easychair}
+%\documentclass[a4paper]{easychair}
+%\documentclass[letterpaper]{easychair}
+
+\input{preambule}
+
+\usepackage{multirow}
+\usepackage{doc}
+
+% use this if you have a long article and want to create an index
+% \usepackage{makeidx}
+
+% In order to save space or manage large tables or figures in a
+% landcape-like text, you can use the rotating and pdflscape
+% packages. Uncomment the desired from the below.
+%
+% \usepackage{rotating}
+% \usepackage{pdflscape}
+
+% Some of our commands for this guide.
+%
+\newcommand{\easychair}{\textsf{easychair}}
+%\newcommand{\miktex}{MiK{\TeX}}
+%\newcommand{\texniccenter}{{\TeX}nicCenter}
+%\newcommand{\makefile}{\texttt{Makefile}}
+\newcommand{\latexeditor}{Emacs}
+
+%\makeindex
+
+%% Front Matter
+%%
+% Regular title as in the article class.
+%
+\title{A CHR-Based Solver for Weak Memory Behaviors\thanks{Work 
+partially funded by French ANR (project SOPRANO, grant ANR-14-CE28-0020).}}
+
+% Keywords :
+% weak memory models
+% Constraint Handling Rules (CHR)
+% valid executions
+
+
+% Authors are joined by \and. Their affiliations are given by \inst, which indexes
+% into the list defined using \institute
+%
+\author{
+   Allan Blanchard\inst{1,2}
+\and
+   Nikolai Kosmatov\inst{1}
+%\and \\
+%   Matthieu Lemerre\inst{1}?
+\and
+   Frédéric Loulergue\inst{2}
+}
+
+% Institutes for affiliations are also joined by \and,
+\institute{
+  CEA, LIST, Software Reliability Laboratory,
+  PC 174, 91191 Gif-sur-Yvette France\\
+  \email{firstname.lastname@cea.fr}
+\and
+  Univ Orléans, INSA Centre Val de Loire, LIFO EA 4022, Orléans, France%\\
+%  \email{firstname.lastname@univ-orleans.fr}
+}
+
+%  \authorrunning{} has to be set for the shorter version of the authors' names;
+% otherwise a warning will be rendered in the running heads. When processed by
+% EasyChair, this command is mandatory: a document without \authorrunning
+% will be rejected by EasyChair
+
+\authorrunning{Blanchard, Kosmatov and Loulergue}
+
+% \titlerunning{} has to be set to either the main title or its shorter
+% version for the running heads. When processed by
+% EasyChair, this command is mandatory: a document without \titlerunning
+% will be rejected by EasyChair
+\titlerunning{A CHR-Based Solver for Weak Memory Behaviors}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  With the wide expansion of multiprocessor architectures, the
+  analysis and reasoning for programs under weak memory models has
+  become an important concern.  This work presents an original
+  constraint solver for detecting program behaviors respecting a
+  particular memory model.  It is implemented in Prolog using CHR
+  (Constraint Handling Rules).  The CHR formalism provides a
+  convenient generic solution for specifying memory models, that
+  benefits from the existing optimized implementations of CHR and can
+  be easily extended to new models.  We briefly present the solver
+  design, illustrate the encoding of memory model constraints in CHR
+  and discuss the benefits and limitations of the proposal.
+\end{abstract}
+
+% The table of contents below is added for your convenience. Please do not use
+% the table of contents if you are preparing your paper for publication in the
+% EPiC series
+
+%\setcounter{tocdepth}{2}
+%{\small
+%\tableofcontents}
+
+%\section{To mention}
+%
+%Processing in EasyChair - number of pages.
+%
+%Examples of how EasyChair processes papers. Caveats (replacement of EC
+%class, errors).
+
+\pagestyle{empty}
+
+%------------------------------------------------------------------------------
+%\vspace{-2mm}
+\section{Introduction}
+%\vspace{-1mm}
+\label{sect:introduction}
+\input{introduction.tex}
+
+%------------------------------------------------------------------------------
+%\vspace{-2mm}
+\section{Weak Memory Models}
+%\vspace{-1mm}
+\label{sect:weakMemoryModels}
+\input{weakMemoryModels.tex}
+
+%------------------------------------------------------------------------------
+%\vspace{-2mm}
+\section{The Solver}
+%\vspace{-1mm}
+\label{sect:solver}
+\input{solver.tex}
+
+
+%------------------------------------------------------------------------------
+%\vspace{-4mm}
+\section{Conclusion and Future Work}
+%\vspace{-3mm}
+\label{sect:discussion}
+\input{discussion.tex}
+
+\noindent\textbf{Acknowledgment.} 
+%----------- AcknowledgmentHIDDEN FOR BLIND REVIEW --------
+%%(hidden for blind review)
+%----------- END Acknowledgment HIDDEN FOR BLIND REVIEW --------
+% ----------- REAL Acknowledgment ------------
+The work of the first author was partially funded by a Ph.D. grant of
+the French Ministry of Defence. Thanks to the anonymous referees 
+for their helpful comments.
+% ----------- END REAL Acknowledgment ------------
+
+%------------------------------------------------------------------------------
+%\vspace{-4mm}
+\begin{thebibliography}{10}
+
+\bibitem{Abe:2014}
+T.~Abe and T.~Maeda.
+\newblock Optimization of a general model checking framework for various memory
+  consistency models.
+\newblock In {\em PGAS 2014}.
+
+\bibitem{AG1996:IEEEC}
+S.~V. Adve and K.~Gharachorloo.
+\newblock Shared memory consistency models: A tutorial.
+\newblock {\em Computer}, 29(12):66--76, 1996.
+
+\bibitem{AMT2014:TPLS}
+J.~Alglave, L.~Maranget, and M.~Tautschnig.
+\newblock Herding cats: Modelling, simulation, testing, and data mining for
+  weak memory.
+\newblock {\em {ACM} Trans. Prog. Lang. Syst.}, 2014.
+
+\bibitem{AM2006:ISCA}
+Arvind and J.~Maessen.
+\newblock Memory model = instruction reordering + store atomicity.
+\newblock In {\em ISCA 2006}.
+
+\bibitem{BA2008:PLDI}
+H.-J. Boehm and S.~V. Adve.
+\newblock Foundations of the {C}++ concurrency memory model.
+\newblock In {\em PLDI 2008}.
+
+\bibitem{Boudol:2009}
+G.~Boudol and G.~Petri.
+\newblock Relaxed memory models: An operational approach.
+\newblock In {\em POPL 2009}.
+
+\bibitem{DFPP2014:VPT}
+E.~{De Angelis}, F.~Fioravanti, A.~Pettorossi, and M.~Proietti.
+\newblock Program verification using constraint handling rules and array
+  constraint generalizations.
+\newblock In {\em {VPT} 2014, co-located with {CAV} 2014}, pages 3--18.
+
+\bibitem{Fruhwirth1998}
+T.~Fruhwirth.
+\newblock Theory and practice of constraint handling rules.
+\newblock {\em J. Logic. Program.}, 1998.
+
+\bibitem{L79:IEEE}
+L.~Lamport.
+\newblock {How to Make a Multiprocessor Computer That Correctly Executes
+  Multiprocess Program}.
+\newblock {\em IEEE Trans. Comput.}, 1979.
+
+\bibitem{SJM2007:PPOPP}
+V.~A. Saraswat, R.~Jagadeesan, M.~M. Michael, and C.~von Praun.
+\newblock A theory of memory models.
+\newblock In {\em PPoPP}, pages 161--172. {ACM}, 2007.
+
+\bibitem{TVD2010:PLDI}
+E.~Torlak, M.~Vaziri, and J.~Dolby.
+\newblock Memsat: checking axiomatic specifications of memory models.
+\newblock In {\em PLDI}, pages 341--350, 2010.
+
+\bibitem{Yang:2005}
+Y.~Yang, G.~Gopalakrishnan, and G.~Lindstrom.
+\newblock {UMM}: An operational memory model specification framework with
+  integrated model checking capability.
+\newblock {\em Concurr. Comput. : Pract. Exper.}, 17(5-6):465--487, 2005.
+
+\end{thebibliography}
+
+
+
+%% \appendix
+%% \newpage
+%% \section{Solver Implementation}
+%% The solver is available to reviewers at {\small \url{http://frederic.loulergue.eu/CHR/wmm.tar.gz}}.
+
+
+%------------------------------------------------------------------------------
+\end{document}

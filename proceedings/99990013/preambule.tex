@@ -1,0 +1,195 @@
+\usepackage[utf8]{inputenc} % 
+\usepackage{amsmath,amsfonts}
+\usepackage{adjustbox}
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{multirow}
+%\usepackage{pgfplots}
+%\usepackage{pgfplotstable}
+\usepackage{hyperref}
+%\usepackage{url}
+%\usepackage{colortbl}
+\usepackage{caption,subcaption,wrapfig}
+%\usepackage{aurical}
+\usepackage{xspace}
+\usepackage{tikz}
+%\usepackage{doi}
+%\usepackage[numbers]{natbib}
+%\usepackage{comment}
+%\excludecomment{useless}
+
+%% \usetikzlibrary{matrix,shapes,shapes.multipart,backgrounds,calc,fit,shadows,
+%%  positioning}
+%%
+%% \pgfdeclarelayer{background}
+%% \pgfdeclarelayer{foreground}
+%% \pgfsetlayers{background,main,foreground}
+%% \tikzstyle{plug-in}=[draw, fill=blue!20, text width=4em, 
+%%   text centered, minimum height=2em,drop shadow]
+%% \tikzstyle{ann} = [above, text width=3em, text centered]
+%% \tikzstyle{operation} = [text centered, text width=8em]
+%% \tikzstyle{file} = [plug-in, text width=8em, fill=white!20,drop shadow]
+%%
+%% \definecolor{Gray}{gray}{0.90}
+%%
+%% \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+%%    \node[shape=circle,draw,inner sep=2pt] (char) {\scriptsize{#1}};}}
+
+\newcommand{\commentAB}[1]{\color{red}((AB: {#1}))\color{black}} 
+\newcommand{\commentNK}[1]{\color{orange}((NK: {#1}))\color{black}} 
+\newcommand{\commentFL}[1]{\color{blue}((FL: {#1}))\color{black}} 
+\newcommand{\commentML}[1]{\color{green}((ML: {#1}))\color{black}} 
+\newcommand{\change}[1]{{\color{purple}#1\color{black}}}
+
+% Empty version of comments - uncomment them to measure the real size 
+% of the article without comments
+%
+\renewcommand{\commentAB}[1]{} 
+%\renewcommand{\commentNK}[1]{} 
+\renewcommand{\commentFL}[1]{} 
+\renewcommand{\commentML}[1]{} 
+\renewcommand{\change}[1]{#1}
+
+% Some tools and languages:
+
+\newcommand{\FramaC}{\textsc{Frama-C}\xspace}
+\newcommand{\framac}{\FramaC}
+\newcommand{\PathCrawler}{\textsc{Path\-Crawler}\xspace}
+\newcommand{\acsl}{\textsc{acsl}\xspace}
+\newcommand{\eacsl}{\textsc{e-acsl}\xspace}
+\newcommand{\WP}{\textsc{Wp}\xspace}
+\newcommand{\Wp}{\WP}
+\newcommand{\Coq}{\textsc{Coq}\xspace}
+\newcommand{\WhyThree}{\textsc{Why3}\xspace}
+\newcommand{\ZThree}{\textsc{Z3}\xspace}
+\newcommand{\CVCThree}{\textsc{CVC3}\xspace}
+\newcommand{\CVCFour}{\textsc{CVC4}\xspace}
+\newcommand{\Value}{\textsc{Value}\xspace}
+\newcommand{\sante}{\textsc{sante}\xspace}
+\newcommand{\rte}{\textsc{rte}\xspace}
+\newcommand{\boogie}{\textsc{Boogie}\xspace}
+\newcommand{\boogaloo}{\textsc{Boogaloo}\xspace}
+\newcommand{\symbiotic}{\textsc{Symbiotic}\xspace}
+\newcommand{\eve}{\textsc{Eve}\xspace}
+\newcommand{\escjava}{\textsc{ESC-Java}\xspace}
+\newcommand{\pex}{\textsc{Pex}\xspace}
+\newcommand{\sage}{\textsc{Sage}\xspace}
+\newcommand{\cute}{\textsc{Cute}\xspace}
+\newcommand{\klee}{\textsc{Klee}\xspace}
+\newcommand{\smart}{\textsc{Smart}\xspace}
+\newcommand{\Occ}{\mathrm{Occ}}
+\newcommand{\mappings}{\mathtt{mappings}}
+\newcommand{\validpage}{\mathtt{validpage}}
+\newcommand{\reff}{\mathtt{ref}}
+
+\newcommand{\zeropage}{\texttt{zero}}%
+\newcommand{\datapage}{\texttt{data}}%
+\newcommand{\pagetable}{\texttt{pagetable}}%
+\newcommand{\pagedirectory}{\texttt{pagedirectory}}%
+
+%% \newcommand{\prettybigletter}{\Fontskrivan\bfseries}
+%% \newcommand{\I}{{\prettybigletter (I)}}
+%% \newcommand{\G}{{\prettybigletter (G)}}
+%% \newcommand{\R}{{\prettybigletter (R)}}
+
+\lstloadlanguages{C}
+
+% --- The following is for a customized pretty-printed and varbatim versions of listing for ACSL annotations. ---
+
+% Warnings: 
+% - Do not use other quantified variables than i, j and k
+% - Do not add 
+%% \lstdefinelanguage{pretty-ACSL}{%
+%%   escapechar={},
+%%   literate=
+%%    {==}{{$==$}}2
+%%    {==>}{{$\Rightarrow$}}1
+%%    {integer\ i}{{i$\,\in \mathbb{Z}\,$}}4
+%%    {integer\ j}{{j$\,\in \mathbb{Z}\,$}}4
+%%    {integer\ k}{{k$\,\in \mathbb{Z}\,$}}4
+%%    {integer\ m}{{m$\,\in \mathbb{Z}\,$}}4
+%%    {integer\ l}{{l$\,\in \mathbb{Z}\,$}}4
+%%    {\\forall}{{$\forall$}}1
+%%    {\\exists}{{$\exists$}}1
+%% %   {integer}{{$\mathbb{Z}$}}1
+%%    {real}{{$\mathbb{R}$}}1
+%%    {&&}{{$\wedge$}}1
+%%    {||}{{$\vee$}}1
+%%    {!=}{{$\neq$}}1
+%%    {<}{{$<$}}1
+%%    {<=}{{$\le~$}}1,
+%%   morekeywords={assert,assigns,assumes,axiom,axiomatic,behavior,behaviors,
+%%     boolean,breaks,complete,continues,data,decreases,disjoint,ensures,
+%%     exit_behavior,ghost,global,inductive,invariant,lemma,logic,loop,
+%%     model,predicate,reads,requires,sizeof,strong,struct,terminates,
+%%     %returns,
+%%     type,union,variant,uchar,byte,typically,\\result,\\old,\\at,\\valid,
+%%     \\separated,\\nothing,Pre},
+%%   alsoletter={\\},
+%%   morecomment=[l]{//}
+%% }
+%% \lstnewenvironment{pretty-codeACSL}{\lstset{language=pretty-ACSL,stepnumber=0}}{\smallskip}
+
+%% \lstdefinelanguage{ACSL}{%
+%%   escapechar={},
+%%   literate=,
+%%   morekeywords={assert,assigns,assumes,axiom,axiomatic,behavior,behaviors,
+%%     boolean,breaks,complete,continues,data,decreases,disjoint,ensures,
+%%     exit_behavior,ghost,global,inductive,invariant,lemma,logic,loop,
+%%     model,predicate,reads,requires,sizeof,strong,struct,terminates,
+%%     %returns,
+%%     type,union,variant,uchar,byte,typically,\\result,\\old,\\at,\\valid,
+%%     \\separated,\\nothing,Pre},
+%%   alsoletter={\\},
+%%   morecomment=[l]{//}
+%% }
+%% \lstnewenvironment{codeACSL}{\lstset{language=ACSL,stepnumber=0}}{\smallskip}
+
+
+
+%% \lstdefinestyle{pretty-c}{language={[ANSI]C},%
+%%   alsolanguage=pretty-ACSL,%
+%%   %commentstyle=\lp@comment,%
+%%   moredelim={*[l]{//}},%
+%%   %moredelim={*[s]{/*}{*/}},%
+%%   %moredelim={**[s]{/*@}{*/}},%
+%%   deletecomment={[s]{/*}{*/}},
+%%   moredelim={*[l]{//@}},%
+%% }
+
+%% \lstdefinestyle{c}{language={[ANSI]C},%
+%%   alsolanguage=ACSL,%
+%%   %commentstyle=\lp@comment,%
+%%   moredelim={*[l]{//}},%
+%%   %moredelim={*[s]{/*}{*/}},%
+%%   %moredelim={**[s]{/*@}{*/}},%
+%%   deletecomment={[s]{/*}{*/}},
+%%   moredelim={*[l]{//@}},%
+%% }
+
+%% \lstset{language=C,
+%%   escapechar=§,
+%%   style=pretty-c,
+%%   basicstyle=\scriptsize\ttfamily,
+%%   numberstyle=\tiny,
+%%   numbers=left,
+%%   stepnumber=1,
+%%   numbersep=5pt,
+%%   tab=\rightarrowfill,
+%% }
+
+\lstdefinelanguage{chr}{
+%%   escapechar=§,
+%%   style=pretty-c,
+   basicstyle=\scriptsize\ttfamily,
+   numberstyle=\scriptsize,
+   numbers=left,
+   stepnumber=1,
+   numbersep=5pt,
+   tab=\rightarrowfill,
+}
+\lstnewenvironment{codeCHR}{\lstset{language=chr,stepnumber=0}}{\smallskip}
+
+\lstMakeShortInline[language=chr,basicstyle=\small\ttfamily]"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

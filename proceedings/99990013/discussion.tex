@@ -1,0 +1,58 @@
+%\commentNK{mieux valoriser contributions? optims etc. Give all supported models?}
+We have presented an original CHR-based solver for detection of admissible executions of 
+a given program w.r.t. a given memory model, and illustrated it for SC, TSO and PSO models.
+It is suitable for a rigorous  exhaustive analysis of program executions 
+of small programs that becomes intractable for bigger ones due to the combinatorial 
+explosion of their number. 
+
+We think that seeing memory models as constraints over executions is
+well adapted. 
+%% It is based on the observation that, given a program
+%% with the written order of its instructions and a set of
+%% constraints that order the writes in memory for any location, a
+%% processor will literally constrain (physically) the other instructions
+%% to execute in a certain order, and the loads to see some written
+%% values, that will forbid some executions.  \commentNK{rephrase?}
+The design of such a solver is convenient and pragmatic.
+The generation of basic executions and cycle detection
+%in the generic model 
+relies on
+a few optimizations in order to be more efficient and to ensure on-the-fly 
+filtering of constraints. The proposed approach makes the definition of specific models from the
+generic one very practical and relatively straightforward. In particular, it is  not very hard 
+when the model becomes more complicated, as for models like ARM for example.
+CHR provides an easy way to express constraints about execution of programs, 
+they have also been used for detection of incorrect behaviors in imperative 
+program analysis in~\cite{DFPP2014:VPT}.
+                         
+Moreover, the use of a well established mechanism of constraint specification
+and solving, here Prolog and CHR, brings the benefit 
+of years of optimization and debugging to handle our problem
+without having to re-develop constraint resolution.  We do
+not claim that our implementation of this problem is most efficient.
+Dedicated tools like~\cite{AMT2014:TPLS} could be faster since they are 
+specialized for this precise problem and can implement a solving
+engine without being as generic as CHR. % constraint solver. 
+But such dedicated tools are harder to develop 
+%than a tool that directly exploits a constraint solver, 
+as they potentially require  a new optimized code that has to be carefully
+developed and debugged.
+
+In future work, we plan to extend the solver to other models, 
+like ARM. %, that needs more work to be complete in our implementation.
+It would be interesting to support other kinds of instructions
+(e.g. binary operations) to handle all kinds of data or address
+dependencies often used for synchronization in ARM.  Another direction
+would be to experiment on different programs of various sizes to
+produce precise benchmarks, in order to compare the solver to
+dedicated tools, as well as to further optimize it.
+%determine the best way to produce
+%execution candidates and to filter them.
+
+% Local Variables: ***
+% eval: (ispell-change-dictionary "english" nil) ***
+% mode: latex ***
+% eval: (flyspell-buffer) ***
+% End: ***
+
+% LocalWords: CHR Prolog

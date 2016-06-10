@@ -1,0 +1,145 @@
+A \emph{memory model} describes how a program can interact with memory during
+its execution. Technical manuals of processors are often vague, and
+sometimes erroneous. Formal descriptions are necessary, but must be as
+abstract as possible to ease reasoning about them. 
+
+In a parallel context, Lamport~\cite{L79:IEEE} proposed \emph{sequential consistency} (SC)
+where the semantics of the parallel composition of two programs is given
+by the interleaving of the executions of each program. 
+For example, if we consider that two memory locations 
+$\mathtt{x}$ and $\mathtt{y}$ initially contain  
+$\mathtt{0}$ and that $\mathtt{r_i}$ are processor registers,
+the program $p_0$ in Fig.~\ref{fig:programs}a can only give one of
+%% \begin{wraptable}{o}{.35\linewidth}
+%% \[
+%% \begin{array}{c||c}
+%%   \begin{array}{l}
+%%     \text{Thread~1} \\
+%% (1)~    \mathtt{x = 1;} \\
+%% (2)~    \mathtt{r_0 = y;} \\
+%%   \end{array} &
+%%   \begin{array}{l}
+%%     \text{Thread~2} \\
+%% (3)~    \mathtt{y = 1;} \\
+%% (4)~    \mathtt{r_1 = x;} \\
+%%   \end{array}
+%% \end{array}
+%% \]    
+%% \end{wraptable}
+the three possible final results: either
+$\mathtt{r_0 = 0}$ and $\mathtt{r_1 = 1}$, or
+$\mathtt{r_0 = 1}$ and $\mathtt{r_1 = 1}$, or
+$\mathtt{r_0 = 1}$ and $\mathtt{r_1 = 0}$.
+The last result is obtained by the interleaving ($i_{10}$)($i_{11}$)($i_{00}$)($i_{01}$).
+
+\begin{figure}
+\begin{subfigure}{.495\textwidth}
+\vspace*{2.5mm}
+\begin{small}
+$\begin{array}{c||c}
+  \begin{array}{rl}
+%\text{Program } 
+p_0{:} &
+    \text{Thread~0} \\
+&(i_{00})~    \mathtt{x = 1;} \\
+&(i_{01})~    \mathtt{r_0 = y;} \\
+  \end{array} &
+  \begin{array}{l}
+    \text{Thread~1} \\
+(i_{10})~    \mathtt{y = 1;} \\
+(i_{11})~    \mathtt{r_1 = x;} \\
+  \end{array}
+\end{array}$\\[4mm]
+$
+\begin{array}{c||c}
+  \begin{array}{rl}
+%\text{Program } 
+p_1{:} & \text{Thread~0} \\
+&(i'_{00})~    \mathtt{x = 1;} \\
+&(i'_{01})~    \mathtt{fence ;} \\
+&(i'_{02})~    \mathtt{r_0 = y;} \\
+  \end{array} &
+  \begin{array}{l}
+\text{Thread~1} \\
+(i'_{10})~    \mathtt{y = 1;} \\
+(i'_{11})~    \mathtt{fence ;} \\
+(i'_{12})~    \mathtt{r_1 = x;} \\
+  \end{array}
+\end{array}
+$
+\end{small}
+%\caption{Example of programs}
+%\label{fig:programs}
+~
+\end{subfigure}
+\begin{subfigure}{.495\textwidth}
+\begin{lstlisting}[language=chr]
+:- include(sc). % :-include(tso).% for SC or TSO 
+
+program_p0(Vars, [Thread0,Thread1]) :- 
+  Vars    = [ x , y ],
+  Thread0 = [ (st,x,1), (ld,y,R0) ],
+  Thread1 = [ (st,y,1), (ld,x,R1) ].
+program_p1(Vars, [Thread0,Thread1]) :-  
+  Vars    = [ x , y ],
+  Thread0 = [ (st,x,1), f(any,any), (ld,y,R0) ],
+  Thread1 = [ (st,y,1), f(any,any), (ld,x,R1) ].
+
+?- program_p0(Vars, P), apply_model(Vars, P).
+\end{lstlisting}
+%\caption{Implementations of P1 and P2 and\\ example of use of the solver}
+%\label{fig:apply-model}
+\end{subfigure}
+\vspace*{-3mm}
+\caption{(a) Two programs $p_0$ and $p_1$,
+%Example of programs, 
+and (b) their implementations with a solving request.}
+\vspace*{-4mm}
+\label{fig:programs}
+\end{figure}
+
+
+However, for the sake of performance, no current multiprocessor
+provides a sequentially consistent memory model. Models are \emph{relaxed} or
+\emph{weak} with respect to SC. In most
+processors, it is also possible  to obtain the result
+$\mathtt{r_0 = 0}$ and $\mathtt{r_1 = 0}$, not justifiable by an interleaving. To avoid this behavior, 
+one can use \emph{memory barriers} or {\em fences} 
+that forbid reorderings through them (see
+program $p_1$ of Fig.~\ref{fig:programs}a). 
+
+There exist operational models for some weak memory models, for
+example~\cite{Boudol:2009}. However this kind of approaches is not
+really appropriate to capture the various existing memory models of
+processors and programming languages. Most approaches are based on
+constraints expressed as partial orders on events. In the case of
+memory models, the events of interest are related to memory: \emph{read}
+(\emph{load}) from,
+and \emph{write} (\emph{store}) 
+to a memory location, as well as memory barriers.
+
+Constraint-based approach have already been used to model memory
+models, see for example \cite{TVD2010:PLDI}. In this work, we propose a
+different approach using the particular case of CHR.
+Following~\cite{AMT2014:TPLS}, we use several relations to formalize
+memory models. The PO relation, for ``program-order'', simply
+expresses that an instruction appears before another one in
+the list of instructions defining a thread. The CO relation, for
+``coherency-order'', is a per location total order of the write
+actions. The RF relation, for ``read-from'', determines which write operation 
+assigned the value at a location before this value is read from this location:
+%states about the store
+%memory access associated to each load: 
+it associates a unique write to  each load. The FR relation, for
+``from-read'', relates each load operation
+with each of the write operations (if any) 
+that overwrite the value %at the same location
+after it was read by the load.
+
+% Local Variables: ***
+% eval: (ispell-change-dictionary "english" nil) ***
+% mode: latex ***
+% eval: (flyspell-buffer) ***
+% End: ***
+
+% LocalWords: CHR Prolog SC

@@ -1,0 +1,4829 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     extended-by	= "Alper Sen"
+%%%  }
+%%% ====================================================================
+
+@String{PROC = {Proceedings of the}}
+@String{AMS = {American Mathematical Society}}
+@String{AW = {Addison-Wesley}}
+@String{TCS = {Theoretical Computer Science}}
+@String{JPDC = {Journal of Parallel and Distributed Computing}}
+@String{WDAG = {Workshop on Distributed Algorithms (WDAG)}}
+@String{WPDD = {ACM/ONR Workshop on Parallel and Distributed Debugging}}
+@String{DC = {Distributed Computing}}
+@String{TrCS = {ACM Transactions on Computer Systems}}
+@String{SPDP = {IEEE Symposium on Parallel and Distributed Processing (SPDP)}}
+@String{ICPP = {International Conference on Parallel Processing}}
+@String{Com = {IEEE Computer}}
+@String{KAP = {Kluwer Academic Publishers}}
+@String{WAD = {International Workshop on Automated Debugging (AADEBUG)}}
+@String{CSS = {International Conference on System Sciences}}
+@String{Fre = {W. H. Freeman and Company, New York}}
+@String{TPDS = {IEEE Transactions on Parallel and Distributed Systems}}
+@String{FTCS = {IEEE Fault-Tolerant Computing Symposium}}
+@String{JCC = {Journal of Computer Communications}}
+@String{WSCT = {International Workshop on Structures in Concurrency Theory (STRICT)}}
+@String{MH = {McGraw-Hill}}
+@String{CACM = {Communications of the ACM (CACM)}}
+@String{ICDCS = {IEEE International Conference on Distributed Computing Systems (ICDCS)}} 
+@String{PODC = {ACM Symposium on Principles of Distributed Computing (PODC)}}
+@String{JS = {Journal of Supercomputing}}
+@String{CAV = {International Conference on Computer-Aided Verification (CAV)}}
+@String{LNCS = {Lecture Notes in Computer Science}}
+@String{ENTCS = {Electronic Notes in Theoretical Computer Science}}
+@String{WPDS = {Workshop on Parallel and Distributed Simulation}}
+@String{DISC = {Symposium on Distributed Computing (DISC)}}
+@String{CSE = {Computer Science and Education}}
+@String{TMH = {Tata McGraw-Hill Publishing Company Limited}}
+@String{ES = {Elsevier Science Publishers B. V. (North-Holland)}}
+@String{PDS = {The Parallel and Distributed Systems Laboratory}}
+@String{DECE = {Department of Electrical and Computer Engineering}}
+@String{UTA = {The University of Texas at Austin}}
+@String{TC = {IEEE Transactions on Computers}}
+@String{IPL = {Information Processing Letters}}
+@String{AMCSJ = {Applied Mathematics and Computer Science Journal}}
+@String{WLCPC = {Workshop on Language and Compilers for Parallel Computing}}
+@String{IBMARC = {IBM Almaden Research Center}}
+@String{ICDE = {International Conference on Data Engineering (ICDE)}}
+@String{CUP = {Cambridge University Press}}
+@String{MVPP = {International Meeting on Vector and Parallel Processing}}
+@String{TOPLAS = {ACM Transactions on Programming Languages and Systems}}
+@String{SPDT = {Symposium on Parallel and Distributed Tools}}
+@String{CJ = {The Computer Journal}}
+@String{PH = {Prentice Hall}}
+@String{MK = {Morgan Kaufmann}}
+@String{SIGMOD = {ACM SIGMOD Conference}}
+@String{USPATENT = {United States Patent Number}}
+@String{INFORMIX = {Informix Software Inc.}}
+@String{SV = {Springer-Verlag}}
+%%%@String{PDCS = {ISCA International Conference on Parallel and Distributed Computing Systems (PDCS)}}
+@String{MIT = {The MIT Press}}
+@String{JHUP = {The Johns Hopkins University Press}}
+@String{DAM = {Discrete Applied Mathematics}}
+@String{DM = {Discrete Mathematics}}
+@String{DS = {Distributed Systems}}
+@String{ICSKE = {IEEE International Conference on Software and Knowledge Engineering}}
+@String{PDCS = {International Conference on Parallel and Distributed Systems}}
+@String{FSTTCS = {Conference on the Foundations of Software Technology and Theoretical Computer Science (FSTTCS)}}
+@String{TSE = {IEEE Transactions on Software Engineering}}
+@String{JSS = {The Journal of Systems and Software}}
+@String{WGCS = {International Workshop on Graph-Theoretic Concepts in Computer Science (WG)}}
+@String{JWS = {John Wiley \& Sons}}
+@String{ORDAL = {International Conference on Orders, Algorithms and Applications (ORDAL)}} 
+@String{AJM = {American Journal of Mathematics}}
+@String{SRKU = {Sci. Reports Kanazawa Univ.}}
+@String{SIAMJDM = {SIAM Journal on Discrete Mathematics}}
+@String{KRUSE = {International KRUSE Symposium: Knowledge Use, Retrieval and Storage for Efficiency}}
+@String{SIAMJADM = {SIAM Journal on Algebraic and Discrete Methods}}
+@String{SIAMJC = {SIAM Journal on Computing}}
+@String{MCT = {Mathematical Center Tracts}}
+@String{STOC = {Annual ACM Symposium on Theory of Computing}}
+@String{MD = {Management of Data}}
+@String{OOPSLA = {Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)}}
+@String{JLMS = {Journal London Mathematics Society}}
+@String{AM = {Annals of Mathematics}}
+@String{TIT = {IEEE Transactions on Information Theory}}
+@String{WLP = {Workshop on Logics of Programs}}
+@String{ISP = {International Symposium in Programming}}
+@String{SPIN = {SPIN International Workshop}}
+@String{WSS = {Workshop on Self-Stabilizing Systems (WSS)}}
+@String{FATES = {International Workshop on Formal Approaches to Testing of Software (FATES)}}
+@String{RV = {International Workshop on Runtime Verification (RV)}}
+@String{OPODIS = { International Conference on Principles of Distributed Systems (OPODIS)}}
+@String{IPDPS = { International Parallel and Distributed Processing
+Symposium (IPDPS)}}
+@String{FSE = {Symposium on the Foundations of Software Engineering (FSE)}}
+@String{SIGACT = {ACM Special Interest Group on Algorithms and Computation Theory (SIGACT) News}}
+@String{PEPM = {ACM SIGPLAN Workshop on Partial Evaluation and
+Semantics-Based Program Manipulation}}
+@String{STTT = {International Journal on Software Tools for Technology Transfer}}
+@String{ASE = {International Conference on Automated Software Engineering (ASE)}}
+@String{LICS = {IEEE Symposium on Logic in Computer Science}}
+@String{SCP= {Science of Computer Programming}}
+@String{ICSE = {International Conference on Software Engineering (ICSE)}}
+@String{CONCUR = {International Conference on Concurrency Theory (CONCUR)}}
+@String{TACAS = {International Conference on Tools and Algorithms for Construction and Analysis of Systems (TACAS)}}
+@String{FMSD = {Formal Methods in System Design}}
+@String{FMICS = {International Workshop on Formal Methods for Industrial
+Critical Systems (FMICS)}}
+@String{FOCS = {IEEE Symposium on the Foundations of Computer Science (FOCS)}}
+@String{POPL = {ACM Symposium on Principles of Programming Languages (POPL)}}
+@String{ICALP = {International Colloquium on Automata, Languages, and Programming (ICALP)}}
+@String{ITC = {International Test Conference (ITC)}}
+@String{ISCAS = {International Symposium on Circuits and Systems (ISCAS)}}
+@String{FMCAD = {International Conference on Formal Methods in Computer Aided Design (FMCAD)}}
+@String{HLDVT = {IEEE International High-Level Design Validation and Test Workshop (HLDVT)}}
+@String{DATE = {Conference on Design Automation and Test in Europe (DATE)}}
+@String{DAC = {Design Automation Conference (DAC)}}
+@String{ASP-DAC = {Asia and South Pacific Design Automation Conference (ASP-DAC)}}
+@String{ICCAD = {International Conference on Computer Aided Design (ICCAD)}}
+@String{MTV = {IEEE International Microprocessor Test and Verification Workshop (MTV)}}
+@String{MEMOCODE = {International Conference on Formal Methods and Models for Co-Design (MEMOCODE)}}
+
+
+
+
+
+
+@Manual{AgaGoe+:1996:IBM,
+  author =	 {A. Agarwal and A. Goel and A. Sood},
+  title =	 {Software Design Description for DLFS on Solaris,
+                  HP-UX, and AIX},
+  year =	 {1996}
+}
+
+@inproceedings{AgaSto:2006:PADTAD,
+author="R. Agarwal and S. D. Stoller",
+title={{Run-Time Detection of Potential Deadlocks for Programs with Locks,
+Semaphores, and Condition Variables}},
+booktitle="Proceedings of the Workshop on Parallel and Distributed
+    Systems: Testing and Debugging (PADTAD)",
+year=2006
+}
+
+
+@InProceedings{AgrBor+:1989:MD,
+  author = 	 {R. Agrawal and A. Borgida and H. V. Jagadish},
+  title = 	 {{E}fficient {M}anagement of {T}ransitive {R}elationships in {L}arge {D}ata
+                  and {K}nowledge {B}ases},
+  booktitle = 	 PROC # "~" # SIGMOD # "~" # MD,
+  pages = 	 {253-262},
+  year = 	 1989,
+  address = 	 {Portland, Oregon}
+}
+
+@Book{AhoHop:1974:AW,
+  author =	 {A. V. Aho and J. E. Hopcroft and J. D. Ullman},
+  OPTeditor =	 {~},
+  title =	 {{T}he {D}esign and {A}nalysis of {C}omputer
+                  {A}lgorithms},
+  publisher =	 AW,
+  year =	 1974,
+  OPTnote =	 {pages 384-386}
+}
+
+@InProceedings{AlaVen:1993:WAD,
+  author =       {S. Alagar and S. Venkatesan},
+  title =        {{H}ierarchy in {T}esting {D}istributed {P}rograms},
+  booktitle =    PROC # "~" # WAD,
+  pages =        {101-116},
+  year =         {1993} 
+}
+
+@InProceedings{AlaVen:1994:PDS, 
+  author =       {S. Alagar and S. Venkatesan},
+  title =        {{T}echniques to {T}ackle {S}tate {E}xplosion in {G}lobal
+                  {P}redicate {D}etection},
+  booktitle =    PROC # "~" # PDS,
+  pages =        {412-417}, 
+  month =        DEC,
+  year =         {1994} 
+}
+
+
+@Article{AlpSch:1985:IPL,
+  author =       "B. Alpern and F. B. Schneider",
+  title =        {{Defining Liveness}},
+  journal =      IPL,
+  year =         1985,
+  OPTkey =       {},
+  volume =       21,
+  OPTnumber =    {},
+  OPTmonth =     {},
+  pages =        "181--185",
+  OPTnote =      {},
+  annote =       "Standard definitions of system properties, safety
+                  and liveness. Shows that every nontrivial system
+                  property can be expressed as an intersection of a
+                  safety property and a liveness property. Terms
+                  safety and liveness defined by Lamport
+                  \cite{Lamport:1977:PCM}."
+}
+
+
+
+@inproceedings{AluMcM+:1998:ICALP,
+ author =   "R. Alur and  K. McMillan and D. Peled",
+ title = {{Deciding Global Partial-Order Properties}},
+ booktitle =      PROC # "~25th~"# ICALP,
+ publisher = SV,
+ series = LNCS,
+ number = 1443,
+ pages = {41-52},
+ year = {1998},
+ }
+
+
+
+
+@Article{AluPel:1999:IPL,
+  author =       "R. Alur and D. Peled",
+  title =        {{Undecidability of Partial Order Logics}},
+  journal =      IPL,
+  volume =       {69},
+  number =       {3},
+  year =         {1999},
+}
+
+
+
+@inproceedings{AluGro:2001:ASE,
+ author =   "R. Alur and R. Grosu",
+ title = {{Shared Variable Interaction Diagrams}},
+ booktitle =      PROC # "~16th~"# ASE,
+ address =      "San Diego, California",
+ year = 2001,
+ }
+
+
+
+
+
+@inproceedings{AluYan:1999:CONCUR,
+ author =   "R. Alur and M. Yannakakis",
+ title = {{Model Checking of Message Sequence Charts}},
+ booktitle =      PROC # "~10th~"# CONCUR,
+ year = {1999},
+ pages = {114--129},
+ publisher = SV,
+ number = 	 1664,
+ series = 	 LNCS,
+}
+
+
+
+
+@Article{BabFro+:1996:JSS,
+  author =       {{\"O}. Babao{\v{g}}lu and E. Fromentin and M. Raynal},
+  title =        {{A} {U}nified {F}ramework for the {S}pecification and 
+                  {R}un-time {D}etection of {D}ynamic {P}roperties in {D}istributed 
+                  {C}omputations},
+  journal =      JSS,
+  volume =       {33},
+  number =       {3},
+  month =        JUN,
+  pages =        {287-298},
+  year =         {1996},
+}
+
+@incollection{BabMar:1993:DS,
+  author =	 {{\"{O}}. Babao{\v g}lu and K. Marzullo},
+  title =	 {{C}onsistent {G}lobal {S}tates of {D}istributed
+                  {S}ystems: {F}undamental {C}oncepts and
+                  {M}echanisms},
+  booktitle =	 DS,
+  publisher =	 AW,
+  editor =	 {S. Mullender},
+  pages =	 {55-96},
+  year =	 {1993},
+}
+
+@Article{BabRay:1995:JPDC,
+  author =	 {{\"{O}}. Babao{\v g}lu and M. Raynal},
+  title =	 {{S}pecification and {V}erification of {D}ynamic
+                  {P}roperties in {D}istributed {C}omputations},
+  journal =	 JPDC,
+  year =	 1995,
+  volume =	 28,
+  number =	 2,
+  pages =	 {173-185}
+}
+
+@Manual{BalKan:1999:INFORMIX,
+  author =	 {I. Balabine and R. Kandasamy},
+  title =	 {File System Interface to a Database},
+  note =	 USPATENT # "~5937406 granted to~" # INFORMIX,
+  year =	 {1999},
+  month =	 AUG
+}
+
+@Manual{BegDon+:PVM2.0,
+  title =	 {{H}ence: {A} users' guide - version 2.0. {PVM}
+                  {D}esign and {V}isualization},
+  author =	 {A. Beguelin and J. Dongarra and G. A. Geist and
+                  R. Manchek and K. Moore and P. Newton and
+                  V. Sunderam}
+}
+
+@article{KarGun+:2002:TSE,
+ author = {K. Bhargavan and C. A. Gunter and I. Lee and O. Sokolsky and M. Kim
+ and D. Obradovic and M. Viswanathan},
+ title = {{Verisim: Formal Analysis of Network Simulations}},
+ journal = TSE,
+ volume = {28},
+ number = {2},
+ year = {2002},
+ issn = {0098-5589},
+ pages = {129--145},
+ publisher = {IEEE Press},
+ }
+
+@inproceedings{BieCim+:1999:TACAS,
+ author = {A. Biere and A. Cimatti and E. M. Clarke and Y. Zhu},
+ title = {{Symbolic Model Checking without BDDs}},
+ booktitle =      PROC # "~5th~"# TACAS,
+ year = {1999},
+ pages = {193--207},
+ publisher = SV,
+ number = 	 1579,
+ series = 	 LNCS,
+ }
+
+@inproceedings{BieCyr+:2002:FMICS,
+    author = {A. Biere and C. Artho and V. Schuppan},
+    title = {{Liveness Checking as Safety Checking}},
+    booktitle =      PROC # "~7th~"# FMICS,
+    volume = {66},
+    issue = {2},
+    series = ENTCS,
+    publisher = ES,
+    year = {2002}
+}
+
+
+@Article{Bou:1987:TCS,
+  author =	 {L. Bouge},
+  title =	 {{R}epeated {S}napshots in {D}istributed {S}ystems
+                  with {S}ynchronous {C}ommunication and their
+                  {I}mplementation in {CSP}},
+  journal =	 TCS,
+  year =	 1987,
+  volume =	 49,
+  pages =	 {145-169}
+}
+
+
+@Book{BoyMoo:1979:AP,
+  author = 	 {R. S. Boyer and J S. Moore},
+  title = 	 {{A Computational Logic}},
+  publisher = 	 {Academic Press},
+  year = 	 1979,
+  address =	 {Orlando},
+  annote =	 {This is the standard text defining the Boyer-Moore logic, and
+  also describing how an automated theorem prover for it can be written, e.g.,
+  Nqthm}
+}
+
+@InProceedings{Bro:2002:RV,
+author = {M. Brorkens and M. Moller},
+title = {{Dynamic Event Generation for Runtime Checking using the
+JDI}},
+booktitle =      PROC # "~2nd~"# RV,
+volume = {70},
+issue = {4},
+publisher = ES,
+series =    ENTCS,
+year = {2002}
+}
+
+@InProceedings{Cap:1994:ORDAL,
+  author = 	 {C. Capelle},
+  title = 	 {{R}epresentation of an {O}rder as {U}nion of {I}nterval {O}rders},
+  booktitle = 	 PROC # "~" # ORDAL,
+  pages = 	 {143-161},
+  year = 	 1994,
+  number = 	 831,
+  series = 	 LNCS,
+  address = 	 {Lyon, France},
+  month = 	 JUL,
+  publisher =    SV
+}
+
+@InProceedings{Cas:1993:OOPSLA,
+  author = 	 {Y. Caseau},
+  title = 	 {{E}fficient {H}andling of {M}ultiple {I}nheritance {H}ierarchies},
+  booktitle = 	 PROC # "~" # OOPSLA,
+  pages = 	 {271-287},
+  year = 	 1993
+}
+
+
+
+@article{ChaRob:1979:CACM,
+    author = "E. J. H. Chang and R. Roberts",
+    title = {{An Improved Algorithm for Decentralized Extrema-Finding in
+        Circular Configurations of Processes}},
+    journal = CACM,
+    volume = "22",
+    number = "5",
+    pages = "281-283",
+    year = "1979",
+}
+
+
+
+@Article{ChaDel+:1995:TOPLAS,
+author =       "B. Charron-Bost and C. Delporte-Gallet and
+                   H. Fauconnier",
+title =        "{L}ocal and {T}emporal {P}redicates in {D}istributed {S}ystems",
+journal =      "ACM Transactions on Programming Languages and Systems",
+volume =       "17",
+number =       "1",
+pages =        "157--179",
+month =        "Jan",
+year =         "1995",
+}
+
+@InProceedings{ChaGar:1995:WDAG,
+  author =	 {C. Chase and V. K. Garg},
+  title = 	 {{Efficient Detection of Restricted Classes of Global
+  Predicates}},
+  booktitle =	 PROC # "~" # WDAG,
+  year =	 1995,
+  address =	 {France},
+  month =	 SEP,
+  pages =	 {303-317}
+}
+
+@Article{ChaGar:1998:DC,
+  author =	 {C. Chase and V. K. Garg},
+  title =	 {{D}etection of {G}lobal {P}redicates: {T}echniques
+                  and their {L}imitations},
+  journal =	 DC,
+  year =	 1998,
+  volume =	 11,
+  number =	 4,
+  pages =	 {191-201}
+}
+
+@Article{ChaLam:1985:TrCS,
+  author =	 {K. M. Chandy and L. Lamport},
+  title =	 {{D}istributed {S}napshots: {D}etermining {G}lobal
+                  {S}tates of {D}istributed {S}ystems},
+  journal =	 TrCS,
+  year =	 1985,
+  volume =	 3,
+  number =	 1,
+  pages =	 {63-75},
+  month =	 FEB
+}
+
+, "," High-Level Design Validation and Test Workshop, 2006. Eleventh Annual IEEE International , vol., no., pp.187-194, Nov. 2006
+
+@InProceedings{CheSat+:2006:HLDVT,
+author =       "E. Cheung and P. Satapathy and V. Pham and H. Hsieh and X. Chen",
+title =        {{Runtime Deadlock Analysis of SystemC Designs}},
+booktitle =	 PROC  # "~" # HLDVT,
+pages =        "187-194",
+year =         2006,
+}
+
+@Article{ChoMil+:1991:TOPLAS,
+  author =	 {J. Choi and B. P. Miller and R. Netzer},
+  title =	 {{T}echniques for {D}ebugging {P}arallel {P}rograms
+                  with {F}lowback {A}nalysis},
+  journal =	 TOPLAS,
+  year =	 1991,
+  volume =	 13,
+  number =	 4,
+  pages =	 {491-530},
+  month =	 OCT
+}
+
+@InProceedings{CimCla+:1999:CAV,
+author =       "A. Cimatti and E.M. Clarke and F. Giunchiglia and M. Roveri",
+title =        "{\sc NuSMV}: a new {S}ymbolic {M}odel {V}erifier",
+booktitle =	 PROC # "~11th~"# CAV,
+pages =        "495-499",
+year =         1999,
+series =       LNCS,
+number =       "1633",
+address =      "{T}rento, {I}taly",
+month =        "July",
+}
+
+@InProceedings{CooMar:1991:WPDD,
+  author =	 {R. Cooper and K. Marzullo},
+  title =	 {{C}onsistent {D}etection of {G}lobal {P}redicates},
+  booktitle =	 PROC # "~" # WPDD,
+  pages =	 {163-173},
+  year =	 1991,
+  address =	 {Santa Cruz, California}
+}
+
+
+
+@InProceedings{CorDwy+:2000:ICSE,
+  author =	 {J. Corbett and M. Dwyer and J. Hatcliff and C. Pasareanu and Robby and S. Laubachand and H. Zheng},
+  title =	 {{Bandera: Extracting Finite-state Models from Java Source Code}},
+  booktitle =	 PROC # "~22nd~" # ICSE,
+  month = 	 JUN,
+  year =	 2000,
+}
+
+
+@Book{CorLei+:1991:MIT,
+  author =	 {T. H. Cormen and C. E. Leiserson and R. L. Rivest},
+  title =	 {{I}ntroduction to {A}lgorithms},
+  publisher =	 MIT,
+  address =	 {Cambridge, Massachusetts},
+  year =	 {1991},
+}
+
+@misc{CORBA:1997,
+ key = "CORBA",
+ title = {{Object Management Group (OMG): The Common Object Request Broker: Architecture and
+ Specification}},
+ month =     {August},
+ year = 1997,
+}
+
+@InProceedings{CypLeu:1995:SPDP,
+  author =	 {R. Cypher and E. Leu},
+  title =	 {{E}fficient {R}ace {D}etection for
+                  {M}essage-{P}assing {P}rograms with
+                  {N}onblocking {S}ends and {R}eceives},
+  booktitle =	 PROC # "~" # SPDP,
+  pages =	 {534-541},
+  year =	 1995
+}
+
+@Manual{DB2SQL:1999:IBM,
+  title =	 {DB2 UDB SQL Reference},
+  organization = {IBM},
+  edition =	 {V6.1},
+  year =	 1999
+}
+
+@Manual{Dav:1999:IBM,
+  title =	 {DataLinks: Managing External Data with DB2 Universal
+                  Database},
+  organization = {IBM Corporation},
+  month =	 FEB,
+  year =	 {1999},
+  note =	 {White paper prepared by J. R. Davis}
+}
+
+@Book{DavPri:1990:CUP,
+  author =	 {B. A. Davey and H. A. Priestley},
+  title =	 {{I}ntroduction to {L}attices and {O}rder},
+  publisher =	 CUP,
+  address =	 {Cambridge, UK},
+  year =	 {1990},
+}
+
+
+
+@Article{Dij:1974:CACM,
+  author =	 {E. W. Dijkstra},
+  title =	 {{S}elf-stabilizing systems in spite of distributed
+                  control},
+  journal =	 CACM,
+  year =	 {1974},
+  volume =	 {17},
+  number =	 {11},
+  pages =	 {643-644}
+}
+
+@Book{Dij:1976:PH,
+  author =	 {E. W. Dijkstra},
+  title =	 {{A Discipline of Programming}},
+  publisher =	 PH,
+  year =	 {1976},
+}
+
+
+
+
+
+@Article{Dij:1986:DC,
+  author =	 {E. W. Dijkstra},
+  title =	 {{A} {B}elated {P}roof of {S}elf-{S}tabilization},
+  journal =	 DC,
+  year =	 {1986},
+  volume =	 {1},
+  pages =	 {5-6}
+}
+
+
+@InProceedings{GroDre:2003:ISCAS,
+  author =	 {D. Grosse and R. Drechsler},
+  title =	 {{Formal Verification of LTL Formulas for SystemC Designs}},
+  booktitle =	 PROC # "~" # ISCAS,
+  pages =	 {245-248},
+  year =	 2003
+}
+
+
+
+@InProceedings{DueGup+:1992:WLCPC,
+  author =	 {E. Duesterwald and R. Gupta and M. L. Soffa},
+  title =	 {{D}istributed {S}licing and {P}artial {R}e-execution
+                  for {D}istributed {P}rograms},
+  booktitle =	 PROC # "~5th~" # WLCPC,
+  pages =	 {329-337},
+  year =	 1992
+}
+
+
+@InProceedings{DwyHat:1999:PEPM,
+author = "M. B. Dwyer and J. Hatcliff",
+title = {{Slicing Software for Model Construction}},
+booktitle = PROC # "~" #PEPM,
+pages = "105--118",
+year = "1999",
+}
+
+@inproceedings{EckEse+:2007:DATE,
+ author = {W. Ecker and V. Esen and T. Steininger and M. Velten and M. Hull},
+ title = {{Implementation of a Transaction Level Assertion Framework in SystemC}},
+ booktitle =  PROC # "~" # DATE,
+ pages = {1--6},
+ year = {2007},
+ }
+
+
+@inproceedings{EisFis+:2003:CAV,
+  author    = "C. Eisner and D. Fisman and J. Havlicek and Y. Lustig and A. McIsaac and D. V. Campenhout",
+  title     = {{Reasoning with Temporal Logic on Truncated Paths}},
+  booktitle = PROC # "~15th~"# CAV,
+  publisher = SV,
+  series    = LNCS,
+  volume    = 2725,
+  year      = "2003",
+}
+
+
+
+
+@incollection{Eme:1990:HTCS,
+AUTHOR = "E. A. Emerson",
+TITLE = {{Temporal and Modal Logic}},
+YEAR = 1990,
+BOOKTITLE = {Handbook of Theoretical Computer Science: Volume B:
+	Formal Models and Semantics},
+EDITOR = {J. van Leeuwen},
+PUBLISHER = ES,
+ADDRESS = {Amsterdam},
+PAGES = {995-1072},
+KEYWORDS = {}}
+
+
+
+@Article{Esp:1994:SCP,
+author = {J. Esparza},
+title = {{Model Checking Using Net Unfoldings}},
+journal = SCP,
+year = 1994, 
+volume = 23,
+number = 2,
+pages = {151--195},
+}
+
+@book{FosKro+:2004:SV,
+ author = "H. D. Foster and A. C. Krolnik and D. J. Lacey",
+ title = {{Assertion-Based Design, Second Edition}},
+ year = {2004},
+ publisher = SV,
+}
+
+
+@book{GosJoy+:2000:AW,
+ author = "J. Gosling and B. Joy and G. Steele and G. Bracha",
+ title = {{Java Language Specification, Second Edition}},
+ year = {2000},
+ publisher = AW,
+}
+
+
+
+@Inproceedings{HavRos:2001:RV,
+author = {K. Havelund and G. Rosu},
+title = {{Monitoring Java Programs with Java PathExplorer}},
+booktitle =	 PROC # "~1st~"# RV,
+series =    ENTCS,
+publisher = ES,
+volume = {55},
+issue = {2},
+year = 2001
+}
+
+@InProceedings{FinSip:2001:RV,
+author =    "B. Finkbeiner and H. B. Sipma",
+title =     {{Checking Finite Traces using Alternating Automata}},
+booktitle =  PROC # "~1st~"# RV,
+series =    ENTCS,
+publisher = ES,
+volume =    55,
+issue = {2},
+year =      2001,
+}
+
+
+@Inproceedings{Dru:2000:SPIN,
+author = "D. Drusinsky",
+title = "{The Temporal Rover and the {ATG} Rover}",
+booktitle = PROC # "~7th~" # SPIN,
+series =       LNCS,
+volume =       "1885",
+pages = "323-330",
+year = "2000"
+}
+
+
+@Article{DusMil:1941:AJM,
+author = 	 {B. Dushnik and E. W. Miller},
+title = 	 {{P}artially {O}rdered {S}ets},
+journal = 	 AJM,
+year = 	 1941,
+volume = 	 63,
+pages = 	 {600-610}
+}
+
+@Article{FelHab+:1994:SIAMJDM,
+  author =       {S. Felsner and M. Habib and R. H. M{\"o}hring},
+  title =        {{O}n the {I}nterplay of {I}nterval {D}imension and {D}imension},
+  journal =      SIAMJDM,
+  volume =       7,
+  pages =        {32-40},
+  year =         1994,
+  url =		 {http://www.inf.fu-berlin.de/~felsner/Paper/Idim-dim.ps.gz},
+}
+
+@Article{FelTro:1994:DM,
+  author =       {S. Felsner and W. T. Trotter},
+  title =        {{O}n the {F}ractional {D}imension of {P}artially {O}rdered {S}ets},
+  journal =      DM,
+  volume =       136,
+  pages =        {101-117},
+  year =         1994,
+  url =		 {http://www.inf.fu-berlin.de/{\tilda}felsner/Paper/fdim.ps.gz},
+}
+
+@Article{Fid:1991:Com,
+  author =	 {C. Fidge},
+  title =	 {{L}ogical {T}ime in {D}istributed {C}omputing
+                  {S}ystems},
+  journal =	 Com,
+  year =	 1991,
+  volume =	 24,
+  number =	 8,
+  pages =	 {28-33},
+  month =	 AUG
+}
+
+@InProceedings{FroRay+:1994:ICPP,
+  author =	 {E. Fromentin and M. Raynal and V. K. Garg and
+                  A. I. Tomlinson},
+  title =	 {{O}n the {F}ly {T}esting of {R}egular {P}atterns in
+                  {D}istributed {C}omputations},
+  booktitle =	 PROC # "~23rd~" # ICPP,
+  pages =	 {73-76},
+  year =	 1994,
+  number =	 2,
+  address =	 {Chicago, Illinois},
+  month =	 AUG
+}
+
+
+@InProceedings{FroRay:1994:SPDP,
+  author =       "E. Fromentin and M. Raynal",
+  title =        {{Inevitable Global States: A Concept to Detect
+                 Unstable Properties of Distributed Computations in an
+                 Observer Independent Way}},
+  booktitle =	 PROC # "~6th~" # SPDP,
+  pages =        "242--248",
+  year =	 1994,
+  address =      "Los Alamitos, CA, USA",
+}
+
+@InProceedings{Gar:1996:ICSKE,
+  author =	 "V. K. Garg",
+  title =	 {{O}bservation of {G}lobal {P}roperties in
+                  {D}istributed {S}ystems},
+  booktitle =	 ICSKE,
+  pages =	 {418-425},
+  year =	 1996,
+  address =	 {Lake Tahoe, Nevada},
+  month =	 JUN
+}
+
+@Book{Gar:1996:KAP,
+  author =	 "V. K. Garg",
+  OPTeditor =	 {~},
+  title =	 {{P}rinciple of {D}istributed {S}ystems},
+  publisher =	 KAP,
+  year =	 1996
+}
+
+
+
+@InProceedings{Gar:1997:WAD,
+  author =	 "V. K. Garg",
+  title =	 {{O}bservation and {C}ontrol for {D}ebugging
+                  {D}istributed {C}omputations},
+  booktitle =	 PROC # "~" # WAD,
+  pages =	 {1-12},
+  year =	 1997,
+  address =	 {Link{\"o}ping, Sweden},
+  note =	 {Keynote Presentation}
+}
+
+
+@Book{Gar:2002:JWS,
+author =       "V. K. Garg",
+title =        "{E}lements of {D}istributed {C}omputing",
+publisher =     JWS,
+year =         "2002",
+}
+
+@InProceedings{Gar:2002:FSTTCS,
+  author =       "V. K. Garg",
+  title =        {{Algorithmic Combinatorics based on Slicing Posets}},
+  booktitle =    PROC # "~22nd~" # FSTTCS,
+  year =         2002,
+  address =      {Kanpur, India},
+}
+
+@InProceedings{GarCha+:1995:CSS,
+  author =	 "V. K. Garg and C. Chase and R. Kilgore and
+                  J. R. Mitchell",
+  title =	 {{D}etecting {C}onjunctive {C}hannel {P}redicates in
+                  a {D}istributed {P}rogramming {E}nvironment},
+  booktitle =	 PROC # "~" # CSS,
+  pages =	 {232-241},
+  year =	 1995,
+  volume =	 2,
+  address =	 {Maui, Hawaii},
+  month =	 JAN
+}
+
+@Article{GarCha+:1997:JPDC,
+  author =	 "V. K. Garg and C. Chase and R. Kilgore and
+                  J. R. Mitchell",
+  title =	 {{E}fficient {D}etection of {C}hannel {P}redicates in
+                  {D}istributed {S}ystems.},
+  journal =	 JPDC,
+  year =	 {1997},
+  volume =	 {45},
+  number =	 {2},
+  pages =	 {134-147},
+  month =	 SEP
+}
+
+@InProceedings{GarCha:1995:ICDCS,
+  author =	 "V. K. Garg and C. Chase",
+  title =	 {{D}istributed {A}lgorithms for {D}etecting
+                  {C}onjunctive {P}redicates},
+  booktitle =	 PROC # "~" # ICDCS,
+  pages =	 {423-430},
+  year =	 1995,
+  address =	 {Vancouver, Canada},
+  month =	 JUN
+}
+
+@Book{GarJoh:1991:Fre,
+  author =	 "M. R. Garey and D. S. Johnson",
+  OPTeditor =	 {Victor Klee},
+  title =	 {{C}omputer and {I}ntractability: {A} {G}uide to the
+                  {T}heory of \mbox{{NP}-{C}ompleteness}},
+  publisher =	 Fre,
+  year =	 1991
+}
+
+@InProceedings{GarMit:1998:FSTTCS,
+  author = 	 "V. K. Garg and J. R. Mitchell",
+  title = 	 {{I}mplementable {F}ailure {D}etectors in {A}synchronous {S}ystems},
+  booktitle = 	 PROC # "~" # FSTTCS,
+  pages = 	 {158-169},
+  year = 	 {1998},
+  address = 	 {Chennai, India},
+}
+
+@InProceedings{GarMit:2001:ICDCS,
+  author =	 "V. K. Garg and N. Mittal",
+  title =	 {{O}n {S}licing a {D}istributed {C}omputation},
+  booktitle =	 PROC # "~21st~" # ICDCS,
+  pages =	 {322-329},
+  year =	 2001,
+  address =	 {Phoenix, Arizona},
+  month =	 APR,
+  OPTnote =	 {Available at {\sf
+                  http://www.cs.utexas.edu/users/neerajm/research.html}}
+}
+
+@Article{GarMit+:2003:SIGACT,
+author =	 "V. K. Garg and N. Mittal and A. Sen",
+title =	  {{Applications of Lattice Theory to Distributed Computing}},
+journal =	SIGACT,
+year =	 	2003,
+volume =	34,
+number =	3,
+pages =	 	{40-61}
+}
+
+@InProceedings{GarSka:2001:PODC,
+  author =	 "V. K. Garg and C. Skawratananond",
+  title =	 {{S}tring {R}ealizers of {P}osets with {A}pplications
+                  to {D}istributed {C}omputing},
+  booktitle =	 PROC # "~20th~" # PODC,
+  year =	 2001,
+  address =	 {Newport, Rhode Island},
+  month =	 AUG,
+  pages =        {72-80}
+}
+
+@InProceedings{GarTom+:1995:SPDP,
+  author =	 "V. K. Garg and A. I. Tomlinson and E. Fromentin and
+                  Michel Raynal",
+  title =	 {{E}xpressing and {D}etecting {G}eneral {C}ontrol
+                  {F}low {P}roperties of {D}istributed {C}omputations},
+  booktitle =	 PROC # "~7th~" # SPDP,
+  pages =	 {432-438},
+  year =	 1995,
+  address =	 {San Antonio, Texas},
+  month =	 OCT
+}
+
+@InProceedings{GarWal:1991:WPDD,
+  author =	 "V. K. Garg and B. Waldecker",
+  title =	 {{D}etection of {U}nstable {P}redicates},
+  booktitle =	 PROC # "~" # WPDD,
+  address =	 {Santa Cruz, California},
+  month =	 MAY,
+  year =	 {1991},
+  OPTorganization = {ACM/ONR},
+}
+
+
+@InProceedings{GarWal:1992:FSTTCS,
+  author = 	 "V. K. Garg and B. Waldecker",
+  title = 	 {{D}etection of {U}nstable {P}redicates in {D}istributed {P}rograms},
+  booktitle = 	 PROC # "~12th~" # FSTTCS,
+  pages = 	 {253-264},
+  year = 	 {1992},
+  volume = 	 652,
+  series = 	 LNCS,
+  address = 	 {New Delhi, India},
+}
+
+
+@Article{GarWal:1994:TPDS,
+  author =	 "V. K. Garg and B. Waldecker",
+  title =	 {{D}etection of {W}eak {U}nstable {P}redicates in
+                  {D}istributed {P}rograms},
+  journal =	 TPDS,
+  year =	 1994,
+  volume =	 5,
+  number =	 3,
+  pages =	 {299-307},
+  month =	 MAR
+}
+
+@Article{GarWal:1996:TPDS,
+  author =	 "V. K. Garg and B. Waldecker",
+  title =	 {{D}etection of {S}trong {U}nstable {P}redicates in
+                  {D}istributed {P}rograms},
+  journal =	 TPDS,
+  year =	 1996,
+  volume =	 7,
+  number =	 12,
+  pages =	 {1323-1333},
+  month =	 DEC
+}
+
+@Book{Gar:2004:JWS,
+author =       "V. K. Garg",
+title =        {{Concurrent and Distributed Computing in Java}},
+publisher =    JWS,
+year =         2004,
+}
+
+
+@Book{Ghe:2005:SP,
+author =       "F. Ghenassia",
+title =        {{Transaction-Level Modeling with SystemC}},
+publisher =     {Springer},
+year =         "2005",
+}
+
+
+@ARTICLE{PieFer:2008:TC,
+author={Pierre, L. and Ferro, L.},
+journal={Computers, IEEE Transactions on}, 
+title={{A Tractable and Fast Method for Monitoring SystemC TLM Specifications}},
+year={2008},
+month={oct. },
+volume={57},
+number={10},
+pages={1346 -1356},
+}
+
+@article{BlaKro:2010:TODAES,
+ author = {Blanc, Nicolas and Kroening, Daniel},
+ title = {{Race Analysis for SystemC using Model Checking}},
+ journal = {ACM Transactions on Design Automation of Electronic Systems},
+ volume = {15},
+ number = {3},
+ year = {2010},
+ issn = {1084-4309},
+ pages = {1--32},
+ publisher = {ACM},
+
+ }
+
+@article{AbaKir+:1988:TCAD,
+  author    = {Magdy S. Abadir and
+               Jack Ferguson and
+               Tom E. Kirkland},
+  title     = {{Logic Design Verification via Test Generation}},
+  journal   = {IEEE Trans. on CAD of Integrated Circuits and Systems},
+  volume    = {7},
+  number    = {1},
+  year      = {1988},
+  pages     = {138-148},
+}
+
+
+@article{HsiRud:2000:TODAES,
+ author = {Hsiao, Michael S. and Rudnick, Elizabeth M. and Patel, Janak H.},
+ title = {{Dynamic State Traversal for Sequential Circuit Test Generation}},
+ journal = {ACM Trans. Des. Autom. Electron. Syst.},
+ volume = {5},
+ number = {3},
+ year = {2000},
+ pages = {548--565},
+ publisher = {ACM},
+ }
+
+
+@article{TonBou+:2010:JETTA,
+ author = {Tong, Jason G. and Boul\'{e}, Marc and Zilic, Zeljko},
+ title = {{Defining and Providing Coverage for Assertion-Based Dynamic Verification}},
+ journal = {Journal of Electronic Testing},
+ volume = {26},
+ number = {2},
+ year = {2010},
+ pages = {211--225},
+ publisher = {Springer},
+ }
+
+@article{CamAla+:1998:TODAES,
+ author = {Campenhout, D. Van and Al-Asaad, H. and Hayes, J. P. and Mudge, T. and Brown, R. B.},
+ title = {{High-level Design Verification of Microprocessors via Error Modeling}},
+ journal = {ACM Transactions on Design Automation of Electronic Systems},
+ volume = {3},
+ number = {4},
+ year = {1998},
+ pages = {581--599},
+ publisher = {ACM},
+ }
+
+
+@article{FumPra:2007:JETTA,
+ author = {Fummi, Franco and Pravadelli, Graziano},
+ title = {{Too Few or Too Many Properties? Measure it by ATPG!}},
+ journal = {Journal of Electronic Testing},
+ volume = {23},
+ number = {5},
+ year = {2007},
+ pages = {373--388},
+ publisher = {Springer},
+ }
+
+
+@inproceedings{HabTah:2005:DATE,
+ author = {A. Habibi, and S. Tahar},
+ title = {{Design for Verification of SystemC Transaction Level Models}},
+ booktitle = {DATE '05: Proceedings of the conference on Design, Automation and Test in Europe},
+ year = {2005},
+ pages = {560--565},
+ }
+
+@ARTICLE{HabTah:2006:VLSI,
+author={A. Habibi, and S. Tahar},
+title={{Design and Verification of SystemC Transaction-Level Models}},
+journal={Very Large Scale Integration (VLSI) Systems, IEEE Transactions on}, 
+year={2006},
+month={jan.},
+volume={14},
+number={1},
+pages={ 57 - 68},
+}
+
+@ARTICLE{TasKeu:2001:DT,
+author={Tasiran, S. and Keutzer, K.},
+journal={Design and Test of Computers, IEEE}, 
+title={{Coverage Metrics for Functional Validation of Hardware Designs}},
+year={2001},
+month={jul/aug},
+volume={18},
+number={4},
+pages={36 -45},
+}
+
+@ARTICLE{AzaFou+:2006:TC,
+author={Azatchi, H. and Fournier, L. and Marcus, E. and Ur, S. and Ziv, A. and Zohar, K.},
+journal={Computers, IEEE Transactions on}, 
+title={{Advanced Analysis Techniques for Cross-Product Coverage}},
+year={2006},
+month={nov. },
+volume={55},
+number={11},
+pages={1367 -1379},
+}
+
+
+@Book{BusAgr:2000:SV,
+  author = 	 "M. L. Bushnell and V. D. Agrawal",
+  title = 	 {{Essentials of Electronic Testing for Digital, Memory and Mixed-Signal VLSI Circuits}}, 
+  publisher =  SV,
+  year = 	 {2000},
+}
+
+
+
+@inproceedings{GiaHav:2001:ASE,
+author = "D. Giannakopoulou and K. Havelund",
+title = {{Automata-Based Verification of Temporal Properties on Running
+Programs}},
+booktitle = PROC # "~16th~" # ASE, 
+pages =       "412-- 416",
+address =      "San Diego, California",
+year =         "2001",
+}
+
+					 
+@InProceedings{GodWol:1991:LICS,
+author = "P. Godefroid and P. Wolper",
+title = {{A Partial Approach to Model Checking}},
+booktitle = PROC # "~6th~" #LICS, 
+pages = "406--415",
+year = "1991"
+}
+
+
+
+
+@Book{God:1996:SV,
+  author = 	 "P. Godefroid",
+  ALTeditor = 	 {},
+  title = 	 {{P}artial-{O}rder {M}ethods for the {V}erification of 
+                  {C}oncurrent {S}ystems}, 
+  publisher = 	 SV,
+  year = 	 {1996},
+  volume = 	 {1032},
+  series = 	 {Lecture Notes in Computer Science}
+}
+
+@Book{GodCox:1993:PH,
+  author =	 {B. Goodheart and J. Cox},
+  title =	 {The Magic Garden Explained: The Internals of Unix
+                  System V Release 4},
+  publisher =	 PH,
+  year =	 {1993}
+}
+
+@Book{GraReu:1993:MK,
+  author =	 {J. Gray and A. Reuter},
+  title =	 {Transaction Processing: Concepts and Techniques},
+  publisher =	 MK,
+  year =	 {1993}
+}
+
+@InProceedings{GraVol:1993:MVPP,
+  author =	 {S. Grabner and J. Volkert},
+  title =	 {{D}ebugging {P}arallel {P}rograms {U}sing {E}vent
+                  {G}raph {M}anipulation},
+  booktitle =	 PROC # "~" # MVPP,
+  pages =	 {443-450},
+  year =	 1993,
+  month =	 OCT
+}
+
+@InProceedings{HabHuc+:1995:KRUSE,
+  author = 	 {M. Habib and M. Huchard and L. Nourine},
+  title = 	 {{E}mbedding {P}artially {O}rdered {S}ets into {C}hain-{P}roducts},
+  booktitle = 	 PROC # "~" # KRUSE,
+  pages = 	 {147-161},
+  year = 	 1995,
+  address = 	 {University of California, Santa Cruz},
+  month = 	 AUG
+}
+
+@InProceedings{HabNou:1994:ORDAL,
+  author = 	 {M. Habib and L. Nourine},
+  title = 	 {{B}it-{V}ector {E}ncoding for {P}artially {O}rdered {S}ets},
+  booktitle = 	 PROC # "~" # ORDAL,
+  pages = 	 {1-12},
+  year = 	 1994,
+  number = 	 831,
+  series = 	 LNCS,
+  address = 	 {Lyon, France},
+  month = 	 JUL,
+  publisher = SV
+}
+
+
+@InProceedings{HabTah:2004:CCECE,
+  author =	 {A. Habibi and S. Tahar},
+  title =	 {{On the extension of SystemC by SystemVerilog assertions}},
+  booktitle =	 {Proceedings of Canadian Conference on Electrical and Computer Engineering},
+  pages = 	 {1869-1872},
+  year =	 {2004},
+}
+
+
+@InProceedings{HalPet:2001:FATES,
+  author =	 {H. Hallal and A. Petrenko and A. Ulrich and S. Boroday},
+  title =	 {{Using SDL Tools to Test Properties of Distributed
+  Systems}},
+  booktitle =	 PROC # "~1st~"# FATES,
+  month =	 AUG,
+  year =	 {2001},
+}
+
+@Book{Har:1998:Java,
+  author =       "S. Hartley",
+  title =        {{Concurrent Programming: The Java Programming Language}},
+  publisher =    "Oxford University Press",
+  year =         "1998",
+}
+
+@InProceedings{Hav:2000:SPIN,
+    author = "K. Havelund",
+    title = "Using {R}untime {A}nalysis to {G}uide {M}odel {C}hecking of {J}ava {P}rograms",
+    booktitle = PROC # "~7th~" # SPIN,
+    number = 1885,
+    series = LNCS,	
+    pages = "245-264",
+    year = "2000",
+}
+
+
+@Article{HavPre:2000:STTT,
+author = "K. Havelund and T. Pressburger",
+title = {{Model Checking Java Programs Using Java PathFinder}},
+journal =      STTT,
+publisher =    SV,
+month =        apr,
+volume =       "2",
+number =       "4",
+year =         2000,
+}
+
+
+@InProceedings{HelJar+:1987:PODC,
+  author =       {J.M. Helary and C. Jard and N. Plouzeau and M. Raynal},
+  title =        {{D}etection of {S}table {P}roperties in {D}istributed {A}pplications},
+  booktitle =    PROC # "~" # PODC,
+  pages =        {125-136},
+  year =         {1987}
+}
+
+@inproceedings{HelMar+:2006:FMCAD,
+  author    = {C. Helmstetter and F. Maraninchi and L. Maillet-Contoz and M. Moy},
+  title     = {{Automatic Generation of Schedulings for Improving the Test Coverage of Systems-on-a-Chip}},
+  booktitle =    PROC # "~" # FMCAD,
+  year      = {2006},
+}
+
+
+
+@article{HelMar+:2009:FMSD,
+  author    = {Claude Helmstetter and
+               Florence Maraninchi and
+               Laurent Maillet-Contoz},
+  title     = {{Full Simulation Coverage for SystemC Transaction-Level Models
+               of Systems-on-a-Chip}},
+  journal   = {Formal Methods in System Design},
+  volume    = {35},
+  number    = {2},
+  year      = {2009},
+  pages     = {152-189},
+}
+
+@inproceedings{HelPon:2008:MEMOCODE,
+  author    = {Claude Helmstetter and
+               Olivier Ponsini},
+  title     = {{A Comparison of Two SystemC/TLM Semantics for Formal Verification}},
+  booktitle = PROC # "~" # MEMOCODE,
+  year      = {2008},
+}
+
+
+
+@Article{Hir:1955:SRKU,
+  author = 	 {T. Hiraguchi},
+  title = 	 {{O}n the {D}imension of {O}rders},
+  journal = 	 SRKU,
+  year = 	 1955,
+  volume = 	 4,
+  pages = 	 {1-20}
+}
+
+@article{Hol:1997:TSE,
+   author = "G.J. Holzmann",
+   title = {{The Model Checker Spin}},
+  journal = 	 TSE,
+   year = {1997},
+   month = {May},
+   volume = {23},
+   number = {5},
+   pages  = {279-295},
+}
+
+@TechReport{HsiMit:2000:TC,
+  author =	 {H. Hsiao and N. Mittal},
+  title =	 {{D}atabase {M}anaged {E}xternal {F}ile {U}pdate},
+  institution =	 IBMARC,
+  year =	 2000,
+  number =	 {RJ10183},
+  address =	 {San Jose, California, 95120}
+}
+
+@Manual{HsiNar:1999:IBMARC,
+  author =	 {H. Hsiao and I. Narang},
+  title =	 {{U}pdate {I}n-{P}lace {S}upport with {D}ataLinks},
+  organization = IBMARC,
+  year =	 {1999},
+  note =	 {Internal Document}
+}
+
+@InProceedings{HsiNar:2000:SIGMOD,
+  author =	 {H. Hsiao and I. Narang},
+  title =	 {{DLFM}: {A} {T}ransactional {R}esource {M}anager},
+  booktitle =	 PROC # "~19th~" # SIGMOD,
+  pages =	 {518-528},
+  year =	 2000,
+  address =	 {Dallas, Texas},
+  month =	 MAY
+}
+
+@InProceedings{HuaKin:1993:FTCS,
+  author =	 {Y. Huang and C. Kintala},
+  title =	 {{S}oftware {I}mplemented {F}ault {T}olerance:
+                  {T}echnologies and {E}xperience},
+  booktitle =	 PROC # "~" # FTCS,
+  pages =	 {138-144},
+  year =	 1993,
+  month =	 JUN
+}
+
+@Article{HurMiz+:1998:TSE,
+author = "M. Hurfin and M. Mizuno and M. Raynal and M. Singhal",
+title = "Efficient Detection of Conjuntions of Local Predicates",
+journal = TSE,
+volume = "24",
+number = "8",
+pages = "664--677",
+year = "1998" 
+}
+
+
+@InProceedings{HurMiz+:1996:SPDP,
+  author =	 "M. Hurfin and M. Mizuno and M. Raynal and
+                  M. Singhal",
+  title =	 {{E}fficient {D}istributed {D}etection of
+                  {C}onjunctions of {L}ocal {P}redicates in
+                  {A}synchronous {C}omputations},
+  booktitle =	 PROC # "~8th~" # SPDP,
+  pages =	 {588-594},
+  year =	 1996,
+  address =	 {New Orleans},
+  month =	 OCT
+}
+
+@Article{HurPlo+:1993:JCC,
+  author =	 {M. Hurfin and N. Plouzeau and M. Raynal},
+  title =	 {{A} {D}ebugging {T}ool for {D}istributed {E}stelle
+                  {P}rograms},
+  journal =	 JCC,
+  year =	 1993,
+  volume =	 16,
+  number =	 5,
+  pages =	 {328-333},
+  month =	 MAY
+}
+
+@InProceedings{HurPlo+:1993:WPDD,
+  author =	 {M. Hurfin and N. Plouzeau and M. Raynal},
+  title =	 {{D}etecting {A}tomic {S}equences of {P}redicates in
+                  {D}istributed {C}omputations},
+  booktitle =	 PROC # "~" # WPDD,
+  pages =	 {32-42},
+  year =	 1993
+}
+
+@InProceedings{HurRay:1996:WGCS,
+  author = 	 {M. Hurfin and M. Raynal},
+  title = 	 {{D}etecting {D}iamond {N}ecklaces in {L}abeled {D}ags 
+                  {A} {P}roblem from {D}istributed  {D}ebugging},
+  booktitle = 	 PROC # "~" # WGCS,
+  pages = 	 {211-223},
+  series = 	 LNCS,
+  publisher =    SV,
+  year = 	 1996,
+}
+
+
+@misc{ISO:1993,
+key = "ISO",
+title = {{ISO: Specification of the Asynchronous Transfer Mode Ring (ATMR)
+Protocol}},
+organization = {ISO},
+month =     {January},
+year = 1993,
+}
+ 
+@InProceedings{JarJer+:1994:ICDCS,
+  author =       {C. Jard and T. J{\'e}ron and G.-V. Jourdan and J.-X. Rampon},
+  title =        {{A} {G}eneral {A}pproach to {T}race-{C}hecking in 
+                  {D}istributed {C}omputing {S}ystems},
+  booktitle =    PROC # "~" # ICDCS,
+  pages =        {396-403},
+  year =         {1994},
+  url =          {http://citeseer.nj.nec.com/jard94general.html} 
+}
+
+@InProceedings{JegMed+:1995:WSCT,
+  author =	 {R. Jegou and R. Medina and L. Nourine},
+  title =	 {{L}inear {S}pace {A}lgorithm for {O}n-line
+                  {D}etection of {G}lobal {P}redicates},
+  booktitle =	 PROC # "~" # WSCT,
+  pages =        {175-189},
+  year =	 1995,
+  editor =	 {J. Desel},
+  publisher =	 SV
+}
+
+
+
+@InProceedings{JohZwa:1988:PODC,
+  author =	 {D. B. Johnson and W. Zwaenepoel},
+  title =	 {{R}ecovery in {D}istributed {S}ystems {U}sing
+                  {O}ptimistic {M}essage {L}ogging and
+                  {C}heckpointing},
+  booktitle =	 PROC # "~6th~" # PODC,
+  pages =	 {171-181},
+  year =	 1988,
+  month =	 AUG
+}
+
+
+@Article{KaeMoh:1978:SIAM,
+  author = 	 {R. Kaerkes and R. H. M{\"o}hring},
+  title = 	 {{V}orlesungen u{\"b}er {O}rdnungen und {N}etzplantheorie},
+  journal = 	 {Schriften zur Informatik und Angewandten Mathematik 45, RWTH Aachen},
+  year = 	 1978
+}
+
+
+@Article{KamLeu:2000:STTT,
+author =       "M. Kamel and S. Leue",
+title =        {{Formalization and Validation of the General Inter-ORB Protocol (GIOP) Using Promela and SPIN}},
+journal =      STTT,
+publisher =    SV,
+month =        apr,
+volume =       "2",
+number =       "4",
+pages =        "394--409",
+year =         2000,
+}
+
+
+
+@InProceedings{KanNao+:1988:STOC,
+  author = 	 {S. Kannan and M. Naor and S. Rudlich},
+  title = 	 {{I}mplicit {R}epresentation of {G}raphs},
+  booktitle = 	 PROC # "~20th~" # STOC,
+  pages = 	 {334-343},
+  year = 	 1988,
+  address = 	 {Chicago},
+  month = 	 MAY
+}
+
+@inproceedings{KasTes:2007:DAC,
+ author = {A. Kasuya and T. Tesfaye},
+ title = {{Verification methodologies in a TLM-to-RTL design flow}},
+ booktitle = PROC # "~" # DAC,
+ year = {2007},
+ pages = {199--204},
+ }
+
+
+
+@book{KauMoo+:2000:KAP,
+ author = "M. Kaufmann and J. S. Moore and P. Manolios",
+ title = {{Computer-Aided Reasoning: An Approach}},
+ year = {2000},
+ publisher = KAP,
+}
+
+
+@Article{KilCha:1997:CJ,
+  author =	 "R. Kilgore and C. Chase",
+  title =	 {{T}esting {D}istributed {P}rograms {C}ontaining
+                  {R}acing {M}essages},
+  journal =	 CJ,
+  year =	 1997,
+  volume =	 40,
+  number =	 8,
+  pages =	 {489-498},
+  month =	 NOV
+}
+
+@InProceedings{KilCha:1997:CSS,
+  author =	 {R. Kilgore and C. Chase},
+  title =	 {{R}e-execution of {D}istributed {P}rograms to
+                  {D}etect {B}ugs {H}idden by {R}acing {M}essages},
+  booktitle =	 PROC # "~" # CSS,
+  pages =        {423-432},
+  year =	 1997,
+  address =	 {Hawaii},
+  month =	 JAN
+}
+
+@InProceedings{KimKan+:2001:RV,
+author = "M. Kim and  S. Kannan and I. Lee and O. Sokolsky and M. Viswanathan",
+title = "{Java-MaC: a Run-time Assurance Tool for Java Programs}",
+booktitle =	 PROC # "~1st~"# RV,
+volume = {55},
+series =    "ENTCS",
+publisher = ES,
+issue = {2},
+year = {2001}
+}
+
+@Book{Koh:1978:MH,
+  author =	 "Z. Kohavi",
+  OPTeditor =	 {~},
+  title =	 {{S}witching and {F}inite {A}utomata {T}heory},
+  publisher =	 MH,
+  year =	 1978,
+  edition =	 {2nd}
+}
+
+@Article{KorFer:1992:AMCSJ,
+  author =	 "B. Korel and R. Ferguson",
+  title =	 {{D}ynamic {S}licing of {D}istributed {P}rograms},
+  journal =	 AMCSJ,
+  year =	 1992,
+  volume =	 2,
+  number =	 2,
+  pages =	 {199-215}
+}
+
+@Article{KorLas:1988:IPL,
+  author =	 "B. Korel and J. Laski",
+  title =	 {{D}ynamic {P}rogram {S}licing},
+  journal =	 IPL,
+  year =	 1988,
+  volume =	 29,
+  number =	 3,
+  pages =	 {155-163}
+}
+
+@InProceedings{KorRil:1997:WAD,
+  author =	 "B. Korel and J. Rilling",
+  title =	 {{A}pplication of {D}ynamic {S}licing in {P}rogram
+                  {D}ebugging},
+  booktitle =	 PROC # "~3rd~" # WAD,
+  pages =	 {43-57},
+  year =	 1997,
+  editor =	 {Mariam Kamkar},
+  address =	 {Link{\" o}ping, Sweden},
+  month =	 MAY
+}
+
+@Article{Lam:1977:TSE,
+  author =       "L. Lamport",
+  title =        {{Proving the Correctness of Multiprocess Programs}},
+  journal =      TSE,
+  year =         1977,
+  OPTkey =       {},
+  volume =       "3",
+  number =       2,
+  month =        mar,
+  pages =        "125--143",
+}
+
+
+
+@Article{Lam:1978:CACM,
+  author =	 "L. Lamport",
+  title =	 {{T}ime, {C}locks, and the {O}rdering of {E}vents in
+                  a {D}istributed {S}ystem},
+  journal =	 CACM,
+  year =	 1978,
+  volume =	 21,
+  number =	 7,
+  pages =	 {558-565},
+  month =	 JUL
+}
+
+@Article{Law:1976:MCT,
+  author = 	 {E. L. Lawler},
+  title = 	 {{G}raphical {A}lgorithms and their {C}omplexity},
+  journal = 	 MCT,
+  year = 	 1976,
+  volume = 	 81,
+  pages = 	 {3-32}
+}
+
+@Article{LebMel:1987:TC,
+  author =	 {T. J. LeBlanc and J. M. Mellor-Crummey},
+  title =	 {{D}ebugging {P}rograms with {I}nstant {R}eplay},
+  journal =	 TC,
+  year =	 1987,
+  volume =	 {C-36},
+  number =	 4,
+  pages =	 {471-482},
+  month =	 APR
+}
+
+@InProceedings{LeuLad:1996:SPIN,
+author = "S. Leue and P.B. Ladkin",
+title = {{Implementing and Verifying MSC Specifications Using Promela/XSpin}},
+booktitle = PROC # "~2nd~" # SPIN,
+Optseries =  "DIMACS Series",
+Optvolume =  "32",
+year = "1996"
+}
+
+
+@InProceedings{LicPnu:1985:POPL, 
+ author =   "O. Lichtenstein and A. Pnueli",
+ title  =   {{Checking that Finite State Concurrent Programs
+	     Satisfy their Linear Specification}},
+booktitle = PROC # "~12th~" # POPL,
+ year      = "1985", 
+ pages     = "97--107", 
+ organization = "ACM", 
+ address =   "New York", 
+ month     = jan, 
+} 
+
+
+@Article{MagWel+:1981:TCS,
+  author =	 {A. Maggiolo-Schettini and H. Welde and J. Winkowski},
+  title =	 {{M}odeling a {S}olution for a {C}ontrol {P}roblem in
+                  {D}istributed {S}ystems by {R}estrictions},
+  journal =	 TCS,
+  year =	 1981,
+  volume =	 13,
+  number =	 1,
+  pages =	 {61-83},
+  month =	 JAN
+}
+
+@article{ManIma:1992:JPDC,
+  author =       {Y. Manabe and M. Imase},
+  title =        {{G}lobal {C}onditions in {D}ebugging {D}istributed {P}rograms},
+  journal =      JPDC,
+  volume =       {15},
+  number =       {1},
+  pages =        {62-69},
+  year =         {1992}
+}
+
+
+@InProceedings{MarSch:2003:CONCUR,
+author =       "N. Markey and Ph. Schnoebelen",
+title =        {{Model Checking a Path}},
+booktitle =    PROC # "~14th~" # CONCUR,
+pages =        {251-265},
+publisher =    SV,
+year =         2003,
+month =	 sep,
+volume =       2761,
+series =       LNCS,
+address = {Marseille, France},
+}
+
+
+
+@InProceedings{MarNei:1991:WDAG,
+  author =       "K. Marzullo and G. Neiger",
+  title =        {{D}etection of {G}lobal {S}tate {P}redicates},
+  booktitle =    PROC # "~" # WDAG,
+  pages =        {254-272},
+  year =         {1991}
+}
+
+@InProceedings{Mat:1989:WDAG,
+  author =	 "F. Mattern",
+  title =	 {{V}irtual {T}ime and {G}lobal {S}tates of
+                  {D}istributed {S}ystems},
+  booktitle =	  PROC # "~" # WDAG,
+  year =	 1989
+}
+%%%  publisher =	 ES
+
+@Manual{MatMel+:1997:ISO,
+  author =	 {N. Mattos and J. Melton and J. Richey},
+  title =	 {Database Language SQL - Part 9: Management of
+                  External Data (SQL/MED)},
+  organization = {ISO working draft},
+  month =	 JUN,
+  year =	 1997
+}
+
+@InProceedings{MilCho:1988:ICDCS,
+  author =	 "B. P. Miller and J. Choi",
+  title =	 {{B}reakpoints and {H}alting in {D}istributed
+                  {P}rograms},
+  booktitle =	 PROC # "~8th~" # ICDCS,
+  pages =	 {316-323},
+  year =	 1988
+}
+
+@Article{MilTei:2000:STTT,
+author =       "L. I. Millett and T. Teitelbaum ",
+title =        {{Issues in Slicing Promela and its Applications to Model
+Checking, Protocol Understanding, and Simulation}},
+journal =      STTT,
+publisher =    SV,
+month =        apr,
+year =         2000,
+volume =       "2",
+number =       "4",
+pages =        "343--349",
+}
+
+
+
+@InProceedings{MitGar:1998:ICDCS,
+  author = 	 "N. Mittal and V. K. Garg",
+  title = 	 {{C}onsistency {C}onditions for {M}ulti-{O}bject 
+                  {D}istributed {O}perations}, 
+  booktitle = 	 PROC # "~18th~" # ICDCS,
+  pages = 	 {582-589},
+  year = 	 {1998},
+  address = 	 {Amsterdam, The Netherlands},
+  month = 	 MAY
+}
+
+@TechReport{MitGar:1998:TR:005,
+  author = 	 "N. Mittal and V. K. Garg",
+  title = 	 {{C}onsistency {C}onditions for {M}ulti-{O}bject 
+                  {D}istributed {O}perations}, 
+  institution =  PDS # ",~" # DECE # ",~" # UTA,
+  year = 	 1998,
+  number = 	 {TR-PDS-1998-005},
+  address = 	 {Austin, TX 78712}
+}
+
+@InProceedings{MitHsi:2000:ICDE,
+  author =	 "N. Mittal and H. Hsiao",
+  title =	 {{D}atabase {M}anaged {E}xternal {F}ile {U}pdate},
+  booktitle =	 PROC # "~17th~" # ICDE,
+  pages = 	 {557-564},
+  year =	 2001,
+  address =	 {Heidelberg, Germany},
+  month =	 APR
+}
+
+@InProceedings{MitGar:2000:PODC,
+  author =	 "N. Mittal and V. K. Garg",
+  title =	 {{D}ebugging {D}istributed {P}rograms {U}sing
+                  {C}ontrolled {R}e-execution},
+  booktitle =	 PROC # "~19th~" # PODC,
+  pages =	 {239-248},
+  year =	 2000,
+  address =	 {Portland, Oregon},
+  month =	 JUL
+}
+
+@TechReport{MitGar:2000:TR:002,
+  author =	 "N. Mittal and V. K. Garg",
+  title =	 {{D}ebugging {D}istributed {P}rograms {U}sing
+                  {C}ontrolled {R}e-execution},
+  institution =	 PDS # ",~" # DECE # ",~" # UTA,
+  year =	 2000,
+  number =	 {TR-PDS-2000-002},
+  address =	 {Austin, TX 78712},
+  month =	 MAY
+}
+
+@InProceedings{MitGar:2001:DISC,
+  author = 	 "N. Mittal and V. K. Garg",
+  title = 	 {{C}omputation {S}licing: {T}echniques and {T}heory},
+  booktitle = 	 PROC # "~" # DISC,
+  pages =	 {78-92},
+  year = 	 2001,
+  address = 	 {Lisbon, Portugal},
+  month = 	 OCT
+}
+
+@InProceedings{MitGar:2001:ICDCS,
+  author = 	 "N. Mittal and V. K. Garg",
+  title = 	 {{O}n {D}etecting {G}lobal {P}redicates in {D}istributed {C}omputations},
+  booktitle = 	 PROC # "~21st~" # ICDCS,
+  pages = 	 {3-10},
+  year = 	 2001,
+  address = 	 {Phoenix, Arizona},
+  month = 	 APR,
+  OPTnote =	 {Available at 
+                  {\sf http://www.cs.utexas.edu/users/neerajm/research.html}}
+}
+
+@TechReport{MitGar:2001:TR:002,
+  author =	 "N. Mittal and V. K. Garg",
+  title =	 {{C}omputation {S}licing: {T}echniques and {T}heory},
+  institution =	 PDS # ",~" # DECE # ",~" # UTA,
+  year =	 2001,
+  number =	 {TR-PDS-2001-002},
+  OPTaddress =	 {Austin, TX 78712},
+  month =	 APR,
+  note =         {Available at {\sf http://www.cs.utexas.edu/users/neerajm}}
+}
+
+@InProceedings{MitGar:2003:ICDCS,
+  author = 	 "N. Mittal and V. K. Garg",
+  title = 	{{Software Fault Tolerance of Distributed Programs Using
+  Computation Slicing}}, 
+  booktitle = 	 PROC # "~23rd~" # ICDCS,
+  pages = 	 {105-113},
+  year = 	 2003,
+  address = 	 {Providence, Rhode Island},
+  month = 	 MAY,
+}
+
+@INPROCEEDINGS{MoyMar+:2005:ACSD,
+  author = {M. Moy and F. Maraninchi and L. Maillet-Contoz},
+  title = {{LusSy: A Toolbox for the Analysis of Systems-on-a-Chip at the Transactional Level}},
+  booktitle = {Int'l Conference on Application of Concurrency to System Design},
+  year = 2005,
+  page = {26-35},
+}
+%%%  month = {June},
+
+@misc{MSC:1996,
+key = "MSC",
+title = {{ITU-T recommendation Z. 120: Message Sequence Chart (MSC)}},
+organization = {ITU},
+year = 1996,
+}
+
+@InProceedings{MurGar:1997:ICDCS,
+  author =	 "V. V. Murty and V. K. Garg",
+  title =	 {{C}haracterization of {M}essage {O}rdering
+                  {S}pecifications and {P}rotocols},
+  booktitle =	 PROC # "~17th~" # ICDCS,
+  year =	 1997,
+  month =	 MAY
+}
+
+@InProceedings{NetBre+:1996:SPDT,
+  author =	 {R. Netzer and T. Brennan and S. Damodaran-Kamal},
+  title =	 {{D}ebugging {R}ace {C}onditions in
+                  {M}essage-{P}assing {P}rograms},
+  booktitle =	 PROC # "~" # SPDT,
+  pages =	 {31-40},
+  year =	 1996,
+  month =	 MAY
+}
+
+@Article{NetMil:1995:JS,
+  author =	 {R. H. B. Netzer and B. P. Miller},
+  title =	 {{O}ptimal {T}racing and {R}eplay for {D}ebugging
+                  {M}essage-{P}assing {P}rograms},
+  journal =	 JS,
+  year =	 1995,
+  volume =	 8,
+  number =	 4,
+  pages =	 {371-388}
+}
+
+@Article{NetXu:1995:TPDS,
+  author = 	 {R. H. B. Netzer and J. Xu},
+  title = 	 {{N}ecessary and {S}ufficient {C}onditions for {C}onsistent
+                  {G}lobal {S}napshots},
+  journal = 	 TPDS,
+  year = 	 1995,
+  volume = 	 6,
+  number = 	 2,
+  pages = 	 {165-169},
+  month = 	 FEB
+}
+
+
+@misc{OSCI,
+key = "OSCI",
+year = 2010,
+title = {{Open SystemC Initiative, http://www.systemc.org/}},
+}
+
+@misc{SCRV,
+key = "SCRV",
+year = 2009,
+title = {{SystemC Runtime Verification Toolbox (SCRV), http://my-trac.assembla.com/scrv/wiki}},
+}
+
+@misc{UCIS,
+key = "UCIS",
+title = {{Accelera Unified Coverage Interoperability Standard, http://www.accellera.org}},
+}
+
+@inproceedings{PVS:1996:CAV,
+	TITLE = {{{PVS}: Combining Specification, Proof Checking, and
+		Model Checking}},
+	AUTHOR = {S. Owre and S. Rajan and J.M. Rushby and N. Shankar
+		and M.K. Srivas},
+booktitle =	 PROC # "~8th~"# CAV,
+	PAGES = {411--414},
+	PUBLISHER = SV,
+	SERIES = LNCS,
+	VOLUME = 1102,
+	MONTH = {July/August},
+	YEAR = 1996,
+	ADDRESS = {New Brunswick, NJ}
+}
+
+
+@Article{PapWas+:1999:SIGMOD,
+  author =	 {M. Papiani and J. Wason and A. Dunlop and D. Nicole},
+  title =	 {{A} {D}istributed {S}cientific {A}rchive {U}sing the
+                  {W}eb, {XML} and {SQL}/{MED}},
+  journal =	 {SIGMOD Record},
+  volume =	 {28},
+  number =	 {3},
+  pages =	 {56-62},
+  month =	 SEP,
+  year =	 {1999}
+}
+
+@InProceedings{Pel:1993:CAV,
+author = "D. Peled",
+title = {{All from One, One for All: On Model Checking Using
+Representatives}},
+booktitle =	 PROC # "~5th~"# CAV,
+address = {Berlin, Heidelberg},
+pages = {409-423},
+year = 1993,
+}
+    
+@InProceedings{Pel:1994:CAV,
+author = "D. Peled",
+title = {{Combining Partial Order Reductions with On-the-Fly
+Model-Checking}},
+booktitle =	 PROC # "~6th~"# CAV,
+volume = "818",
+publisher = SV,
+address = "Stanford, California",
+pages = "377--390",
+year = 1994,
+}
+
+
+@incollection{Pen:1995:UCL,
+author = "W. Penczek",
+title = {{Branching Time and Partial Order in Temporal Logics}},
+booktitle = "Time and Logic: A Computational Approach",
+publisher = "UCL Press Ltd",
+editor = "L. Bolc and A. Szalas",
+address = "London",
+year = 1995,
+}
+
+
+@Article{PenTah+:2003:STTT,
+author =       "H. Peng and S. Tahar and F. Khendek",
+title =        {{Comparison of {SPIN} and {VIS} for Protocol
+Verification}},
+journal =      STTT,
+publisher =    SV,
+volume =       "4",
+number =       "2",
+pages =        "234--245",
+year =         "2003",
+}
+
+@InProceedings{Pnu:1977:FOCS,
+  author =       "A. Pnueli",
+  title =        {{The Temporal Logic of Programs}},
+  booktitle =	 PROC # "~18th~"# FOCS,
+  publisher =    "IEEE Computer Society Press",
+  year =         "1977",
+  pages =        "46--57",
+}
+
+
+
+@Article{PreRus:1994:SIAM,
+  author = 	 "G. Preusse and F. Ruskey",
+  title =        {{Generating Linear Extensions Fast}},
+  journal =      {SIAM J. Comput., 23, 373-386},
+  year = 	 1994
+}
+
+
+
+@Book{Ray:1988:JWS,
+  author =       {M. Raynal},
+  title =        {{D}istributed {A}lgorithms and {P}rotocols},
+  publisher =    JWS, 
+  year =         {1988}
+}
+
+
+@Article{RicAgr:1981:CACM,
+     author =       "G. Ricart and A. K. Agrawala",
+     title =        {{An Optimal Algorithm for Mutual Exclusion in Computer
+                    Networks}},
+     journal =      CACM,
+     volume =       "24",
+     year =         "1981",
+}
+
+
+@Article{Riv:1974:AMS,
+  author = 	 "I. Rival",
+  title = 	 {{M}aximal {S}ublattices of {F}inite {D}istributive {L}attices {II}},
+  journal = 	 PROC # "~" # AMS,
+  year = 	 1974,
+  volume = 	 44,
+  number = 	 2,
+  pages = 	 {263-268}
+}
+
+@Proceedings{RV:2001:2004,
+title = {{Proceedings of the International Workshop on Runtime Verification}},
+booktitle =      PROC # "~" # RV,
+year = {2001-2004}
+}
+
+
+@Article{Sch:2003:AiML,
+author = "P. Schnoebelen",
+title ={{The Complexity of Temporal Logic Model Checking}},
+journal = "Advances in Modal Logic",
+volume = 4,
+pages = {437-459},
+publisher = {King's College Publication},
+year = 2003,
+}
+
+@Article{SchMat:1994:DC,
+  author = 	 "R. Schwartz and F. Mattern",
+  title = 	 {{D}etecting {C}ausal {R}elationships in {D}istributed  {C}omputations: 
+                  {I}n {S}earch of the {H}oly {G}rail},
+  journal = 	 DC,
+  year = 	 1994,
+  volume = 	 7,
+  number = 	 3,
+  pages = 	 {149-174}
+}
+
+
+@article{SegBry:1995:FMSD,
+ author = {C. H. Seger and R. E. Bryant},
+ title = {{Formal Verification by Symbolic Evaluation of Partially-Ordered
+ Trajectories}},
+ journal = FMSD,
+ volume = {6},
+ number = {2},
+ year = {1995},
+ pages = {147--189},
+ publisher = KAP,
+ }
+
+
+@InProceedings{LitSen+:2007:MTV,
+author =       "S. Little and A. Sen and C. Myers",
+title =        {{Application of Automated Model Generation Techniques to Analog Mixed Signal Circuits}}, 
+booktitle =	 PROC # "~"# MTV,
+year =         2007,
+}
+
+@InProceedings{IkiSen+:2007:MTV,
+author =       "S. Ikiz and A. Sen",
+title =        {{Runtime Verification of k-Mutual Exclusion for SoC's}}, 
+booktitle =	 PROC # "~"# MTV,
+year =         2007,
+}
+
+@InProceedings{SenOga+:2008:DAC,
+author =       "A. Sen and V. Ogale and M. S. Abadir",
+title =        {{Predictive Runtime Verification of Multi-Processor SoCs in SystemC}}, 
+booktitle =	 PROC # "~"# DAC,
+pages =        {948--953},
+year =         2008,
+}
+
+@Article{SenGar:2007:TC,
+  author =       "A. Sen and V. K. Garg",
+  title =	 {{Formal Verification of Simulation Traces Using Computation Slicing}},
+  journal = 	 TC,
+  year = 	 2007,
+  volume = 	 56,
+  number = 	 4,
+  pages = 	 {511-527},
+  month = 	 APR
+}
+
+@article{Sen:2007:ENTCS,
+ author = "A. Sen",
+ title = {{Error Diagnosis in Equivalence Checking of High Performance Microprocessors}},
+ journal = {Electron. Notes Theor. Comput. Sci.},
+ volume = {174},
+ number = {4},
+ year = {2007},
+ pages = {9--18},
+ }
+
+@InProceedings{SenAba:2010:HLDVT,
+author =       "A. Sen and M. S. Abadir",
+title =        {{Coverage Metrics for Verification of Concurrent SystemC Designs Using Mutation Testing}}, 
+booktitle =	 PROC # "~"# HLDVT,
+year =         2010,
+}
+
+
+@InProceedings{AnaBha+:2007:HLDVT,
+author =       "H. Anand and J. Bhadra and A. Sen and M. S. Abadir and K. G. Davis",
+title =        {{Establishing Latch Correspondence for Embedded Circuits of PowerPC Microprocessors}}, 
+booktitle =	 PROC # "~"# HLDVT,
+year =         2005,
+}
+
+
+@Article{MitSen+:2007:TPDS,
+  author =       "N. Mittal and A. Sen and V. K. Garg",
+  title =	 {{Solving Computation Slicing using Predicate Detection}},
+  journal = 	 TPDS,
+  year = 	 2007,
+  volume = 	 18,
+  number = 	 12,
+  pages = 	 {1700-1713},
+  month = 	 DEC
+}
+
+
+@InProceedings{SenGar:2002:IPDPS,
+author =       "A. Sen and V. K. Garg",
+title =        "{D}etecting {T}emporal {L}ogic {P}redicates on the {H}appened-{B}efore {M}odel",
+booktitle =	 PROC # "~16th~"# IPDPS,
+address =      "Fort Lauderdale, Florida",
+year =         2002,
+month=	APR
+}
+
+
+
+
+@InProceedings{MitSen+:2004:IPDPS,
+author =       "N. Mittal and A. Sen and V. K. Garg and R. Atreya",
+title =        {{Finding Satisfying Global States: All for One and One for All}},
+booktitle =	 PROC # "~18th~"# IPDPS,
+address =      "Santa Fe, New Mexico",
+year =         2004,
+month=	APR
+}
+
+
+
+
+
+@PhdThesis{Sen:2004:Thesis,
+  author =       {A. Sen},
+  title =        {{T}echniques for {F}ormal {V}erification of {C}oncurrent and
+  {D}istributed {P}rogram {T}races},
+  school =       UTA,
+  year =         2004,
+  month =        MAY,
+  note =         {Available at \texttt{http://www.ece.utexas.edu/{\symbol{126}}sen}}
+}
+
+@PhdThesis{Sen:2006:Thesis,
+  author =       {K. Sen},
+  title =        {{S}calable {A}utomated {M}ethods for {D}ynamic {P}rogram {A}nalysis},
+  year =         2006,
+  note =         {Available at \texttt{http://srl.cs.berkeley.edu/\symbol{126}ksen/doku.php}}
+}
+
+
+@InProceedings{GarMit+:2006:AMS,
+author =	 "V. K. Garg and N. Mittal and A. Sen",
+title =		 {{Using Order in Distributed Computing}},
+booktitle =	 {Proceedings of the American Mathematical Society (AMS) National Meeting},
+year = 		2006,
+}
+
+
+
+@InProceedings{SenGar:2003:RV,
+author =	 "A. Sen and V. K. Garg",
+title =		 {{Partial Order Trace Analyzer (POTA) for Distributed Programs}},
+booktitle =	 PROC # "~3rd~"# RV,
+year = 		2003,
+volume = 	{89},
+issue = 	{2},
+series =	ENTCS,
+publisher = ES,
+}
+
+
+@InProceedings{SenGar+:2004:ITC,
+author =	 "A. Sen and V. K. Garg and J. Bhadra and J. A. Abraham",
+title =		 {{Formal Verification of a System-on-Chip Using Computation Slicing}},
+booktitle =	 PROC # "~"# ITC,
+year = 		2004
+}
+
+
+
+@InProceedings{SenGar:2003:FATES,
+author = 	"A. Sen and V. K. Garg",
+title = 	{{On Checking Whether a Predicate Definitely Holds}},
+booktitle =	 PROC # "~3rd~"# FATES,
+address = 	"Montreal, Quebec",
+pages =	 	{15-29},
+volume = 	{2931},
+publisher =    SV,
+series = 	LNCS,
+year = 		2003,
+month =		JUL
+}
+
+
+@InProceedings{SenGar:2003:OPODIS,
+author =	 "A. Sen and V. K. Garg",
+title =		 {{Detecting Temporal Logic Predicates in Distributed Programs Using
+Computation Slicing}}, 
+booktitle =	 PROC # "~7th~"# OPODIS,
+year = 		2003,
+month =		DEC,
+}
+
+
+
+
+@misc{SenGar:2003:POTA,
+key = "POTA",
+title =   	{{Partial Order Trace Analyzer (POTA) web site}},
+note =     	"http://maple.ece.utexas.edu/{\textasciitilde}sen/POTA.html",
+year = 2003,
+}
+
+
+@InProceedings{SenRos+:2003:FSE,
+author = "K. Sen and G. Rosu and G. Agha",
+title = {{ Runtime Safety Analysis of Multithreaded Programs}},
+booktitle = PROC # "~"# FSE,
+year = 2003
+}
+
+
+@Book{McM:1993:KAP,
+author =       "K. L. McMillan",
+title =        "{S}ymbolic {M}odel {C}hecking",
+publisher =    KAP,
+year =         "1993",
+}
+
+
+@InProceedings{SkaMit+:1999:PDCS,
+  author = 	 {C. Skawratananond and N. Mittal and V. K. Garg},
+  title = 	 {{A} {L}ightweight {A}lgorithm for {C}ausal {M}essage 
+                  {O}rdering in {M}obile {C}omputing {S}ystems},
+  booktitle = 	 PROC # "~12th~" # PDCS,
+  pages = 	 {245-250},
+  year = 	 {1999},
+  address = 	 {Florida}
+}
+
+@InProceedings{SpeKea:1986:ICDCS,
+  author =	 {M. Spezialetti and P. Kearns},
+  title =	 {{E}fficient {D}istributed {S}napshots},
+  booktitle =	 PROC # "~6th~" # ICDCS,
+  pages =	 {382-388},
+  year =	 1986
+}
+
+@Article{SpiBra:1987:DAM,
+  author = 	 {J. Spinrad and A. Brandstadt and L. Stewart},
+  title = 	 {{B}ipartite {P}ermutation {G}raphs},
+  journal = 	 DAM,
+  year = 	 1987,
+  volume = 	 18,
+  pages = 	 {279-292}
+}
+
+@InCollection{StoLiu:1998:CAV,
+  author =	 "S. D. Stoller and Y. A. Liu",
+  title =	 {{E}fficient {S}ymbolic {D}etection of {G}lobal
+                  {P}roperties in {D}istributed {S}ystems},
+  booktitle =	 PROC # "~10th~" # CAV,
+  pages =	 {357-368},
+  publisher =	 {Springer-Verlag},
+  year =	 1998,
+  editor =	 {Alan J. Hu and Moshe Y. Vardi},
+  volume =	 1427,
+  series =	 LNCS
+}
+
+@InProceedings{StoSch:1995:WDAG,
+  author =	 "S. D. Stoller and F. Schneider",
+  title =	 {{F}aster {P}ossibility {D}etection by {C}ombining
+                  {T}wo {A}pproaches},
+  booktitle =	 PROC # "~" # WDAG,
+  pages =        {318-332},
+  year =	 1995,
+  volume =       {972},
+  series =       LNCS,
+  address =	 {France},
+  month =	 SEP
+}
+
+
+@InProceedings{StoUnn+:2000:CAV,
+  author =	 "S. D. Stoller and L. Unnikrishnan and Y. A. Liu",
+  title =	 {{E}fficient {D}etection of {G}lobal {P}roperties in
+                  {D}istributed {S}ystems {U}sing {P}artial-{O}rder
+                  {M}ethods},
+  booktitle =	 PROC # "~12th~" # CAV,
+  pages =	 {264-279},
+  year =	 2000,
+  volume =	 1855,
+  series =	 LNCS,
+  month =	 JUL,
+}
+
+@InProceedings{Tai:1997:ICDCS,
+  author =	 {K. Tai},
+  title =	 {{R}ace {A}nalysis of {T}races of {A}synchronous
+                  {M}essage-{P}assing {P}rograms},
+  booktitle =	 PROC # "~17th~" # ICDCS,
+  pages =	 {261-268},
+  year =	 1997
+}
+
+@PhdThesis{Tar:2000:Thesis,
+  author = 	 {A. Tarafdar},
+  title = 	 {{S}oftware {F}ault {T}olerance in {D}istributed {S}ystems 
+                  {U}sing {C}ontrolled {R}e-execution},
+  school = 	 {The University of Texas at Austin},
+  year = 	 2000,
+  month = 	 AUG
+}
+
+@InProceedings{TarGar:1998:ICDCS,
+  author =	 "A. Tarafdar and V. K. Garg",
+  title =	 {{A}ddressing {F}alse {C}ausality while {D}etecting
+                  {P}redicates in {D}istributed {P}rograms},
+  booktitle =	 PROC # "~9th~" # ICDCS,
+  pages =	 {94-101},
+  year =	 1998,
+  address =	 {Amsterdam, The Netherlands},
+  month =	 MAY
+}
+
+@InProceedings{TarGar:1998:SPDP,
+  author =	 "A. Tarafdar and V. K. Garg",
+  title =	 {{P}redicate {C}ontrol for {A}ctive {D}ebugging of
+                  {D}istributed {P}rograms},
+  booktitle =	 PROC # "~9th~" # SPDP,
+  pages =        {763-769},
+  year =	 1998,
+  address =	 {Orlando}
+}
+
+@InProceedings{TarGar:1999:DISC,
+  author =	 "A. Tarafdar and V. K. Garg",
+  title =	 {{S}oftware {F}ault {T}olerance of {C}oncurrent
+                  {P}rograms {U}sing {C}ontrolled {R}e-execution},
+  booktitle =	 PROC # "~13th~" # DISC,
+  pages =	 {210-224},
+  year =	 1999,
+  address =	 {Bratislava, Slovak Republic},
+  month =	 SEP
+}
+
+
+@misc{Tex:1997,
+key = "Texas97",
+title = {{Texas97 Verification Benchmarks: Examples of HW Verification using
+VIS}},
+year = 1997,
+note = "Available from VIS website
+http://www-cad.eecs.berkeley.edu/Respep/Research/vis/",
+}
+
+@misc{VIS:2004,
+key = "VIS",
+title = {{VIS Verification Benchmarks}},
+note = "Available from VIS website
+http://vlsi.colorado.edu/{\textasciitilde}vis/",
+}
+
+
+@InProceedings{TomGar:1993:WPDS,
+  author =	 "A. I. Tomlinson and V. K. Garg",
+  title =	 {{A}n {A}lgorithm for {M}inimally {L}atent {G}lobal
+                  {V}irtual {T}ime},
+  booktitle =	 PROC # "~7th~" # WPDS,
+  pages =        {35-42},
+  year =	 1993,
+  address =	 {San Diego, California},
+  month =	 MAY
+}
+
+@InProceedings{TomGar:1994:CSE,
+  author =	 {A. I. Tomlinson and V. K. Garg},
+  title =	 {{M}aintaining {G}lobal {A}ssertions in {D}istributed
+                  {S}ystems},
+  booktitle =	 CSE,
+  pages =	 {257-272},
+  year =	 1994,
+  publisher =	 TMH
+} 
+
+@Article{TomGar:1994:JPDC,
+  author =	 {A. I. Tomlinson and V. K. Garg},
+  title =	 {{M}onitoring {F}unctions on {G}lobal {S}tates of
+                  {D}istributed {P}rograms},
+  journal =	 JPDC,
+  year =	 1997,
+  volume =       {41},
+  number =       {2},
+  pages  =       {173-189},
+  month =        MAR,
+  OPTnote =	 "A revised version of ``Detecting Relational Global
+                  Predicates in Distributed Systems'', In " # PROC #
+                  "~" # WPDD # ", San Diego, California, " # MAY # "
+                  1993, pages 21-31"
+}
+
+@InProceedings{TomGar:1995:FSTTCS,
+  author =       {A. I. Tomlinson and V. K. Garg},
+  title =        {{O}bservation of {S}oftware for {D}istributed {S}ystems with {RCL}},
+  booktitle =    PROC # "~15th~" # FSTTCS,
+  pages =        {195-209},
+  year =         {1995},
+  url =          {http://citeseer.nj.nec.com/tomlinson95observation.html} 
+}
+
+@Article{TomGar:1997:JPDC,
+  author =	 {A. I. Tomlinson and V. K. Garg},
+  title =	 {{M}onitoring {F}unctions on {G}lobal {S}tates of
+                  {D}istributed {P}rograms},
+  journal =	 JPDC,
+  year =	 1997,
+  volume =       {41},
+  number =       {2},
+  pages  =       {173-189},
+  month =        MAR,
+  OPTnote =	 "A revised version of ``Detecting Relational Global
+                  Predicates in Distributed Systems'', In " # PROC #
+                  "~" # WPDD # ", San Diego, California, " # MAY # "
+                  1993, pages 21-31"
+}
+
+@Book{Tro:1992:JHUP,
+  author = 	 {W. T. Trotter},
+  title = 	 {{C}ombinatorics and {P}artially {O}rdered {S}ets: {D}imension {T}heory},
+  publisher = 	 JHUP,
+  year = 	 1992,
+  address = 	 {Baltimore, MD}
+}
+
+@Book{Vah:1996:PH,
+  author =	 {U. Vahalia},
+  title =	 {Unix Internals: The New Frontiers},
+  publisher =	 PH,
+  year =	 1996,
+  month =	 JAN
+}
+
+@Article{ValTar+:1982:SIAMJC,
+  author = 	 {J. Valdes and R. E. Tarjan and E. L. Lawler},
+  title = 	 {{T}he {R}ecognition of {S}eries-{P}arallel {D}igraphs},
+  journal = 	 SIAMJC,
+  year = 	 1982,
+  volume = 	 11,
+  pages = 	 {298-314}
+}
+
+@InProceedings{Val:1991:CAV,
+author =       "A. Valmari",
+title =        {{A Stubborn Attack On State Explosion}},
+pages =        "156--165",
+booktitle =	 PROC # "~3rd~"# CAV,
+series =       LNCS,
+volume =       531,
+address =      "Berlin, Germany",
+year =         "1991",
+}
+
+@inproceedings{Var:2007:DAC,
+  author    = {M. Y. Vardi},
+  title     = {{Formal Techniques for SystemC Verification; Position Paper}},
+  booktitle = PROC # "~" # DAC,
+  year      = {2007},
+  pages     = {188-192},
+}
+
+
+@Article{VenDat:1995:TSE,
+  author = 	 {S. Venkatesan and B. Dathan},
+  title = 	 {{T}esting and {D}ebugging {D}istributed {P}rograms {U}sing
+                  {G}lobal {P}redicates},
+  journal = 	 TSE,
+  year = 	 1995,
+  volume = 	 21,
+  number = 	 2,
+  pages = 	 {163-177},
+  month = 	 FEB
+}
+
+
+@InProceedings{VIS:1996:CAV,
+author = "VIS",
+title = {{A System for Verification and Synthesis}},
+booktitle =	 PROC # "~8th~"# CAV,
+pages = {428-432},
+year =         1996,
+series =       LNCS,
+number =       "1102",
+address =      "{N}ew Brunswick, {N}J",
+month =        "July",
+}
+
+@InProceedings{WalGar:1991:WPDD,
+  author =       "B. Waldecker and V. K. Garg ",
+  title =        {{U}nstable {P}redicate {D}etection in {D}istributed 
+                  {P}rogram {D}ebugging},
+  booktitle =    PROC # "~" # WPDD,
+  address =	 {Santa Cruz, California},
+  pages =        {276-278},
+  month =	 MAY,
+  year =	 1991 
+}
+
+@Article{Wan:1997:TC,
+  author = 	 {Y.-M. Wang},
+  title = 	 {{C}onsistent {G}lobal {C}heckpoints that {C}ontain a 
+                  {G}iven {S}et of {L}ocal {C}heckpoints},
+  journal = 	 TC,
+  year = 	 1997,
+  volume = 	 46,
+  number = 	 4,
+  pages = 	 {456-468},
+  month = 	 APR
+}
+
+@Article{WanHua+:1997:TC,
+  author =	 {Y.-M. Wang and Y. Huang and W. K. Fuchs and
+                  C. Kintala and G. Suri},
+  title =	 {{P}rogressive {R}etry for {S}oftware {F}ailure
+                  {R}ecovery in {M}essage-{P}assing {A}pplications},
+  journal =	 TC,
+  year =	 1997,
+  volume =	 46,
+  number =	 10,
+  pages =	 {1137-1141},
+  month =	 OCT
+}
+
+@Article{Wei:1982:CACM,
+  author =	 "M. Weiser",
+  title =	 {{P}rogrammers {U}se {S}lices when {D}ebugging},
+  journal =	 CACM,
+  year =	 1982,
+  volume =	 25,
+  number =	 7,
+  pages =	 {446-452}
+}
+
+@Article{Yan:1982:SIAMHADM,
+  author = 	 {M. Yannakakis},
+  title = 	 {{T}he {C}omplexity of the {P}artial {O}rder {D}imension {P}roblem},
+  journal = 	 SIAMJADM,
+  year = 	 1982,
+  volume =	 3,
+  pages = 	 {351-358}
+}
+
+
+@Manual{iFS:1999,
+  author =	 "Oracle",
+  title =	 {iFS: Oracle Internet File System},
+  note =	 {\\ {\sf
+                  http://www.oracle.com/database/options/ifs.html}},
+  year =	 1999
+}
+
+@Article{Hir:1951:SRKU,
+  author = 	 {T. Hiraguchi},
+  title = 	 {{O}n the {D}imension of {P}artially {O}rdered {S}ets},
+  journal = 	 SRKU,
+  year = 	 1951,
+  volume = 	 1,
+  pages = 	 {77-94}
+}
+
+@Article{MadWes:1991:DM,
+  author = 	 {T. Madej and D. B. West},
+  title = 	 {{T}he {I}nterval {I}nclusion {N}umber of a {P}artially {O}rdered {S}et}, 
+  journal = 	 DM,
+  year = 	 1991,
+  volume = 	 88,
+  pages = 	 {259-277},
+  note = 	 ES
+}
+
+@Article{Nas:1961:JLMS,
+  author = 	 {C. Nash-Williams},
+  title = 	 {{E}dge-{D}isjoint {S}panning {T}rees of {F}inite {G}raphs},
+  journal = 	 JLMS,
+  year = 	 1961,
+  volume =	 36,
+  pages = 	 {445-450}
+}
+
+@Article{Dil:1950:AM,
+  author = 	 {R. P. Dilworth},
+  title = 	 {{A} {D}ecomposition {T}heorem for {P}artially {O}rdered {S}ets},
+  journal = 	 AM,
+  year = 	 1950,
+  volume = 	 51,
+  pages = 	 {161-166}
+}
+
+@PhdThesis{Ell:1995:PhD,
+  author = 	 {G. Ellis},
+  title = 	 {{M}anaging {C}omplex {O}bjects},
+  school = 	 {University of Queensland},
+  year = 	 1995
+}
+
+@Article{KanNao+:1992:SIAMJDM,
+  author = 	 {S. Kannan and M. Naor and S. Rudlich},
+  title = 	 {{I}mplicit {R}epresentation of {G}raphs},
+  journal = 	 SIAMJDM,
+  year = 	 1992,
+  volume = 	 5,
+  number = 	 4,
+  pages = 	 {596-603},
+  month = 	 NOV
+}
+
+@Article{Bre:1966:TIT,
+  author = 	 {M. Breuer},
+  title = 	 {{C}oding {V}ertexes of a {G}raph},
+  journal = 	 TIT,
+  year = 	 1966,
+  volume = 	 12,
+  pages = 	 {148-153}
+}
+
+@Article{Tur:1984:DAM,
+  author = 	 {G. Turan},
+  title = 	 {{S}uccinct {R}epresentations of {G}raphs},
+  journal = 	 DAM,
+  year = 	 1984,
+  volume = 	 8,
+  pages = 	 {289-294}
+}
+
+
+
+
+
+
+@Article{AlaVen:2001:TSE,
+  author = 	 {S. Alagar and S. Venkatesan},
+  title = 	 {{T}echniques to {T}ackle {S}tate {E}xplosion in {G}lobal {P}redicate 
+                  {D}etection},
+  journal = 	 TSE,
+  year = 	 {2001},
+  volume = 	 {27},
+  number = 	 {8},
+  pages = 	 {704-714},
+  month = 	 AUG,
+}
+
+
+
+
+@InProceedings{ClaEme:1981:WLP,
+  author =       "E. M. Clarke and E. A. Emerson",
+  title =        {{D}esign and {S}ynthesis of {S}ynchronization {S}keletons using
+                 {B}ranching {T}ime {T}emporal {L}ogic},                        
+  booktitle =    PROC # "~" # WLP,
+  address =      {Yorktown Heights, New York},
+  month =        MAY,
+  series =       LNCS,
+  volume =       131,
+  year =         1981
+}
+
+@InProceedings{ClaGru+:1994:TPLS,
+author =       "E. M. Clarke and O. Grumberg and D. E. Long",
+title =        "Model Checking and Abstraction",
+booktitle =      "ACM Transactions on Programming Languages and Systems",
+volume =       "16",
+pages =        "1512--1542",
+month =        sep,
+year =         "1994",
+}
+
+@Book{ClaGru+:2000:MIT,
+  author =	 "E. M. Clarke and O. Grumberg and D. A. Peled",
+  title =	 {{Model Checking}},
+  publisher =	 MIT,
+  year =	 {2000},
+}
+
+
+@InProceedings{QueSif:1982:ISP,
+  author =       "J. P. Queille and J. Sifakis",
+  title =        {{S}pecification and {V}erification of {C}oncurrent {S}ystems in {CESAR}},
+  address =      {New York},
+  booktitle =    PROC # "~5th~" # ISP,  
+  pages =        {337-351},
+  publisher =    SV,
+  series =       LNCS,
+  volume =       137,
+  year =         1982
+}
+
+@Misc{Pom:2000:TUT,
+  OPTkey = 	 {},
+  author = 	 {W. Torres-Pomales},
+  title = 	 {{S}oftware {F}ault {T}olerance: {A} {T}utorial},
+  OPThowpublished = {},
+  OPTmonth = 	 {},
+  year = 	 {2000},
+  note = 	 {NASA Langley Research Center},
+  OPTannote = 	 {}
+}
+
+
+
+
+
+@Article{ChaTou:1996:JACM,
+  author = 	 {T. D. Chandra and S. Toueg},
+  title = 	 {{U}nreliable {F}ailure {D}etectors for {R}eliable {D}istributed {S}ystems},
+  journal = 	 JACM,
+  year = 	 {1996},
+  volume = 	 {43},
+  number = 	 {2},
+  pages = 	 {225-267}
+}
+
+
+@Article{KunBla+:1997:CJ,
+  author = 	 {T. Kunz and J. P. Black and D. J. Taylor and T. Basten},
+  title = 	 {{POET}: {T}arget-{S}ystem {I}ndependent {V}isualizations of {C}omplex 
+                  {D}istributed-{A}pplications {E}xecutions}, 
+  journal = 	 CJ,
+  year = 	 {1997},
+  OPTkey = 	 {},
+  volume = 	 {40},
+  number = 	 {8},
+  OPTpages = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+
+@Misc{KohGei:1995,
+  OPTkey = 	 {},
+  author = 	 {J. A. Kohl and G. A. Geist},
+  title = 	 {{T}he {PVM 3.4} {T}racing {F}acility and {XPVM 1.1}},
+  howpublished = {Computer Science and Mathematics Divison, Oak Ridge National Laboratory, TN, USA},
+  OPTmonth = 	 {},
+  year = 	 {1995},
+  note = 	 {},
+  OPTannote = 	 {}
+}
+
+@InProceedings{GarMit:1998:ICDCS,
+  author = 	 "V. K. Garg and J. R. Mitchell",
+  title = 	 {{D}istributed {P}redicate {D}etection in a {F}aulty {E}nvironment},
+  booktitle = 	 PROC # "~" # ICDCS,
+  pages = 	 {416-423},
+  year = 	 {1998},
+  address = 	 {Amsterdam, The Netherlands},
+  month = 	 MAY
+}
+
+
+
+@InProceedings{GaePle:2001:DISC,
+  author = 	 {F. C. G{\"a}rtner and S. Pleisch},
+  title = 	 {({I}m){P}ossibilities of {P}redicate {D}etection in {C}rash-{A}ffected
+                  {S}ystems using {I}nterrupt-{S}tyle {F}ailure {D}etectors}, 
+  booktitle = 	 PROC # "~" # DISC,
+  OPTcrossref =  {},
+  OPTkey = 	 {},
+  OPTpages = 	 {},
+  year = 	 {2001},
+  OPTeditor = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  address = 	 {Lisbon, Portugal},
+  month = 	 {October},
+  OPTorganization = {},
+  OPTpublisher = {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@InProceedings{GaePle:2001:WSS,
+  author = 	 {F. C. G{\"a}rtner and S. Pleisch},
+  title = 	 {({I}m){P}ossibilities of {P}redicate {D}etection in {C}rash-{A}ffected
+                  {S}ystems}, 
+  booktitle = 	 PROC # "~5th~" # WSS,
+  OPTcrossref =  {},
+  OPTkey = 	 {},
+  pages = 	 {98-113},
+  year = 	 {2001},
+  OPTeditor = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  series = 	 LNCS # "~2194",
+  address = 	 {Lisbon, Portugal},
+  month = 	 {October},
+  OPTorganization = {},
+  publisher =    SV,
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@inproceedings{BlaKro:2008:ICCAD,
+ author = {Blanc, Nicolas and Kroening, Daniel},
+ title = {{Race Analysis for SystemC using Model Checking}},
+ booktitle = {ICCAD '08: Proceedings of the 2008 IEEE/ACM International Conference on Computer-Aided Design},
+ year = {2008},
+ pages = {356--363},
+ }
+
+@inproceedings{KunGan+:2008:DAC,
+ author = {Kundu, Sudipta and Ganai, Malay and Gupta, Rajesh},
+ title = {{Partial Order Reduction for Scalable Testing of SystemC TLM Designs}},
+ booktitle = {Proc. of the 45th annual Design Automation Conference},
+ year = {2008},
+ pages = {936--941},
+ }
+
+
+%%%===============================================================
+%%%% Coverage related
+
+
+
+@misc{Certitude,
+key = "CERTITUDE",
+title =   	{{Springsoft, Certitude web site}},
+ year = {2010},
+note =     	"http://www.springsoft.com/",
+}
+
+
+@INPROCEEDINGS{WilMer+::2001::RM,
+title={{Code Coverage, what does it mean in terms of quality?}},
+author={T.W. Williams and M.R. Mercer and J.P. Mucha and R. Kapur},
+booktitle={Reliability and Maintainability Symposium, 2001. Proceedings. Annual},
+year={2001},
+pages={420-424},
+}
+
+@article{SheAbr::JETA::2000,
+ author = {J. Shen and J. A. Abraham},
+ title = {{An RTL Abstraction Technique for Processor Microarchitecture Validation and Test Generation}},
+ journal = {J. Electronic Testing},
+ volume = {16},
+ number = {1-2},
+ year = {2000},
+ pages = {67--81},
+ publisher = {Kluwer Academic Publishers},
+ }
+
+@inproceedings{KatNoa::1996::DAC,
+ author = {Katrowitz, Michael and Noack, Lisa M.},
+ title = {{I'm done simulating; now what? Verification coverage analysis and correctness checking of the DEC chip 21164 Alpha microprocessor}},
+ booktitle = PROC # "~" # DAC,
+ year = {1996},
+ pages = {325--330},
+ publisher = {ACM},
+ }
+
+
+@inproceedings{FalDev+::1998::DAC,
+ author = {F. Fallah and S. Devadas and K. Keutzer},
+ title = {{OCCOM: Efficient Computation of Observability-based Code Coverage Metrics for Functional Verification}},
+ booktitle = PROC # "~" # DAC,
+ year = {1998},
+ pages = {152--157},
+ publisher = {ACM},
+ }
+
+@inproceedings{FouKoy+::1999::DAC,
+ author = {Fournier, Laurent and Koyfman, Anatoly and Levinger, Moshe},
+ title = {{Developing an architecture validation suite: application to the PowerPC architecture}},
+ booktitle = PROC # "~" # DAC,
+ year = {1999},
+ pages = {189--194},
+ publisher = {ACM},
+ }
+
+@inproceedings{GriHar+::1998::DAC,
+ author = {Grinwald, Raanan and Harel, Eran and Orgad, Michael and Ur, Shmuel and Ziv, Avi},
+ title = {{User defined coverage---a tool supported methodology for design verification}},
+ booktitle = PROC # "~" # DAC,
+ year = {1998},
+ pages = {158--163},
+ publisher = {ACM},
+ }
+
+@inproceedings{DevGho+::1996::ICCAD,
+ author = {Devadas, Srinivas and Ghosh, Abhijit and Keutzer, Kurt},
+ title = {{An observability-based code coverage metric for functional simulation}},
+ booktitle = PROC # "~" # ICCAD,
+ year = {1996},
+ pages = {418--425},
+ publisher = {IEEE Computer Society},
+ }
+
+@inproceedings{Bud::1981::CPT,
+ author = {Budd, T. A.},
+ title = {{Mutation analysis: Ideas, examples, problems and prospects}},
+ booktitle = {Computer Program Testing},
+ year = {1981},
+ pages = {129--148},
+ publisher = {North-Holland},
+ }
+
+@INPROCEEDINGS{OffAmm+::2006::MA,
+title={{Mutation Testing implements Grammar-Based Testing}},
+author={Offutt, J. and Ammann, P. and Lisa Liu},
+booktitle={Workshop on Mutation Analysis, 2006},
+year={2006},
+pages={12-12},
+}
+
+@book{OffUnt::2001::MT,
+ author = {Offutt, Jefferson and Untch, Ronald H.},
+ title = {{Mutation 2000: Uniting the Orthogonal}},
+ year = {2001},
+ pages = {34--44},
+ publisher = {Kluwer Academic Publishers},
+ }
+
+@Book{AbrBre+::1990:ACM,
+author={Abramovici, M. and Breuer  M. A. and Friedman, A. D. }, 
+title = {{Digital Systems Testing and Testable Design}},
+publisher = {Computer Science Press, New York},
+year = {1990}
+}
+
+@INPROCEEDINGS{BraCor+::2006::MA,
+title={{Mutation Operators for Concurrent Java (J2SE 5.0)}},
+author={Bradbury, J.S. and Cordy, J.R. and Dingel, J.},
+booktitle={Workshop on Mutation Analysis},
+year={2006},
+month={Nov.},
+pages = {11},
+}
+
+@article{MaOff+:2005::STVR,
+ author = {Ma, Yu-Seung and Offutt, Jeff and Kwon, Yong Rae},
+ title = {{MuJava: An Automated Class Mutation System: Research Articles}},
+ journal = {Software Testing, Verification and Reliability},
+ volume = {15},
+ number = {2},
+ year = {2005},
+ pages = {97--133},
+ publisher = {John Wiley and Sons Ltd.},
+ }
+
+@INPROCEEDINGS{PinDel+::1994::SRE,
+title={{Mutation Analysis Testing for Finite State Machines}},
+author={P. F. Fabbri, S.C. and Delamaro, M.E. and Maldonado, J.C. and Masiero, P.C.},
+booktitle={5th International Symposium on Software Reliability Engineering},
+year={1994},
+month={Nov},
+pages={220-229},
+}
+
+@INPROCEEDINGS{HamPet::2007::Test,
+title={Leveraging a Commercial Mutation Analysis Tool For Research},
+author={Hampton, M. and Petithomme, S.},
+booktitle={{Testing: Academic and Industrial Conference Practice and Research Techniques - MUTATION, 2007}},
+year={2007},
+month={Sept.},
+volume={},
+number={},
+pages={203-209},
+}
+
+@inproceedings{BomFum+::2008::DATE,
+ author = {Bombieri, Nicola and Fummi, Franco and Pravadelli, Graziano},
+ title = {{A Mutation Model for the SystemC TLM 2.0 Communication Interfaces}},
+ booktitle = PROC # "~" # DATE,
+ year = {2008},
+ pages = {396--401},
+ publisher = {ACM},
+ }
+
+@inproceedings{BomFum+::2009::DATE,
+ author = {Bombieri, Nicola and Fummi, Franco and Pravadelli, Graziano and Hampton, Mark and Letombe, Florian},
+ title = {{Functional Qualification of TLM Verification}},
+ booktitle = PROC # "~" # DATE,
+ year = {2009},
+ pages = {190--195},
+ publisher = {ACM},
+ }
+
+@inproceedings{KupLi+::2008::FMCAD,
+ author = {Kupferman, Orna and Li, Wenchao and Seshia, Sanjit A.},
+ title = {{A Theory of Mutations with Applications to Vacuity, Coverage, and Fault Tolerance}},
+ booktitle = PROC # "~" # FMCAD,
+ year = {2008},
+ pages = {1--9},
+ }
+
+@inproceedings{TabVar+::2008::FMCAD,
+ author = {Tabakov, Deian and Vardi, Moshe Y. and Kamhi, Gila and Singerman, Eli},
+ title = {{A Temporal Language for SystemC}},
+ booktitle = PROC # "~" # FMCAD,
+ year = {2008},
+ pages = {1--9},
+ }
+
+@inproceedings{FarNir+::2003::IPDPS,
+ author = {Farchi, Eitan and Nir, Yarden and Ur, Shmuel},
+ title = {{Concurrent Bug Patterns and How to Test Them}},
+ booktitle = PROC # "~" # IPDPS,
+ year = {2003},
+ }
+
+@inproceedings{Bai::2008::HVC,
+ author = {B. Bailey},
+ title = {{Can Mutation Analysis Help Fix Our Broken Coverage Metrics?}},
+ booktitle={Proceedings of the 4th International Haifa Verification Conference (HVC '08)},
+ pages = {5--5},
+ year = {2009},
+ }
+
+
+
+@book{WilGos+::2005::MK,
+ author = {Wile, Bruce and Goss, John and Roesner, Wolfgang},
+ title = {{Comprehensive Functional Verification: The Complete Industry Cycle (Systems on Silicon)}},
+ year = {2005},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ }
+
+@book{Ber::2003::SV,
+ author = {J. Bergeron},
+ title = {{Writing Testbenches - Functional Verification of HDL Models}},
+ year = {2003},
+ publisher = {Springer},
+ }
+
+@inproceedings{LiPra+:2009:STVV,
+author = {Nan Li and Upsorn Praphamontripong and Jeff Offutt},
+title = {{An Experimental Comparison of Four Unit Test Criteria: Mutation, Edge-Pair, All-Uses and Prime Path Coverage}},
+booktitle ={IEEE International Conference on Software Testing Verification and Validation Workshop },
+year = {2009},
+pages = {220-229},
+}
+
+@book{Won:2001:KL,
+ editor = {Wong, W. Eric},
+ title = {{Mutation Testing for The New Century}},
+ year = {2001},
+ isbn = {0-7923-7323-5},
+ publisher = {Kluwer Academic Publishers},
+ }
+
+
+@ARTICLE{JiaHar:2010:TSE,
+author={Jia, Y and Harman, M},
+journal={Software Engineering, IEEE Transactions on}, 
+title={{An Analysis and Survey of the Development of Mutation Testing}},
+year={2010},
+month={ },
+volume={PP},
+number={99},
+pages={1},
+}
+
+
+
+@TECHREPORT{JiaHar:2009:TR, 
+author = {Yue Jia and Mark Harman}, 
+title = {{A}n {A}nalysis and {S}urvey of the {D}evelopment of {M}utation {T}esting}, 
+institution = {CREST Centre, King's College London}, 
+year = {2009}, 
+type = {Technical Report}, number = {TR-09-06}, 
+address = {London, UK}, 
+month = {September} 
+}
+
+@INPROCEEDINGS{AndBri:2005:ICSE, 
+author = {James H. Andrews and Lionel C. Briand and Yvan Labiche}, 
+title = {{Is Mutation an Appropriate Tool for Testing Experiments?}}, 
+booktitle = {Proceedings of the 27th International Conference on Software Engineering (ICSE)}, 
+year = {2005}, 
+pages = {402 - 411} }
+
+@ARTICLE{FraWei+:1997:JSS, 
+author = {Phyllis G. Frankl and Stewart N. Weiss and Cang Hu}, 
+title = {{All-uses vs Mutation Testing: an Experimental Comparison of Effectiveness}}, 
+journal = {Journal of Systems and Software}, 
+year = {1997}, 
+month = {September}, 
+volume = {38}, 
+number = {3}, 
+pages = {235-253} }
+
+@phdthesis{Wal:1985:PHD,
+ author = {Walsh, Patrick Joseph},
+ title = {{A Measure of Test Case Completeness (software, engineering)}},
+ year = {1985},
+ school = {State University of New York at Binghamton},
+ address = {Binghamton, NY, USA},
+ }
+
+
+
+%%%===============================================================
+%%% GPU Paper Related
+
+@inproceedings{ChaDeo+::2009::DAC,
+  author    = {Debapriya Chatterjee and
+               Andrew DeOrio and
+               Valeria Bertacco},
+  title     = {{Event-Driven Gate-Level Simulation with GP-GPUs}},
+  booktitle = PROC # "~" # DAC,
+  year      = {2009},
+  pages     = {557-562},
+}
+
+@inproceedings{ChaDeo+::2009::DATE,
+  author    = {Debapriya Chatterjee and
+               Andrew DeOrio and
+               Valeria Bertacco},
+  title     = {{GCS: High-performance Gate-Level Simulation with GPGPUs}},
+  booktitle = PROC # "~" # DATE,
+  year      = {2009},
+  pages     = {1332-1337},
+}
+
+@inproceedings{Her::2002::IPDPS,
+  author    = {Klaus Hering},
+  title     = {{A Parallel LCC Simulation System}},
+  booktitle =	 PROC # "~" # IPDPS,
+  year      = {2002},
+}
+
+@inproceedings{HerRei+::2002::MASCOTS,
+  author    = {Klaus Hering and
+               Robert Reilein and
+               Sven Trautmann},
+  title     = {{Cone Clustering Principles for Parallel Logic Simulatio}},
+  booktitle = {International Workshop on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems},
+  year      = {2002},
+  pages     = {93-100},
+}
+
+@article{CheBoy::2008::JPDC,
+author = "Shuai Che and Michael Boyer and Jiayuan Meng and David Tarjan and Jeremy W. Sheaffer and Kevin Skadron",
+title = {{A performance study of general-purpose applications on graphics processors using CUDA}},
+journal = "Journal of Parallel and Distributed Computing",
+volume = "68",
+number = "10",
+pages = "1370 - 1380",
+year = "2008",
+}
+
+
+@inproceedings{CroKha::2009::ICCAD,
+ author = {Croix, John F. and Khatri, Sunil P.},
+ title = {{Introduction to GPU programming for EDA}},
+  booktitle =	 PROC # "~" # ICCAD,
+ year = {2009},
+ pages = {276--280},
+ publisher = {ACM},
+ }
+
+
+@article{BaiBri+::1994::ACM,
+ author = {Bailey, Mary L. and Briner,Jr., Jack V. and Chamberlain, Roger D.},
+ title = {{Parallel logic simulation of VLSI systems}},
+ journal = {ACM Comput. Surv.},
+ volume = {26},
+ number = {3},
+ year = {1994},
+ pages = {255--294},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+
+@TechReport{Mei::1993:TR,
+author =       "G. Meister",
+title =        {{A survey on parallel logic simulation}},
+institution = "Dept. of Computer Engineering, University of Saarland",
+type =         "Technical Report",
+year =         1993,
+}
+
+@article{AlpKah::1995::VLSI,
+author = "Charles J. Alpert and Andrew B. Kahng",
+title = {{Recent directions in netlist partitioning: a survey}},
+journal = "Integration, the VLSI Journal",
+volume = "19",
+number = "1-2",
+pages = "1 - 81",
+year = "1995",
+}
+
+
+@inproceedings{Joh::1996::DAC,
+ author = {Johannes, Frank M.},
+ title = {{Partitioning of VLSI circuits and systems}},
+ booktitle = PROC # "~" # DAC,
+ year = {1996},
+ pages = {83--87},
+ publisher = {ACM},
+ }
+
+@inproceedings{CatKeu+::2008::DAC,
+ author = {Catanzaro, Bryan and Keutzer, Kurt and Su, Bor-Yiing},
+ title = {{Parallelizing CAD: a timely research agenda for EDA}},
+ booktitle = PROC # "~" # DAC,
+ year = {2008},
+ pages = {12--17},
+ publisher = {ACM},
+ }
+
+
+
+@article{NicBuc+::2008:ACM,
+ author = {Nickolls, John and Buck, Ian and Garland, Michael and Skadron, Kevin},
+ title = {{Scalable Parallel Programming with CUDA}},
+ journal = {Queue},
+ volume = {6},
+ number = {2},
+ year = {2008},
+ pages = {40--53},
+ publisher = {ACM},
+ }
+
+@book{GPUGems,
+ author = {Nguyen, Hubert},
+ title = {{Gpu Gems 3}},
+ year = {2007},
+ publisher = {Addison-Wesley Professional},
+}
+
+@book{Ban::1994::PH,
+	author	= "Prithviraj Banerjee",
+	title	= {{Parallel Algorithms for {VLSI} Computer-aided Design
+		   Applications}},
+	address = "Englewoods-Cliffs, NJ",
+	publisher = "Prentice Hall",
+	year	= 1994
+}
+
+@inproceedings{DenWan::2009::ICCAD,
+ author = {Deng, Yangdong (Steve) and Wang, Bo David and Mu, Shuai},
+ title = {{Taming Irregular EDA Applications on GPUs}},
+ booktitle = PROC # "~" # ICCAD,
+ year = {2009},
+ pages = {539--546},
+ publisher = {ACM},
+ }
+
+
+@misc{ABC,
+key = "ABC",
+title =   	{{ABC web site}},
+note =     	"http://www.eecs.berkeley.edu/{\textasciitilde}alanmi/abc/",
+}
+
+@misc{CUDA,
+key = "CUDA",
+title =   	{{NVIDIA CUDA web site}},
+note =     	"http://www.nvidia.com/CUDA",
+}
+
+@misc{OPENCL,
+key = "OPENCL",
+title =   	{{OpenCL web site}},
+note =     	"http://www.khronos.org/opencl/",
+}
+
+@misc{OPENMP,
+key = "OPENCL",
+title =   	{{OpenMP web site}},
+note =     	"http://www.openmp.org/",
+}
+
+@misc{Opencores,
+key = "OpenCores",
+title =   	{{Opencores Benchmarks}},
+note =     	"http://www.opencores.org",
+}
+
+@misc{AIGER,
+key = "AIGER",
+title =   	{{AIGER Format web site}},
+note =     	"http://fmv.jku.at/aiger/",
+}
+
+@misc{IWLS,
+key = "IWLS",
+title =   	{{IWLS 2005 Benchmarks}},
+note =     	"http://www.iwls.org/iwls2005/benchmarks.html",
+}
+
+@mastersthesis{Per::2007::MS,
+  author        = "A. Perinkulam",
+  title         = {{Logic Simulation using Graphics Processors}},
+  school        = "University of Massachusetts Amherst",
+  year          = "2007"
+}
+
+@inproceedings{BraMis::2010::CAV,
+ author = {R. Brayton and A. Mishchenko},
+ title = {{ABC: An Academic Industrial-Strength Verification Tool}},
+ booktitle = PROC # "~" # CAV,
+ year = {2010},
+ }
+
+
+@inproceedings{Pfi::1982::DAC,
+ author = {G.F. Pfister},
+ title = {{The Yorktown Simulation Engine: Introduction}},
+ booktitle = PROC # "~" # DAC,
+ year = {1982},
+ }
+
+
+@inproceedings{MisCha+::2006::DAC,
+ author = {A. Mishchenko and S. Chatterjee and R. Brayton},
+ title = {{DAG-aware AIG Rewriting: a Fresh Look at Combinational Logic Synthesis}},
+ booktitle = PROC # "~" # DAC,
+ year = {2006},
+ }
+
+
+
+
+@inproceedings{MisBra+::2010::FPGA,
+ author = {Mishchenko, Alan and Brayton, Robert and Jang, Stephen},
+ title = {{Global Delay Optimization using Structural Choices}},
+ booktitle = {FPGA '10: Proceedings of the 18th annual ACM/SIGDA international symposium on Field programmable gate arrays},
+ year = {2010},
+ pages = {181--184},
+ publisher = {ACM},
+ }
+
+
+
+@article{ChaMis+::2010::TCAD,
+author = {Satrajit Chatterjee and Alan Mishchenko and Robert K. Brayton and Xinning Wang and Timothy Kam},
+title = {{Reducing Structural Bias in Technology Mapping}},
+journal = "IEEE TCAD",
+volume = "25",
+number = "12",
+pages = "2894 - 2903",
+year = "2010",
+}
+
+
+ @inproceedings{ZhuKue+::2006::DAC,
+ author = {Qi Zhu and N. Kitchen and A. Kuehlmann and A. Sangiovanni-Vincentelli},
+ title = {{SAT Sweeping with Local Observability Don't-Cares}},
+ booktitle = PROC # "~" # DAC,
+ year = {2006},
+ }
+
+@inproceedings{SenAks+::2010::ISPDC,
+ author = {Alper Sen and Baris Aksanli and Murat Bozkurt and Melih Mert},
+ title = {{Parallel Cycle Based Logic Simulation using Graphics Processing Units}},
+ booktitle = {Proceedings of the International Symposium on Parallel and Distributed Computing (ISPDC)},
+ year = {2010},
+ }
+
+%----------------------
+
+@InProceedings{sharma:mcc:,
+	author = "Subodh Sharma and Ganesh Gopalakrishnan and Eric Mercer and Jim Holt",
+	title  = {{MCC: A runtime verification tool for MCAPI user applications}},
+	booktitle = {{Formal Methods in Computer-Aided Design'09}},
+	pages = {41-44},
+	year = {2009},
+}
+	
+% [2] Dynamic Verification of Multicore Communication Applications in MCAPI
+@InProceedings{sharma:dv,
+	author = "Subodh Sharma and Ganesh Gopalakrishnan and Eric Mercer",
+	title  = {{Dynamic Verification of Multicore Communication Applications in MCAPI}},
+	booktitle = {{IEEE Int'l High Level Design Validation and Test Workshop}},
+	year = {2009},
+}
+	
+% [3] Formal Verification of MCAPI Applications Using the Dynamic Verification tool MCC
+@InProceedings{sharma:fv,
+	author = "Subodh Sharma and  Ganesh Gopalakrishnan",
+	title  = {{Formal Verification of MCAPI Applications using the Dynamic Verification tool MCC}},
+	booktitle = {{TECHCON, Semiconductor Research Corporation}},
+	year = {2009},
+}
+	
+% [4] Dynamic partial-order reduction for model checking software
+@InProceedings{flanagan:dynamic,
+	author = "Cormac Flanagan and Patrice Godefroid",
+	title = {{Dynamic partial-order reduction for model checking software}},
+	booktitle = {{Principles of Programming Languages}},
+	year = {2005},
+}
+	
+% [5] Debugging Support Tool for MCAPI Applications
+@InProceedings{elwakil:debugging,
+	author = "Mohamed Elwakil and Zijiang Yang",
+	title = {{Debugging support tool for MCAPI applications}},
+	booktitle = {{Parallel and Distributed Systems: Testing, Analysis, and Debugging'10}},
+	pages = {20-25},
+	year = {2010},
+}
+	
+% [6] CRI: Symbolic Debugger for MCAPI Applications
+@InProceedings{elwakil:cri:,
+	author = "Mohamed Elwakil and Zijiang Yang and Liqiang Wang",
+	title = {{CRI: Symbolic Debugger for MCAPI Applications}},
+	booktitle = {{Automated Technology for Verification and Analysis'10}},
+	pages = {353-358},
+	year = {2010},
+}
+	
+% [7] A Fast Linear-Arithmetic Solver for DPLL(T)
+@InProceedings{dutertre:a,
+	author = "Bruno Dutertre and Leonardo Mendonça de Moura",
+	title = {{A Fast Linear-Arithmetic Solver for DPLL(T)}},
+	booktitle = {{Computer Aided Verification'06}},
+	pages = {81-94},
+	year = {2006},
+}
+	
+	
+% [11] Detecting Temporal Logic Predicates on Distributed Computations
+@InProceedings{a.ogale:detecting,
+	author = "Vinit A. Ogale and Vijay K. Garg",
+	title = {{Detecting Temporal Logic Predicates on Distributed Computations}},
+	booktitle = {{DIStributed Computing'07}},
+	pages = {420-434},
+	year = {2007},
+}
+	
+% [12] The Model Checker SPIN. (G.J. Holzmann)
+@Article{j.holzmann:the,
+	author = "Gerard J. Holzmann",
+	title = {{The Model Checker SPIN}},
+	journal = {{IEEE Transactions on Software Engineering}},
+	volume = {23},
+	number = {5},
+	pages = {279-295},
+	year = {1997},
+}
+	
+% [13] Detecting errors in multithreaded programs by generalized predictive analysis of executions. 
+@InProceedings{sen:detecting,
+	author = "Koushik Sen and Grigore Rosu and Gul Agha",
+	title = {{Detecting Errors in Multithreaded Programs by Generalized Predictive Analysis of Executions}},
+	booktitle = {{Formal Methods for Open Object-based Distributed Systems'05}},
+	pages = {211-226},
+	year = {2005},
+}
+	
+	
+% [15] A Graph Based Approach for MPI Deadlock Detection
+@InProceedings{hilbrich:a,
+	author = "Tobias Hilbrich and Bronis R. de Supinski and Martin Schulz and Matthias S. Miller",
+	title = {{A graph based approach for MPI deadlock detection}},
+	booktitle = {{International Conference on Supercomputing'09}},
+	pages = {296-305},
+	year = {2009},
+}
+	
+
+% [17] http://www.mcs.anl.gov/mpi/
+@Misc{website:mpi,
+	key = "MPI",
+	year = {2011},
+	title = {{Message Passing Interface, http://www.mcs.anl.gov/mpi/}},
+}
+
+% [18] MPIRace-Check: Detection of Message Races in MPI Programs
+@InProceedings{park:mpi-rc,
+	author = "Mi-Young Park and Su Jeong Shim and Yong-Kee Jun and Hyuk-Ro Park",
+	title = {{MPIRace-Check: Detection of Message Races in MPI Programs}},
+	booktitle = {{Grid and Pervasive Computing'07}},
+	year = {2007},
+	pages = {322-333},
+}
+	
+
+% [23] A survey of MPI related debuggers and tools
+@InProceedings{sharma:asompi,
+	author = "Subodh Sharma and  Ganesh Gopalakrishnan and Robert M. Kirby",
+	title  = {{A survey of MPI related debuggers and tools}},
+	booktitle = {{Technical Report UUCS-07-015, University of Utah, School of Computing}},
+	year = {2007},
+}
+	
+% [24] MARMOT: An MPI Analysis and Checking Tool
+@InProceedings{krammer:marmot,
+	author = "Bettina Krammer and Matthias S. Müller and Michael M. Resch",
+	title = {{MPI Application Development Using the Analysis Tool MARMOT}},
+	booktitle = {{International Conference on Computational Science'04}},
+	pages = {464-471},
+	year = {2004},
+}
+	
+% [25] Automated, scalable debugging of mpi programs with intel message checker
+@InProceedings{desouza:automated,
+	author = "Jayant Desouza and Bob Kuhn and Bronis R. De Supinski",
+	title = {{Automated, scalable debugging of mpi programs with intel message checker}},
+	booktitle = {{In Workshop on Software Engineering for High Performance Computing
+	System Applications (SE-HPCS)}},
+	year = {2005},
+}
+	
+% [26] Dynamic Software Testing of MPI Applications with Umpire
+@InProceedings{vetter:dynamicsoftware,
+	author = "Jeffrey S. Vetter and Bronis R. de Supinski",
+	title = {{Dynamic Software Testing of MPI Applications with Umpire}},
+	booktitle = {{Supercomputing}},
+	year = {2000},
+}
+	
+% [27] An instrumentation technique for online analysis of multithreaded programs
+@article{rosu:an,
+	author = "Grigore Rosu and Koushik Sen",
+	title = {{An instrumentation technique for online analysis of multithreaded programs}},
+	journal = {{Concurrency and Computation: Practice and Experience}},
+	volume = {19},
+	number = {3},
+	pages = {311-325},
+	year = {2007},
+}
+	
+% [28] T. Software, http://www.etnus.com/Products/TotalView/.
+@Misc{website:totalview,
+	key = "TotalView",
+	month = {April},
+	year = {2011},
+	title = {{TotalView Debug Software, http://www.etnus.com/Products/TotalView/}},
+}
+
+% [29] ScalaTrace: Scalable compression and replay of communication traces for high-performance computing
+@article{noeth:scalatrace,
+	author = "Michael Noeth and Prasun Ratn and Frank Mueller and Martin Schulz and Bronis R. de Supinski",
+	title = {{ScalaTrace: Scalable compression and replay of communication traces for high-performance computing}},
+	journal = {{Journal of Parallel and Distributed Computing}},
+	volume = {69},
+	number = {8},
+	year = {2009},
+	pages = {696-710},
+}
+	
+% [30] A Scalable and Distributed Dynamic Formal Verifier for MPI Programs
+@InProceedings{vo:acad,
+	author = "Anh Vo and
+		  Sriram Aananthakrishnan and
+		  Ganesh Gopalakrishnan and
+		  Bronis R. de Supinski and
+		  Martin Schulz and
+		  Greg Bronevetsky",
+	title = {{A Scalable and Distributed Dynamic Formal Verifier for MPI Programs}},
+	booktitle = {{Super Computing'10}},
+	year = {2010},
+	pages = {1-10},
+}
+	
+% [31] Formal verification of practical MPI programs
+@InProceedings{vo:fv,
+	author = "Anh Vo and
+		  Sarvani S. Vakkalanka and
+		  Michael Delisi and
+			Ganesh Gopalakrishnan and
+		  Robert M. Kirby and
+		  Rajeev Thakur",
+	title = {{Formal verification of practical MPI programs}},
+	booktitle = {{Principles and Practice of Parallel Programming}},
+	year = {2009},
+	pages = {261-270},
+}
+
+% [32] http://www.mentor.com/embedded-software/
+@Misc{website:mentor,
+	key = "Open MCAPI",
+	year = {2011},
+	title = {{Mentor Graphics, http://www.mentor.com/embedded-software/}},
+}
+
+% [33] Efficient Dynamic Verification of Concurrent Programs
+@PhdThesis{yang:efficient,
+  author = "Yu Yang",
+  title = {{Efficient Dynamic Verification of Concurrent Programs}},
+  school = {University of Utah, School of Computing},
+  year = {2009}
+}
+
+% [34] http://cil.sourceforge.net/
+@Misc{website:cil,
+	key = "CIL",
+	year = {2011},
+	title = {{C Intermediate Language (CIL), http://cil.sourceforge.net/}},
+}
+
+@phdthesis{Fra:2007:PHD,
+ author = {Gordon Fraser},
+ title = {{Automated Software Testing with Model Checkers}},
+ year = {2007},
+ school = {Graz University of Technology},
+ address = {Austria},
+ }
+
+
+@inproceedings{KroCla+::2004::TACAS,
+ author = {D. Kroening and E. Clarke and F. Lerda},
+ title = {{ A tool for checking ANSI-C programs}},
+  booktitle =	 PROC # "~" # TACAS,
+ year = {2004},
+ pages = {168--176},
+ }
+
+@inproceedings{RabGru:2005:CAV,
+   author = {Rabinovitz, Ishai and Grumberg, Orna},
+   title = {Bounded Model Checking of Concurrent Programs},
+   booktitle = PROC # "~" # CAV,
+   pages = {319-325},
+   year = {2005}
+}
+
+
+@inproceedings{DamGiu+:2009:EC,
+   author = {Angeletti, Damiano and Giunchiglia, Enrico and Narizzano, Massimo and Puddu, Alessandra and Sabina, Salvatore},
+   title = {Automatic Test Generation for Coverage Analysis Using CBMC},
+   booktitle = {Computer Aided Systems Theory - EUROCAST 2009},
+   pages = {287-294},
+   year = {2009}
+}
+
+@inproceedings{HeRue+:2011:DAC, 
+author = {Nannan He and Philpp Ruemmer and Daniel Kroening},
+title = {{Test-Case Generation for Embedded Simulink via Formal Concept Analysis}}, 
+booktitle = PROC # "~" # DAC,
+year = {2011}, 
+}
+ 
+@inproceedings{ClaKro+:2005:TACAS,
+  AUTHOR    = { Clarke, Edmund
+                and Kroening, Daniel
+                and Sharygina, Natasha
+                and Yorav, Karen },
+  TITLE     = { {SATABS}: {SAT}-based Predicate Abstraction for {ANSI-C} },
+  BOOKTITLE = { Tools and Algorithms for the Construction and Analysis of Systems (TACAS 2005) },
+  YEAR      = { 2005 },
+  PAGES     = { 570--574 },
+  VOLUME    = { 3440 },
+}
+
+@TechReport{DenSen+:2011:TR001,
+  author = 	 "E. Deniz and A. Sen and J. Holt",
+  title = 	 {{Verification and Coverage of Message Passing Multicore Applications}}, 
+  institution =  "Department of Computer Engineering, Bogazici University",
+  year = 	 2011,
+}
+
+
+@inproceedings{CimMic+:2010:FMCAD,
+  author    = {Alessandro Cimatti and
+               Andrea Micheli and
+               Iman Narasamdya and
+               Marco Roveri},
+  title     = {{Verifying SystemC: A software model checking approach}},
+  booktitle =    PROC # "~" # FMCAD,
+  pages     = {51-59},
+  year      = {2010},
+}
+
+@Misc{mcapiwebsitecmpe,
+	key = "mcapiex",
+	year = {2011},
+	title = {{MCAPI Examples, http://www.cmpe.boun.edu.tr/~ozgul/mcapi}},
+}
+
+@article{HolAga+:2009:IEEEMicro,
+author={Holt, J. and Agarwal, A. and Brehmer, S. and Domeika, M. and Griffin, P. and Schirrmeister, F.},
+journal={Micro, IEEE}, 
+title={{Software Standards for the Multicore Era}},
+year={2009},
+month={may-june},
+volume={29},
+number={3},
+pages={40 -51},
+}
+
+@InProceedings{GroLe+:2010:MEMOCODE,
+  author =	 {D. Grosse and H. M. Le and R. Drechsler},
+  title =	 {{Proving Transaction and System-level Properties of Untimed SystemC TLM Designs}},
+  booktitle =	 PROC # "~" # MEMOCODE,
+  pages =	 {113-122},
+  year =	 2010
+}
+
+@inproceedings{BriHe+:2010:FMCO,
+  AUTHOR    = { Brillout, Angelo
+                and He, Nannan
+                and Mazzucchi, Michele
+                and Kroening, Daniel
+                and Purandare, Mitra
+                and R{\"u}mmer, Philipp
+                and Weissenbacher, Georg },
+  TITLE     = {{ Mutation-based Test Case Generation for Simulink Models }},
+  BOOKTITLE = { 8th International Symposium on Formal Methods for Components and Objects, Eindhoven, The Netherlands },
+  YEAR      = { 2010 },
+}
+
+
+
+%----- RACE CONDITION
+
+@inproceedings{sb97,
+  author = "S. Savage and M. Burrows and G. Nelson and P. Sobalvarro and
+            T. Anderson",
+  title = "Eraser: a dynamic data race detector for multi-threaded programs",
+  booktitle = "Proc. of the 16th ACM Symposium on Operating System Principles",
+  year = "1997",
+}
+
+@inproceedings{Flanagan:2009:FEP,
+ author = {Flanagan, Cormac and Freund, Stephen N.},
+ title = {{FastTrack: Efficient and Precise Dynamic Race Detection}i},
+ booktitle = {Proc. of the Conference on Programming Language Design and Implementation},
+ year = {2009},
+} 
+
+@inproceedings{OCallahan:2003:HDD,
+ author = {O'Callahan, Robert and Choi, Jong-Deok},
+ title = {Hybrid dynamic data race detection},
+ booktitle = {Proc. of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ year = {2003},
+} 
+
+@article{Pozniansky:2007:MEO,
+ author = {Pozniansky, Eli and Schuster, Assaf},
+ title = {MultiRace: efficient on-the-fly data race detection in multithreaded C++ programs: Research Articles},
+ journal = {Concurr. Comput. : Pract. Exper.},
+ volume = {19},
+ number = {3},
+ month = mar,
+ year = {2007},
+ pages = {327--340},
+} 
+
+@inproceedings{Serebryany:2009:TDR,
+ author = {Serebryany, Konstantin and Iskhodzhanov, Timur},
+ title = {ThreadSanitizer: data race detection in practice},
+ booktitle = {Proc. of the Workshop on Binary Instrumentation and Applications},
+ year = {2009},
+} 
+
+@inproceedings{Flanagan:2000:TRD,
+ author = {Flanagan, Cormac and Freund, Stephen N.},
+ title = {Type-based race detection for Java},
+ booktitle = {Proceedings of the ACM SIGPLAN 2000 conference on Programming language design and implementation},
+ year = {2000},
+} 
+
+@inproceedings{Musuvathi:2008:FRH,
+ author = {Musuvathi, Madanlal and Qadeer, Shaz and Ball, Thomas and Basler, Gerard and Nainar, Piramanayagam Arumuga and Neamtiu, Iulian},
+ title = {Finding and reproducing Heisenbugs in concurrent programs},
+ booktitle = {Proceedings of the 8th USENIX conference on Operating systems design and implementation},
+ year = {2008},
+} 
+
+
+%-------- SYSTEMC VERIFICATION
+
+@inproceedings{Le:2013:VSU,
+ author = {Le, Hoang M. and Grosse, Daniel and Herdt, Vladimir and Drechsler, Rolf},
+ title = {Verifying SystemC using an intermediate verification language and symbolic simulation},
+ booktitle = {Proc. of the 50th Annual Design Automation Conference},
+ year = {2013},
+} 
+
+@ARTICLE{CimNar+:2013:TCAD, 
+author={Cimatti, A. and Narasamdya, I. and Roveri, M.}, 
+journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
+title={Software Model Checking SystemC}, 
+year={2013}, 
+volume={32}, 
+number={5}, 
+pages={774-787}, 
+}
+
+
+@article{Sen:2011:TODAES,
+ author = {Sen, Alper},
+ title = {Concurrency-oriented verification and coverage of system-level designs},
+ journal = {ACM Trans. Des. Autom. Electron. Syst.},
+ volume = {16},
+ number = {4},
+ month = oct,
+ year = {2011},
+ pages = {37:1--37:25},
+} 
+
+@article{Blanc:2010:RAS,
+ author = {Blanc, Nicolas and Kroening, Daniel},
+ title = {Race analysis for systemc using model checking},
+ journal = {ACM Trans. Des. Autom. Electron. Syst.},
+ volume = {15},
+ number = {3},
+ month = jun,
+ year = {2010},
+ pages = {21:1--21:32},
+} 
+
+@INPROCEEDINGS{MoiGlu+:2013:DDECS, 
+author={Moiseev, M. and Glukhikh, M. and Zakharov, A. and Richter, H.}, 
+booktitle={Proc. of International Symposium on Design and Diagnostics of Electronic Circuits Systems (DDECS)}, 
+title={A static analysis approach to data race detection in SystemC designs}, 
+year={2013}, 
+}
+
+
+@ARTICLE{simics, 
+author={Magnusson, P.S. and Christensson, M. and Eskilson, J. and Forsgren, D. and Hallberg, G. and Hogberg, J. and Larsson, F. and Moestedt, A. and Werner, B.}, 
+journal={Computer}, 
+title={Simics: A full system simulation platform}, 
+year={2002}, 
+volume={35}, 
+number={2}, 
+pages={50-58}, 
+ISSN={0018-9162},}
+
+
+@inproceedings{Carlson:2011:SEL,
+ author = {Carlson, Trevor E. and Heirman, Wim and Eeckhout, Lieven},
+ title = {Sniper: exploring the level of abstraction for scalable and accurate parallel multi-core simulation},
+ booktitle = {International Conference for High Performance Computing, Networking, Storage and Analysis},
+ year = {2011},
+} 
+
+@inproceedings{sesame:2007,
+author={Thompson, Mark and Pimentel, Andy D.},
+title={Towards Multi-application Workload Modeling in Sesame for System-Level Design Space Exploration},
+ booktitle = {International conference on Embedded computer systems: architectures, modeling, and simulation (SAMOS)},
+year={2007},
+}
+
+@inproceedings{Kreku:2010:AWG,
+ author = {Kreku, Jari and Tiensyrj\"{a}, Kari and Vanmeerbeeck, Geert},
+ title = {Automatic workload generation for system-level exploration based on modified GCC compiler},
+ booktitle = {Proceedings of the Conference on Design, Automation and Test in Europe},
+ year = {2010},
+} 
+
+@article{KarJoh:2013:IEEETC,
+author = {Karthik Ganesan and Lizy Kurian John},
+title = {Automatic Generation of Miniaturized Synthetic Proxies for Target Applications to Efficiently Design Multicore Processors},
+journal ={IEEE Transactions on Computers},
+volume = {99},
+number = {PrePrints},
+year = {2013},
+pages = {1},
+publisher = {IEEE Computer Society},
+}
+
+@inproceedings{bienia08characterization,
+author = {Bienia, Christian and Kumar, Sanjeev and Singh, Jaswinder Pal and Li, Kai},
+title = {{The PARSEC Benchmark Suite: Characterization and Architectural Implications}},
+booktitle = {International Conference on Parallel Architectures and Compilation Techniques},
+year = {2008},
+}
+
+@inproceedings{LukCMPKLWRH05,
+author    = {Chi-Keung Luk and Robert S. Cohn and Robert Muth and Harish Patil and Artur Klauser and P. Geoffrey Lowney and Steven Wallace and Vijay Janapa Reddi and Kim M. Hazelwood},
+title     = {{Pin: Building Customized Program Analysis Tools with Dynamic Instrumentation}},
+booktitle = {Proc. of Programming Language Design and Implementation},
+year      = {2005},
+}
+
+%------------------------------
+
+@article{EeckhoutVB03,
+	author={Lieven Eeckhout and Hans Vandierendonck and Koen De Bosschere},
+	title={{Quantifying the Impact of Input Data Sets on Program Behavior and its Applications}},
+	journal={Journal of Instruction-Level Parallelism},
+	year={2003},
+	volume={5},
+	pages={1-33},
+	publisher={www.jilp.org/vol5},
+}
+
+@inproceedings{BPJM07,
+	author =        {Sarah Bird and Aashish Phansalkar and Lizy K. John and Alex Mercas and Rajeev Idukuru},
+	booktitle =     {SPEC Benchmark Workshop},
+	month =         jan,
+	title =         {{Performance Characterization of {SPEC} {CPU} Benchmarks on {Intel's} {Core} Microarchitecture based processor}},
+	year =          {2007},
+}
+
+
+@inproceedings{GanesanJSS08,
+	author    = {Karthik Ganesan and Lizy Kurian John and Valentina Salapura and James C. Sexton},
+	title     = {{A Performance Counter Based Workload Characterization on Blue Gene/P}},
+	booktitle = {International Conference on Parallel Processing (ICPP)},
+	year      = {2008},
+	pages     = {330-337},
+}
+
+@inproceedings{Silva2009,
+	title = {Transactions Sequence Tracking by means of Dynamic Binary Instrumentation of TLM Models},
+	booktitle = {12th Euromicro Conference on Digital System Design, Architectures, Methods and Tools},
+	author = {da Silva, A. and Sanchez, S.},
+	year = {2009},
+},
+
+@article{Hoste2007,
+	title = {Microarchitecture-Independent Workload Characterization},
+	volume = {27},
+	number = {3},
+	journal = {{IEEE} Micro},
+	author = {Hoste, K. and Eeckhout, L.},
+	year = {2007},
+	pages = {63--72},
+},
+
+@article{Joshi2008,
+	author = {Joshi, Ajay and Eeckhout, Lieven and {Bell,Jr.}, Robert H. and John, Lizy K.},
+	title = {Distilling the essence of proprietary workloads into miniature benchmarks},
+	volume = {5},
+	number = {2},
+	journal = {{ACM} Trans. Archit. Code Optim.},
+	year = {2008},
+	pages = {10:1 - 10:33},
+},
+
+@article{Wild2005,
+	title = {TAPES-Trace-based architecture performance evaluation with SystemC},
+	volume = {10},
+	number = {2-3},
+	journal = {Design Automation for Embedded Systems},
+	author = {Wild, Thomas and Herkersdorf, Andreas and Lee, Gyoo-Yeong},
+	month = sep,
+	year = {2005},
+	pages = {157--179},
+},
+
+@article{Kreku2008,
+	title = {Combining UML2 application and SystemC platform modelling for performance evaluation of real-time embedded systems},
+	volume = {2008},
+	journal = {{EURASIP} J. Embedded Syst.},
+	author = {Kreku, Jari and Hoppari, Mika and Kestila, Tuomo and Qu, Yang and Soininen, Juha-Pekka and Andersson, Per and Tiensyrja, Kari},
+	month = jan,
+	year = {2008},
+	pages = {6:1-6:18},
+},
+
+@inproceedings{Poovey2011,
+	author = {Poovey, Jason A. and Railing, Brian P. and Conte, Thomas M.},
+	title = {Parallel pattern detection for architectural improvements},
+	booktitle = {3rd {USENIX} conference on Hot topic in parallelism},
+  	year={2011},
+},
+
+@inproceedings{Grammatikakis2011,
+	author = {Grammatikakis, {M.D.} and Politis, S. and Schoellkopf, J.-P. and Papadas, C.},
+	title = {System-level power estimation methodology using cycle- and bit-accurate TLM},
+	year = {2011},
+	booktitle = {Design, Automation Test in Europe Conference Exhibition ({DATE)}},
+},
+
+@inproceedings{Deniz2012,
+	title = {Using software architectural patterns for synthetic embedded multicore benchmark development},
+	booktitle = {{IEEE} International Symposium on Workload Characterization ({IISWC)}},
+	author = {Deniz, E. and Sen, A. and Holt, J. and Kahne, B.},
+	year = {2012},
+},
+
+@inproceedings{Luk2005,
+	title = {Pin: building customized program analysis tools with dynamic instrumentation},
+	booktitle = {{ACM} {SIGPLAN} conference on Programming language design and implementation},
+	year = {2005},
+	author = {Luk, Chi-Keung and Cohn, Robert and Muth, Robert and Patil, Harish and Klauser, Artur and Lowney, Geoff and Wallace, Steven and Reddi, Vijay Janapa and Hazelwood, Kim},
+},
+
+
+@misc{SystemC,
+key = "Accelera Systems Initiative",
+year = 2012,
+title = {{Accelera Systems Initiative, http://www.accelera.org/}},
+}
+
+@misc{Doulos,
+key = "Doulos",
+year = 2013,
+title = {{Doulos, http://www.doulos.com/}},
+}
+
+
+@book{Mattson2004,
+	title = {Patterns for parallel programming},
+	publisher = {Addison-Wesley Professional},
+	author = {Mattson, Timothy and Sanders, Beverly and Massingill, Berna},
+	year = {2004}
+},
+
+@article{Nethercote2007,
+	title = {Valgrind: a framework for heavyweight dynamic binary instrumentation},
+	volume = {42},
+	number = {6},
+	journal = {{SIGPLAN} Not.},
+	author = {Nethercote, Nicholas and Seward, Julian},
+	month = jun,
+	year = {2007},
+	pages = {89–100},
+},
+
+@phdthesis{Bruening2004,
+  title={Efficient, transparent, and comprehensive runtime code manipulation},
+  author={Bruening, Derek Lane},
+  year={2004},
+  school={Massachusetts Institute of Technology}
+}
+
+
+
+@inproceedings{Nethercote2007a,
+	title = {How to shadow every byte of memory used by a program},
+	booktitle = {3rd International conference on Virtual execution environments},
+  	year={2007},
+	author = {Nethercote, Nicholas and Seward, Julian},
+},
+
+
+@article{Cimatti2012,
+  author    = {Alessandro Cimatti and
+               Iman Narasamdya and
+               Marco Roveri},
+  title     = {Software Model Checking SystemC},
+  journal   = {IEEE Trans. on CAD of Integrated Circuits and Systems},
+  volume    = {32},
+  number    = {5},
+  year      = {2013},
+  pages     = {774-787},
+}
+
+
+@INPROCEEDINGS{Streubuhr2011, 
+author={Streubuhr, M. and Rosales, R. and Hasholzner, R. and Haubelt, C. and Teich, J.}, 
+booktitle={Forum on Specification and Design Languages (FDL)}, 
+title={{ESL power and performance estimation for heterogeneous MPSOCS using SystemC}}, 
+year={2011}, 
+}
+
+@INPROCEEDINGS{Greaves2012, 
+author={Greaves, D. and Yasin, M.}, 
+booktitle={Forum on Specification and Design Languages (FDL)}, 
+title={TLM POWER3: Power estimation methodology for SystemC TLM 2.0}, 
+year={2012}, 
+}
+
+@inproceedings{Ezudheen2009,
+  author    = {P. Ezudheen and
+               Priya Chandran and
+               Joy Chandra and
+               Biju Puthur Simon and
+               Deepak Ravi},
+  title     = {Parallelizing SystemC Kernel for Fast Hardware Simulation
+               on SMP Machines},
+  booktitle = {PADS},
+  year      = {2009},
+  pages     = {80-87},
+}
+
+@inproceedings{Nanjundappa2010,
+  author    = {Mahesh Nanjundappa and
+               Hiren D. Patel and
+               Bijoy A. Jose and
+               Sandeep K. Shukla},
+  title     = {SCGPSim: a fast SystemC simulator on GPUs},
+ booktitle =  ASP-DAC,
+  year      = {2010},
+}
+
+@inproceedings{Vinco2012,
+  author    = {Sara Vinco and
+               Debapriya Chatterjee and
+               Valeria Bertacco and
+               Franco Fummi},
+  title     = {SAGA: SystemC acceleration on GPU architectures},
+ booktitle = PROC # "~" # DAC,
+  year      = {2012},
+}
+
+
+
+
+@misc{alper,
+key = "alper",
+year = 2013,
+title = {{Omitted for blind review}},
+}
+
+@Misc{website:perf,
+	key = "Linux profiling with performance counters",
+	year = {2013},
+	title = {{Linux profiling with performance counters, https://perf.wiki.kernel.org}},
+}
+
+
+@article{scope,
+  author    = {Daniel Calvo and
+               Pablo Gonz{\'a}lez and
+               Luis Diaz and
+               Hector Posadas and
+               Pablo S{\'a}nchez and
+               Eugenio Villar and
+               Andrea Acquaviva and
+               Enrico Macii},
+  title     = {A Multi-Processing Systems-on-Chip Native Simulation Framework
+               for Power and Thermal-Aware Design},
+  journal   = {J. Low Power Electronics},
+  volume    = {7},
+  number    = {1},
+  year      = {2011},
+  pages     = {2-16},
+}
+
+
+
+@misc{pthreads,
+key = "pthreads",
+year = 2014,
+	title = {{POSIX Pthreads, IEEE Std 1003.1, 2013 Edition, http://www.unix.org/version4/ieee\_std.html}},
+}
+
+
+@inproceedings{kunzli2006combining,
+  title={Combining simulation and formal methods for system-level performance analysis},
+  author={Kunzli, S and Poletti, Francesco and Benini, Luca and Thiele, Lothar},
+  booktitle={Design, Automation and Test in Europe, 2006. DATE'06. Proceedings},
+  volume={1},
+  pages={1--6},
+  year={2006},
+}
+
+@inproceedings{grammatikakis2013monitoring,
+  title={Monitoring-Aware Virtual Platform Prototype of Heterogeneous NoC-Based Multicore SoCs},
+  author={Grammatikakis, Miltos D and Papagrigoriou, Antonis and Petrakis, Polydoros and Kornaros, George},
+  booktitle={Digital System Design (DSD), 2013 Euromicro Conference on},
+  pages={497--504},
+  year={2013},
+}
+
+@inproceedings{beltrame2009real,
+  title={A real-time application design methodology for MPSoCs},
+  author={Beltrame, Giovanni and Fossati, Luca and Sciuto, Donatella},
+  booktitle={Proceedings of the Conference on Design, Automation and Test in Europe},
+  pages={767--772},
+  year={2009},
+}
+
+@inproceedings{shen2008configurable,
+  title={Configurable heterogeneous MPSoC architecture exploration using abstraction levels},
+  author={Shen, Hao and Gerin, Patrice and P{\'e}trot, Fr{\'e}d{\'e}ric},
+  booktitle={Rapid System Prototyping, 2008. RSP'08. The 19th IEEE/IFIP International Symposium on},
+  pages={51--57},
+  year={2008},
+}
+
+@inproceedings{chureau2008intermediate,
+  title={An intermediate format for automatic generation of MPSoC virtual prototypes},
+  author={Chureau, Alexandre and P{\'e}trot, Fr{\'e}d{\'e}ric},
+  booktitle={Embedded Computer Systems: Architectures, Modeling, and Simulation, 2008. SAMOS 2008. International Conference on},
+  pages={165--172},
+  year={2008},
+}
+
+@article{posadas2005rtos,
+  title={RTOS modeling in SystemC for real-time embedded SW simulation: A POSIX model},
+  author={Posadas, Hector and Adamez, JA and Villar, Eugenio and Blasco, Francisco and Escuder, F},
+  journal={Design Automation for Embedded Systems},
+  volume={10},
+  number={4},
+  pages={209--227},
+  year={2005},
+  publisher={Kluwer Academic Publishers}
+}
+
+@article{fummi2007systemc,
+  title={SystemC co-simulation for core-based embedded systems},
+  author={Fummi, Franco and Loghi, Mirko and Perbellini, Giovanni and Poncino, Massimo},
+  journal={Design Automation for Embedded Systems},
+  volume={11},
+  number={2-3},
+  pages={141--166},
+  year={2007},
+  publisher={Springer US}
+}
+
+@INPROCEEDINGS{CheHan+:2014:DATE, 
+author={Weiwei Chen and Xu Han and Domer, R.}, 
+booktitle={Proc. of Design, Automation and Test in Europe Conference and Exhibition (DATE)}, 
+title={May-happen-in-parallel analysis based on segment graphs for safe ESL models}, 
+year={2014}, 
+}
+
+@INPROCEEDINGS{HerVil:2009:FDL, 
+author={Herrera, F. and Villar, E.}, 
+booktitle={Proc. of Forum on Specification Design Languages (FDL)}, 
+title={Local application of simulation directed for Exhaustive Coverage of Schedulings of SystemC specifications}, 
+year={2009}, 
+}
+
+@article{HerVil:2008:TODAES,
+ author = {Herrera, Fernando and Villar, Eugenio},
+ title = {A Framework for Heterogeneous Specification and Design of Electronic Embedded Systems in SystemC},
+ journal = {ACM Trans. Des. Autom. Electron. Syst.},
+ volume = {12},
+ number = {3},
+ month = may,
+ year = {2008},
+ pages = {22:1--22:31},
+} 
+
+@INPROCEEDINGS{NiaSan:2013:DATE, 
+author={Niaki, Seyed Hosein Attarzadeh and Sander, Ingo}, 
+booktitle={Proc. of Design, Automation Test in Europe Conference Exhibition (DATE)}, 
+title={An automated parallel simulation flow for heterogeneous embedded systems}, 
+year={2013}, 
+}
+
+@incollection{HerUga:2012:Intech,
+  author      = "F. Herrera and I. Ugarte",
+  title       = "Concurrent Specification of Embedded Systems: An Insight into the Flexibility vs Correctness Trade-Off",
+  editor      = "Dr. Kiyofumi Tanaka",
+  booktitle   = "Embedded Systems - Theory and Design Methodology",
+  publisher   = "InTech",
+  year        = 2012,
+}
+
+
+
+@ARTICLE{systemc-ieee, 
+journal={{IEEE Std 1666-2011 (Revision of IEEE Std 1666-2005)}}, 
+title={{IEEE Standard for Standard SystemC Language Reference Manual}}, 
+year={2012}, 
+month={Jan}, 
+pages={1-638}, 
+}
+
+
+%-----------------------
+
+
+@article{NetMil+:1992:LOPLAS,
+ author = {Netzer, Robert H. B. and Miller, Barton P.},
+ title = {What Are Race Conditions?: Some Issues and Formalizations},
+ journal = {ACM Lett. Program. Lang. Syst.},
+ volume = {1},
+ number = {1},
+ month = mar,
+ year = {1992},
+ pages = {74--88},
+ numpages = {15},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+
+@inproceedings{VouJha+:2007:FSE,
+ author = {Voung, Jan Wen and Jhala, Ranjit and Lerner, Sorin},
+ title = {RELAY: Static Race Detection on Millions of Lines of Code},
+ booktitle = {Proceedings of the the 6th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on The Foundations of Software Engineering},
+ year = {2007},
+} 
+
+@inproceedings{PraFos+:2006:PLDI,
+ author = {Pratikakis, Polyvios and Foster, Jeffrey S. and Hicks, Michael},
+ title = {LOCKSMITH: Context-sensitive Correlation Analysis for Race Detection},
+ booktitle = {Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ year = {2006},
+} 
+
+@article{EngAsh:2003:OSR,
+ author = {Engler, Dawson and Ashcraft, Ken},
+ title = {RacerX: Effective, Static Detection of Race Conditions and Deadlocks},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ issue_date = {December 2003},
+ volume = {37},
+ number = {5},
+ month = oct,
+ year = {2003},
+ pages = {237--252},
+ numpages = {16},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@inproceedings{PozSc:2003:PPOPP,
+ author = {Pozniansky, Eli and Schuster, Assaf},
+ title = {Efficient On-the-fly Data Race Detection in Multithreaded C++ Programs},
+ booktitle = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ year = {2003},
+}
+
+@inproceedings{BonCoo+:2010:PLDI,
+ author = {Bond, Michael D. and Coons, Katherine E. and McKinley, Kathryn S.},
+ title = {PACER: Proportional Detection of Data Races},
+ booktitle = {Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ year = {2010},
+} 
+
+@inproceedings{OCaCho:2003:PPOPP,
+ author = {O'Callahan, Robert and Choi, Jong-Deok},
+ title = {Hybrid Dynamic Data Race Detection},
+ booktitle = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ year = {2003},
+} 
+
+
+@inproceedings{MarMus+:2009:PLDI,
+ author = {Marino, Daniel and Musuvathi, Madanlal and Narayanasamy, Satish},
+ title = {LiteRace: Effective Sampling for Lightweight Data-race Detection},
+ booktitle = {Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ year = {2009},
+} 
+
+
+@inproceedings{YuRod+:2005:SOSP,
+ author = {Yu, Yuan and Rodeheffer, Tom and Chen, Wei},
+ title = {RaceTrack: Efficient Detection of Data Race Conditions via Adaptive Tracking},
+ booktitle = {Proceedings of the ACM Symposium on Operating Systems Principles},
+ year = {2005},
+} 
+
+@inproceedings{KahYan:2007:CAV,
+ author = {Kahlon, Vineet and Yang, Yu and Sankaranarayanan, Sriram and Gupta, Aarti},
+ title = {Fast and Accurate Static Data-race Detection for Concurrent Programs},
+ booktitle = {Proceedings of the International Conference on Computer Aided Verification},
+ year = {2007},
+} 
+
+@inproceedings{NaiAik+:2006:PLDI,
+ author = {Naik, Mayur and Aiken, Alex and Whaley, John},
+ title = {Effective Static Race Detection for Java},
+ booktitle = {Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation},
+ year = {2006},
+} 
+
+@article{SavBur+:1997:TOCS,
+ author = {Savage, Stefan and Burrows, Michael and Nelson, Greg and Sobalvarro, Patrick and Anderson, Thomas},
+ title = {Eraser: A Dynamic Data Race Detector for Multithreaded Programs},
+ journal = {ACM Transactions on Computer Systems},
+ issue_date = {1997},
+ volume = {15},
+ number = {4},
+ year = {1997},
+ pages = {391--411},
+ numpages = {21},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+
+@inproceedings{SerIsk:2009:WBA,
+ author = {Serebryany, Konstantin and Iskhodzhanov, Timur},
+ title = {ThreadSanitizer: Data Race Detection in Practice},
+ booktitle = {Proceedings of the Workshop on Binary Instrumentation and Applications},
+ year = {2009},
+} 
+
+@article{PozSc:2007:CC,
+ author = {Pozniansky, Eli and Schuster, Assaf},
+ title = {MultiRace: Efficient On-the-fly Data Race Detection in Multithreaded C++ Programs: Research Articles},
+ journal = {Concurr. Comput. : Pract. Exper.},
+ issue_date = {March 2007},
+ volume = {19},
+ number = {3},
+ month = mar,
+ year = {2007},
+ pages = {327--340},
+ numpages = {14},
+ publisher = {John Wiley and Sons Ltd.},
+ address = {Chichester, UK},
+} 
+
+
+@inproceedings{JanKai+:2009:IPDPS,
+ author = {Jannesari, Ali and Kaibin Bao and Pankratius, Victor and Tichy, Walter F.},
+ title = {Helgrind+: An Efficient Dynamic Race Detector},
+ booktitle = {Proceedings of the IEEE International Symposium on Parallel and Distributed Processing},
+ year = {2009},
+}
+
+@article{FlaFre:2010:CACM,
+ author = {Flanagan, Cormac and Freund, Stephen N.},
+ title = {FastTrack: Efficient and Precise Dynamic Race Detection},
+ journal = {Communications of the ACM},
+ issue_date = {2010},
+ volume = {53},
+ number = {11},
+ year = {2010},
+ pages = {93--101},
+ numpages = {9},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@misc{httpd,
+	key= "httpd",
+	title = "The Apache HTTP Server Project - 2.2.22",
+	year = 2014,
+	url = "http://www.apache.org/",
+	note = "{Accessed: May 2014}"
+}
+
+  
+
+
+@inproceedings{SmaEva+:2012:POPL,
+ author = {Smaragdakis, Yannis and Evans, Jacob and Sadowski, Caitlin and Yi, Jaeheon and Flanagan, Cormac},
+ title = {Sound Predictive Race Detection in Polynomial Time},
+ booktitle = {Proceedings of the ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+ year = {2012},
+} 
+
+
+@inproceedings{Gli:2004:PDCS,
+  title={Parallel Data Compression with bzip2},
+  author={Gilchrist, Jeff},
+  booktitle={Proceedings of the International Conference on Parallel and Distributed Computing and Systems},
+  year={2004},
+}
+
+
+ 
+@INPROCEEDINGS{SenKal:2014:FDL, 
+author={Sen, A. and Kalaci, O. }, 
+booktitle={Proc. of Forum on Specification Design Languages (FDL)}, 
+title={Hybrid Dynamic Data Race Detection in SystemC}, 
+year={2014}, 
+}
+
+
+
+@inproceedings{muzahid2009sigrace,
+ author = {Muzahid, Abdullah and Su\'{a}rez, Dario and Qi, Shanxiang and Torrellas, Josep},
+ title = {SigRace: Signature-based Data Race Detection},
+ booktitle = {Proceedings of the 36th Annual International Symposium on Computer Architecture},
+ series = {ISCA '09},
+ year = {2009},
+ isbn = {978-1-60558-526-0},
+ location = {Austin, TX, USA},
+ pages = {337--348},
+ numpages = {12},
+ doi = {10.1145/1555754.1555797},
+ acmid = {1555797},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {SigRace, concurrency defect, data race, happened-before, signature, timestamp},
+} 
+
+
+
+
+@inproceedings{zhou2007hard,
+ author = {Zhou, Pin and Teodorescu, Radu and Zhou, Yuanyuan},
+ title = {HARD: Hardware-Assisted Lockset-based Race Detection},
+ booktitle = {Proceedings of the 2007 IEEE 13th International Symposium on High Performance Computer Architecture},
+ series = {HPCA '07},
+ year = {2007},
+ isbn = {1-4244-0804-0},
+ pages = {121--132},
+ numpages = {12},
+ doi = {10.1109/HPCA.2007.346191},
+ acmid = {1318108},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+} 
+
+
+%-----------------------------------------------
+
+@Article{DenSen+:2014:TC,
+  author =       "A. Sen and V. K. Garg and B. Kahne and J. Holt",
+  title =	 {{MINIME: Pattern-Aware Multicore Benchmark Synthesizer}},
+  journal = 	 TC,
+  year = 	 2014,
+  volume = 	 {PP},
+  number = 	 99,
+  pages = 	 {1-1},
+  month={}, 
+ doi={10.1109/TC.2014.2349522}, 
+}
+
+@INPROCEEDINGS{MilKas+:2010:HPCA, 
+author={Miller, J.E. and Kasture, H. and Kurian, G. and Gruenwald, C. and Beckmann, N. and Celio, C. and Eastep, J. and Agarwal, A.}, 
+booktitle={International Symposium on High Performance Computer Architecture (HPCA)}, 
+title={Graphite: A distributed parallel simulator for multicores}, 
+year={2010}, 
+}
+
+@book{Gamma94,
+    author = {Gamma, Erich and Helm, Richard and Johnson, Ralph and Vlissides, John},
+    edition = {1},
+    howpublished = {Hardcover},
+    keywords = {design, development, pattern, software},
+    month = nov,
+    publisher = {Addison-Wesley Professional},
+    title = {{Design Patterns: Elements of Reusable Object-Oriented Software}},
+    year = {1994}
+}
+
+@inproceedings{ArjonaR98,
+	author    = {Jorge L. Ortega-Arjona and Graham Roberts},
+	title     = {{Architectural Patterns for Parallel Programming}},
+	booktitle = {European Conference on Pattern Languages of Programs (EuroPLoP)},
+	year      = {1998},
+}
+
+@inproceedings{JoshiEBJ06,
+	author    = {Ajay Joshi and Lieven Eeckhout and Robert H. Bell Jr. and Lizy Kurian John},
+	title     = {{Performance Cloning: A Technique for Disseminating Proprietary Applications as Benchmarks}},
+	booktitle = {IEEE International Symposium on Workload Characterization},
+	year      = {2006},
+	}
+
+@inproceedings{Hughes08, 
+	author={Hughes, C. and Tao Li}, 
+	booktitle={IEEE International Symposium on Workload Characterization},
+	title={{Accelerating Multi-core Processor Design Space Evaluation using Automatic Multi-threaded Workload Synthesis}}, 
+	year={2008}, 
+}
+
+@article{Ganesan2013,
+	author = {Karthik Ganesan and Lizy Kurian John},
+	title = {Automatic Generation of Miniaturized Synthetic Proxies for Target Applications to Efficiently Design Multicore Processors},
+	journal ={IEEE Transactions on Computers},
+	volume = {63},
+	number = {4},
+	issn = {0018-9340},
+	year = {2014},
+	pages = {833-846},
+	publisher = {IEEE Computer Society},
+	address = {Los Alamitos, CA, USA},
+}
+
+@article{Holt09micro, 
+	author={Holt, J. and Agarwal, A. and Brehmer, S. and Domeika, M. and Griffin, P. and Schirrmeister, F.}, 
+	journal={IEEE Micro}, 
+	title={{Software Standards for the Multicore Era}}, 
+	year={2009}, 
+	volume={29}, 
+	number={3}, 
+	pages={40-51}, 
+}
+
+@Misc{website:multicore,
+	key = "MCA",
+	year = {2013},
+	title = {{Multicore Association, http://www.multicore-association.org}},
+}
+
+@inproceedings{Joshi08,
+	author={Joshi, Ajay and Eeckhout, Lieven and John, Lizy},
+	title={{The Return of Synthetic Benchmarks}},
+	booktitle={SPEC Benchmark Workshop},
+	year={2008},
+}
+
+%%%===============================================================
+%%% Concolic Testing Related
+
+@article{Sen:2005:CCU:1095430.1081750,
+ author = {Sen, Koushik and Marinov, Darko and Agha, Gul},
+ journal = {SIGSOFT Softw. Eng. Notes},
+ title = {CUTE: A Concolic Unit Testing Engine for C},
+ year = {2005},
+ volume = {30},
+ number = {5},
+ pages = {263--272},
+ publisher = {ACM}
+}
+
+@inproceedings{Cadar:2008:KUA:1855741.1855756,
+ author = {Cadar, Cristian and Dunbar, Daniel and Engler, Dawson},
+ title = {KLEE: Unassisted and Automatic Generation of High-coverage Tests for Complex Systems Programs},
+ booktitle = {Proceedings of the 8th USENIX Conference on Operating Systems Design and Implementation},
+ series = {OSDI'08},
+ year = {2008}
+}
+
+@inproceedings{Sen:2006:CJC:2135909.2135962,
+ author = {Sen, Koushik and Agha, Gul},
+ title = {CUTE and jCUTE: Concolic Unit Testing and Explicit Path Model-checking Tools},
+ booktitle = {Proceedings of the 18th International Conference on Computer Aided Verification},
+ series = {CAV'06},
+ year = {2006}
+}
+
+@inproceedings{Burnim:2008:HSD:1642931.1642995,
+ author = {Burnim, J. and Sen, K.},
+ title = {Heuristics for Scalable Dynamic Test Generation},
+ booktitle = {Proceedings of the 2008 23rd IEEE/ACM International Conference on Automated Software Engineering},
+ series = {ASE '08},
+ year = {2008}
+}
+
+@inproceedings{Tillmann:2008:PWB:1792786.1792798,
+ author = {Tillmann, Nikolai and De Halleux, Jonathan},
+ title = {Pex: White Box Test Generation for .NET},
+ booktitle = {Proceedings of the 2Nd International Conference on Tests and Proofs},
+ series = {TAP'08},
+ year = {2008}
+}
+
+@article{Godefroid:2005:DDA:1064978.1065036,
+ author = {Godefroid, Patrice and Klarlund, Nils and Sen, Koushik},
+ title = {DART: Directed Automated Random Testing},
+ journal = {SIGPLAN Not.},
+ year = {2005},
+ volume = {40},
+ number = {6},
+ pages = {213--223},
+ publisher = {ACM}
+}
+
+@inproceedings{Seo:2014:WGC:2635868.2635872,
+ author = {Seo, Hyunmin and Kim, Sunghun},
+ title = {How We Get There: A Context-guided Search Strategy in Concolic Testing},
+ booktitle = {Proceedings of the 22Nd ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+ series = {FSE 2014},
+ year = {2014}
+}
+
+@incollection{LimeConcolicTester,
+year={2010},
+booktitle={Model Checking Software},
+volume={6349},
+series={Lecture Notes in Computer Science},
+editor={van de Pol, Jaco and Weber, Michael},
+title={Experimental Comparison of Concolic and Random Testing for Java Card Applets},
+publisher={Springer Berlin Heidelberg},
+author={Kähkönen, Kari and Kindermann, Roland and Heljanko, Keijo and Niemelä, Ilkka},
+pages={22-39}
+}
+
+@inproceedings{Souza:2011:CSC:1986308.1986337,
+ author = {Souza, Matheus and Borges, Mateus and d'Amorim, Marcelo and P\u{a}s\u{a}reanu, Corina S.},
+ title = {CORAL: Solving Complex Constraints for Symbolic Pathfinder},
+ booktitle = {Proceedings of the Third International Conference on NASA Formal Methods},
+ series = {NFM'11},
+ year = {2011}
+}
+
+@inproceedings{DBLP:conf/aaai/ZhouYZ10,
+  author    = {Junping Zhou and Minghao Yin and Chunguang Zhou},
+  title     = {New Worst-Case Upper Bound for {\#}2-SAT and {\#}3-SAT with the Number of Clauses as the Parameter},
+  booktitle = {Proceedings of the Twenty-Fourth {AAAI} Conference on Artificial Intelligence},
+  year      = {2010}
+}
+
+@article{Anand:2013:OSM:2503903.2503991,
+ author = {Anand, Saswat and Burke, Edmund K. and Chen, Tsong Yueh and Clark, John and Cohen, Myra B. and Grieskamp, Wolfgang and Harman, Mark and Harrold, Mary Jean and Mcminn, Phil},
+ title = {An Orchestrated Survey of Methodologies for Automated Software Test Case Generation},
+ journal = {J. Syst. Softw.},
+ year = {2013},
+ volume = {86},
+ number = {8},
+ month = aug,
+ pages = {1978--2001},
+ publisher = {Elsevier Science Inc.}
+}
+
+@inproceedings{DBLP:conf/asplos/Sidiroglou-Douskos15,
+  author    = {Stelios Sidiroglou{-}Douskos and Eric Lahtinen and Nathan Rittenhouse and Paolo Piselli and Fan Long and Deokhwan Kim and
+ Martin C. Rinard},
+  title     = {Targeted Automatic Integer Overflow Discovery Using Goal-Directed Conditional Branch Enforcement},
+  booktitle = {Proceedings of the Twentieth International Conference on Architectural Support for Programming Languages and Operating Systems, {ASPLOS} '15},
+  pages     = {473--486},
+  year      = {2015}
+}
+
+@inproceedings{Nuzzo:2010:CSS:1998496.1998513,
+ author = {Nuzzo, Pierluigi and Puggelli, Alberto and Seshia, Sanjit A. and Sangiovanni-Vincentelli, Alberto},
+ title = {CalCS: SMT Solving for Non-linear Convex Constraints},
+ booktitle = {Proceedings of the 2010 Conference on Formal Methods in Computer-Aided Design},
+ series = {FMCAD '10},
+ year = {2010}
+}
+
+@Misc{website:crestz3,
+	key = "CZ3",	
+	title = {{CREST-z3, https://github.com/heechul/crest-z3}}
+}
+
+@Misc{website:crestppc,
+	key = "PPC",
+	title = {{ }} 
+}
+%http://bitbucket.org/yavuzkoroglu/crest-ppc}}
+%}
+
+@Misc{website:bubblesort,
+	key = "SRT",
+	title = {{BubbleSort, http://www.programmingsimplified.com/c/source-code/c-program-bubble-sort}}
+}
+
+@inproceedings{Qu:2011:CSC:2082758.2083418,
+ author = {Qu, Xiao and Robinson, Brian},
+ title = {A Case Study of Concolic Testing Tools and Their Limitations},
+ booktitle = {Proceedings of the 2011 International Symposium on Empirical Software Engineering and Measurement},
+ series = {ESEM '11},
+ year = {2011}
+}
+
+@inproceedings{Dong:2011:AHB:2056316.2057002,
+ author = {Dong, Yu and Lin, Mengxiang and Yu, Kai and Zhou, Yi and Chen, Yinli},
+ title = {Achieving High Branch Coverage with Fewer Paths},
+ booktitle = {Proceedings of the 2011 IEEE 35th Annual Computer Software and Applications Conference Workshops},
+ series = {COMPSACW '11},
+ year = {2011}
+} 
+
+@inproceedings{Seo:2014,
+ author = {Seo, Hyunmin and Kim, Sunghun},
+ title = {How We Get There: A Context-guided Search Strategy in Concolic Testing},
+ booktitle = {Proceedings of the 22Nd ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+ series = {FSE 2014},
+ year = {2014}
+} 
+
+
+@incollection{Yices,
+year={2014},
+booktitle={Computer Aided Verification},
+volume={8559},
+series={Lecture Notes in Computer Science},
+editor={Biere, Armin and Bloem, Roderick},
+title={Yices 2.2},
+publisher={Springer International Publishing},
+author={Dutertre, Bruno},
+pages={737-744}
+}
+
+@inproceedings{DeMoura:2008:ZES:1792734.1792766,
+ author = {De Moura, Leonardo and Bj{\o}rner, Nikolaj},
+ title = {Z3: An Efficient SMT Solver},
+ booktitle = {Proceedings of the Theory and Practice of Software, 14th International Conference on Tools and Algorithms for the Construction and Analysis of Systems},
+ series = {TACAS'08/ETAPS'08},
+ year = {2008}
+} 
+
+@inproceedings{DBLP:conf/vmcai/Bradley11,
+  author    = {Aaron R. Bradley},
+  title     = {SAT-Based Model Checking without Unrolling},
+  booktitle = {Verification, Model Checking, and Abstract Interpretation - 12th International Conference, {VMCAI} 2011},
+  pages     = {70--87},
+  year      = {2011}
+}
+
+@inproceedings{Farzan:2013:CT:2491411.2491453,
+ author = {Farzan, Azadeh and Holzer, Andreas and Razavi, Niloofar and Veith, Helmut},
+ title = {Con2Colic Testing},
+ booktitle = {Proceedings of the 2013 9th Joint Meeting on Foundations of Software Engineering},
+ series = {ESEC/FSE 2013},
+ year = {2013}
+}
+
+@article{SIR,
+    author    = {Hyunsook Do and
+                Sebastian G. Elbaum and
+                Gregg Rothermel},
+    title     = {Supporting Controlled Experimentation with Testing Techniques:
+                An Infrastructure and its Potential Impact.},
+    journal   = {Empirical Software Engineering: An International Journal},
+    volume    = {10},
+    number    = {4},
+    pages     = {405--435},
+    year      = {2005}
+}
+
+@Book{Tsang93foundationsof,
+  author = {Tsang, Edward P. K.},
+  publisher = {Academic Press},
+  series = {Computation in cognitive science},
+  title = {Foundations of constraint satisfaction.},
+  year = 1993
+}

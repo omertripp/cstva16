@@ -1,0 +1,62 @@
+\documentclass[a4paper,twoside,openright]{book}
+
+\usepackage{pdfpages}
+\usepackage[inner=3.5cm,outer=3.5cm]{geometry}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+
+\newcommand{\tocTitle}[2]{\noindent\protect\contentsline{title}{#1\dotfill}{#2\\}}
+\newcommand{\tocAuthors}[1]{{\indent\raggedright \leftskip 15pt \rightskip 2.55em\itshape #1\endgraf\vspace{.4cm}}}
+\newcommand{\tocSection}[1]{\subsection*{#1}}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\footskip 50pt
+
+\newcounter{addchap}
+
+\newcommand{\add}[4][]{
+  \includepdf[#1,pages=-,scale=1.0,pagecommand={
+    },
+    addtotoc={1,chapter,1,,paper:#2}]{#2}
+  \addcontentsline{toc}{chapter}{\normalfont #3\dotfill\\\textit #4}  
+}
+
+\newcommand{\emptypage}{
+  \newpage
+  \thispagestyle{empty}
+  \mbox{}
+  \newpage
+}
+
+\title{
+  CSTVA 2016\\7th Workshop on\\
+  Constraint Solvers in Testing, Verification, and Analysis
+  \let\thefootnote\relax\footnotetext{
+    Copyright \copyright\ 2016 for the individual papers by the papers'
+    authors. Copying permitted only for private and academic purposes. This
+    volume is published and copyrighted by its editors.}
+}
+\date{Saarbr\"ucken, Germany, July 17, 2016\\\vspace{1cm}
+  Affiliated with \\
+  The Int'l. Symposium on Software Testing and Analysis (ISSTA 2016).
+}
+
+\begin{document}
+\pagenumbering{roman}
+\pagestyle{empty}
+\maketitle
+\emptypage
+
+\input{frontmatter}
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[OR]{\thepage}
+\fancyfoot[EL]{\thepage}
+\input{toc}
+
+\input{author_index}
+
+\end{document}

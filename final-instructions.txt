@@ -10,10 +10,10 @@ You have already received the comments by the reviewers in a previous
 email. Please take them carefully into account when preparing your
 camera-ready paper for the proceedings. The final paper is due on
 
-   May 24, 2016
+   May 24, 2016 (AOE)
 
-This is a firm deadline for the production of the proceedings.
-You should submit your paper using your EasyChair author account.
+This is a firm deadline for the production of the proceedings and you should
+submit your paper using your EasyChair author account. 
 
 
 1. FINAL PAPER: Please submit the files belonging to your camera-ready paper
@@ -24,12 +24,12 @@ for uploading two files:
        or a Word file in the RTF format, and
    (b) PDF version of your camera-ready paper.
 
-For regular papers and extended abstracts, the page limit is 10 pages
-using the easychair.cls class file. To give you some extra space,
-references do NOT count toward the page limit.
-
-For presentation-only papers, please submit a document with only title
-and abstract of your presentation (maximum 1 page).
+For regular papers and extended abstracts, we increased the page limit by 2
+pages for the final paper, so that the page limits are 12 pages for original
+research papers and 8 pages for tool demonstration and fast abstract papers
+(all using the easychair.cls class file and not including the references). For
+presentation-only papers, please submit a document with only title and abstract
+of your presentation (maximum 1 page). 
 
 
 2. COPYRIGHT: We will publish the CSTVA 2016 proceedings as a CEUR volume

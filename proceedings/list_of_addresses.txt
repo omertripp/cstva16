@@ -1,0 +1,28 @@
+This file contains information about emails addresses
+of the corresponding editors and authors of LNCS volume 9999.
+The file was generated automatically by EasyChair, see
+http://www.easychair.org.
+
+CORRESPONDING EDITOR(S)
+
+Name(s): Christoph M. Wintersteiger
+Email address: cwinter@microsoft.com
+
+CORRESPONDING AUTHOR EMAIL ADDRESSES
+
+The number in parentheses is the first page of the paper of
+these authors in the proceedings. Note that some papers have
+more than one corresponding author.
+
+------------------------------
+(1) Design of a Modified Concolic Testing Algorithm with Smaller Constraints
+Yavuz Koroglu <yavuz.koroglu@boun.edu.tr>, Alper Sen <alper.sen@boun.edu.tr>
+------------------------------
+(13) A CHR-Based Solver for Weak Memory Behaviors
+Allan Blanchard <Allan.Blanchard@cea.fr>, Nikolai Kosmatov <Nikolai.Kosmatov@cea.fr>, Frederic Loulergue <frederic.loulergue@univ-orleans.fr>
+------------------------------
+(21) A Constraint Solving Problem Towards Unified Combinatorial Interaction Testing
+Hanefi Mercan <hanefimercan@sabanciuniv.edu>, Cemal Yilmaz <cyilmaz@sabanciuniv.edu>
+------------------------------
+(28) Towards automated bounded model checking of API implementations
+Daniel Neville <daniel.neville@cs.ox.ac.uk>, Andrew Malton <amalton@blackberry.com>, Martin Brain <martin.brain@cs.ox.ac.uk>
