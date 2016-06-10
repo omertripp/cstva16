@@ -112,6 +112,9 @@ retex:
 		file=$$(perl -ne 'print $$1 if /^Command to create document: .*latex (.*)$$/' README_EASYCHAIR); \
 		file=$${file%.tex}; \
 		$(TEX2PDF) --jobname $$i $${file}.tex; \
+		bibtex $$i >> output.log ; \
+		$(TEX2PDF) --jobname $$i $${file}.tex >> output.log ; \
+		$(TEX2PDF) --jobname $$i $${file}.tex >> output.log ; \
 		cd .. ; \
 	done
 
@@ -121,7 +124,7 @@ zip: ceur-ws/index.html ceur-ws/temp.bib
 
 # cleans up some files created by other rules
 clean:
-	rm $$(< ID).zip
+	rm -f $$(< ID).zip
 
 # The names of the following rules are not names of files:
 .PHONY: all zip retex clean

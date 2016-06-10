@@ -4,7 +4,8 @@
 
 
 %\documentclass{easychair}
-\documentclass[EPiC]{easychair}
+\documentclass[EPiCempty]{easychair}
+\pagestyle{plain}
 %\documentclass[debug]{easychair}
 %\documentclass[verbose]{easychair}
 %\documentclass[notimes]{easychair}
@@ -39,7 +40,7 @@
 %%
 % Regular title as in the article class.
 %
-\title{Towards automated bounded model checking of API implementations.}
+\title{Towards Automated Bounded Model Checking of API Implementations.}
 
 % Authors are joined by \and. Their affiliations are given by \inst, which indexes
 % into the list defined using \institute
@@ -94,9 +95,6 @@ We introduce and demonstrate the viability of a novel technique for verifying th
 The refinement-analysis process is repeated iteratively.   We demonstrate the viability of the technique by showing how it can find an integer underflow within Google's Brotli, an underflow that has been shown to lead directly to allow remote attackers to execute arbitrary code in CVE 2016-1968. 
 \end{abstract}
 
-
-
-\pagestyle{empty}
 
 %------------------------------------------------------------------------------
 \section{Introduction}
@@ -481,10 +479,8 @@ Finally, to encourage use of the technique, a user interface will be created to 
 %It is hoped this will become part of the open-source CProver suite of tools, with comprehensive CBMC integration.
 
 
-
-\bibliography{database}{}
 \bibliographystyle{plain}
-
+\bibliography{database}{}
 
 %------------------------------------------------------------------------------
 % Index

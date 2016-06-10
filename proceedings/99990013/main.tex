@@ -1,6 +1,7 @@
 % easychair.tex,v 3.4 2015/12/10
 %\documentclass{easychair}
-\documentclass[EPiC]{easychair}
+\documentclass[EPiCempty]{easychair}
+\pagestyle{plain}
 %\documentclass[debug]{easychair}
 %\documentclass[verbose]{easychair}
 %\documentclass[notimes]{easychair}
@@ -115,8 +116,6 @@ partially funded by French ANR (project SOPRANO, grant ANR-14-CE28-0020).}}
 %Examples of how EasyChair processes papers. Caveats (replacement of EC
 %class, errors).
 
-\pagestyle{empty}
-
 %------------------------------------------------------------------------------
 %\vspace{-2mm}
 \section{Introduction}
@@ -156,76 +155,81 @@ the French Ministry of Defence. Thanks to the anonymous referees
 for their helpful comments.
 % ----------- END REAL Acknowledgment ------------
 
-%------------------------------------------------------------------------------
-%\vspace{-4mm}
-\begin{thebibliography}{10}
 
-\bibitem{Abe:2014}
-T.~Abe and T.~Maeda.
-\newblock Optimization of a general model checking framework for various memory
-  consistency models.
-\newblock In {\em PGAS 2014}.
 
-\bibitem{AG1996:IEEEC}
-S.~V. Adve and K.~Gharachorloo.
-\newblock Shared memory consistency models: A tutorial.
-\newblock {\em Computer}, 29(12):66--76, 1996.
+\bibliographystyle{plain}
+\bibliography{bibliography}
 
-\bibitem{AMT2014:TPLS}
-J.~Alglave, L.~Maranget, and M.~Tautschnig.
-\newblock Herding cats: Modelling, simulation, testing, and data mining for
-  weak memory.
-\newblock {\em {ACM} Trans. Prog. Lang. Syst.}, 2014.
+% %------------------------------------------------------------------------------
+% %\vspace{-4mm}
+% \begin{thebibliography}{10}
 
-\bibitem{AM2006:ISCA}
-Arvind and J.~Maessen.
-\newblock Memory model = instruction reordering + store atomicity.
-\newblock In {\em ISCA 2006}.
+% \bibitem{Abe:2014}
+% T.~Abe and T.~Maeda.
+% \newblock Optimization of a general model checking framework for various memory
+%   consistency models.
+% \newblock In {\em PGAS 2014}.
 
-\bibitem{BA2008:PLDI}
-H.-J. Boehm and S.~V. Adve.
-\newblock Foundations of the {C}++ concurrency memory model.
-\newblock In {\em PLDI 2008}.
+% \bibitem{AG1996:IEEEC}
+% S.~V. Adve and K.~Gharachorloo.
+% \newblock Shared memory consistency models: A tutorial.
+% \newblock {\em Computer}, 29(12):66--76, 1996.
 
-\bibitem{Boudol:2009}
-G.~Boudol and G.~Petri.
-\newblock Relaxed memory models: An operational approach.
-\newblock In {\em POPL 2009}.
+% \bibitem{AMT2014:TPLS}
+% J.~Alglave, L.~Maranget, and M.~Tautschnig.
+% \newblock Herding cats: Modelling, simulation, testing, and data mining for
+%   weak memory.
+% \newblock {\em {ACM} Trans. Prog. Lang. Syst.}, 2014.
 
-\bibitem{DFPP2014:VPT}
-E.~{De Angelis}, F.~Fioravanti, A.~Pettorossi, and M.~Proietti.
-\newblock Program verification using constraint handling rules and array
-  constraint generalizations.
-\newblock In {\em {VPT} 2014, co-located with {CAV} 2014}, pages 3--18.
+% \bibitem{AM2006:ISCA}
+% Arvind and J.~Maessen.
+% \newblock Memory model = instruction reordering + store atomicity.
+% \newblock In {\em ISCA 2006}.
 
-\bibitem{Fruhwirth1998}
-T.~Fruhwirth.
-\newblock Theory and practice of constraint handling rules.
-\newblock {\em J. Logic. Program.}, 1998.
+% \bibitem{BA2008:PLDI}
+% H.-J. Boehm and S.~V. Adve.
+% \newblock Foundations of the {C}++ concurrency memory model.
+% \newblock In {\em PLDI 2008}.
 
-\bibitem{L79:IEEE}
-L.~Lamport.
-\newblock {How to Make a Multiprocessor Computer That Correctly Executes
-  Multiprocess Program}.
-\newblock {\em IEEE Trans. Comput.}, 1979.
+% \bibitem{Boudol:2009}
+% G.~Boudol and G.~Petri.
+% \newblock Relaxed memory models: An operational approach.
+% \newblock In {\em POPL 2009}.
 
-\bibitem{SJM2007:PPOPP}
-V.~A. Saraswat, R.~Jagadeesan, M.~M. Michael, and C.~von Praun.
-\newblock A theory of memory models.
-\newblock In {\em PPoPP}, pages 161--172. {ACM}, 2007.
+% \bibitem{DFPP2014:VPT}
+% E.~{De Angelis}, F.~Fioravanti, A.~Pettorossi, and M.~Proietti.
+% \newblock Program verification using constraint handling rules and array
+%   constraint generalizations.
+% \newblock In {\em {VPT} 2014, co-located with {CAV} 2014}, pages 3--18.
 
-\bibitem{TVD2010:PLDI}
-E.~Torlak, M.~Vaziri, and J.~Dolby.
-\newblock Memsat: checking axiomatic specifications of memory models.
-\newblock In {\em PLDI}, pages 341--350, 2010.
+% \bibitem{Fruhwirth1998}
+% T.~Fruhwirth.
+% \newblock Theory and practice of constraint handling rules.
+% \newblock {\em J. Logic. Program.}, 1998.
 
-\bibitem{Yang:2005}
-Y.~Yang, G.~Gopalakrishnan, and G.~Lindstrom.
-\newblock {UMM}: An operational memory model specification framework with
-  integrated model checking capability.
-\newblock {\em Concurr. Comput. : Pract. Exper.}, 17(5-6):465--487, 2005.
+% \bibitem{L79:IEEE}
+% L.~Lamport.
+% \newblock {How to Make a Multiprocessor Computer That Correctly Executes
+%   Multiprocess Program}.
+% \newblock {\em IEEE Trans. Comput.}, 1979.
 
-\end{thebibliography}
+% \bibitem{SJM2007:PPOPP}
+% V.~A. Saraswat, R.~Jagadeesan, M.~M. Michael, and C.~von Praun.
+% \newblock A theory of memory models.
+% \newblock In {\em PPoPP}, pages 161--172. {ACM}, 2007.
+
+% \bibitem{TVD2010:PLDI}
+% E.~Torlak, M.~Vaziri, and J.~Dolby.
+% \newblock Memsat: checking axiomatic specifications of memory models.
+% \newblock In {\em PLDI}, pages 341--350, 2010.
+
+% \bibitem{Yang:2005}
+% Y.~Yang, G.~Gopalakrishnan, and G.~Lindstrom.
+% \newblock {UMM}: An operational memory model specification framework with
+%   integrated model checking capability.
+% \newblock {\em Concurr. Comput. : Pract. Exper.}, 17(5-6):465--487, 2005.
+
+% \end{thebibliography}
 
 
 
