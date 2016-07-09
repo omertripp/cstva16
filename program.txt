@@ -1,0 +1,37 @@
+CSTVA program:
+
+*******************************
+09:45-10:00	Welcome
+*******************************
+10:00-11:00	Session I: Keynote		[chair: Christoph Wintersteiger]
+*******************************
+10:00-11:00	An Empirical Understanding of Conflict-Driven Clause-Learning SAT Solvers
+		Vijay Ganesh
+*******************************
+11:00-11:30	Coffee break
+*******************************
+11:30-13:00	Session II: Bug finding	[chair: Murali Krishna Ramanathan]
+*******************************
+11:30-12:00	Design of a Modified Concolic Testing Algorithm with Smaller Constraints
+		Yavuz Koroglu and Alper Sen
+————————————
+12:00-12:30	A Constraint Solving Problem Towards Unified Combinatorial Interaction Testing
+		Hanefi Mercan and Cemal Yilmaz
+————————————
+12:30-13:00	Towards Automated Bounded Model Checking of API Implementations
+		Daniel Neville, Andrew Malton, Martin Brain and Daniel Kroening
+*******************************
+13:00-14:10	Lunch
+*******************************
+14:10-15:40	Session III: Concurrency	[chair: Vijay Ganesh]	
+*******************************
+14:10-15:10	Leveraging Constraint Solvers to Build Reliable Multithreaded Software
+		Murali Krishna Ramanathan		
+————————————
+15:10-15:40	A CHR-Based Solver for Weak Memory Behaviors	
+		Allan Blanchard, Nikolai Kosmatov and Frederic Loulergue
+*******************************
+15:40-16:00	Coffee break
+*******************************
+16:00-17:00	Open discussion			[moderator: Christoph Wintersteiger]
+*******************************
