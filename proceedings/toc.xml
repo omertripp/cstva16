@@ -39,7 +39,7 @@
         </authors>
     </paper>
     <paper>
-        <title>Towards automated bounded model checking of API implementations</title>
+        <title>Towards Automated Bounded Model Checking of API Implementations</title>
         <pages from="31" to="42"/>
         <authors>
             <author>Daniel Neville</author>

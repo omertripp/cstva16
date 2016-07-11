@@ -1,5 +1,5 @@
 LNCS Volume: 9999
-Paper: Towards automated bounded model checking of API implementations
+Paper: Towards Automated Bounded Model Checking of API Implementations
 Pages: 31-42
 Command to create document: pdflatex report.tex
 ----------------------------------------------------------------
