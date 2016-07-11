@@ -29,7 +29,7 @@ CSTVA program:
 		Murali Krishna Ramanathan		
 ————————————
 15:10-15:40	A CHR-Based Solver for Weak Memory Behaviors	
-		Allan Blanchard, Nikolai Kosmatov and Frederic Loulergue
+		Allan Blanchard, Nikolai Kosmatov and Frederi cLoulergue
 *******************************
 15:40-16:00	Coffee break
 *******************************
