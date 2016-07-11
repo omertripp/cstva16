@@ -1,7 +1,21 @@
 <toc>
     <paper>
+        <title>Keynote I: An Empirical Understanding of Conflict-Driven Clause-Learning SAT Solvers</title>
+        <pages from="1" to="1"/>
+        <authors>
+            <author>Vijay Ganesh</author>
+        </authors>
+    </paper>
+    <paper>
+        <title>Keynote II: Leveraging Constraint Solvers to Build Reliable Multithreaded Software</title>
+        <pages from="2" to="2"/>
+        <authors>
+            <author>Murali Krishna Ramanathan </author>
+        </authors>
+    </paper>
+    <paper>
         <title>Design of a Modified Concolic Testing Algorithm with Smaller Constraints</title>
-        <pages from="1" to="12"/>
+        <pages from="3" to="14"/>
         <authors>
             <author>Yavuz Koroglu</author>
             <author>Alper Sen</author>
@@ -9,7 +23,7 @@
     </paper>
     <paper>
         <title>A CHR-Based Solver for Weak Memory Behaviors</title>
-        <pages from="13" to="20"/>
+        <pages from="15" to="22"/>
         <authors>
             <author>Allan Blanchard</author>
             <author>Nikolai Kosmatov</author>
@@ -18,7 +32,7 @@
     </paper>
     <paper>
         <title>A Constraint Solving Problem Towards Unified Combinatorial Interaction Testing</title>
-        <pages from="21" to="27"/>
+        <pages from="24" to="30"/>
         <authors>
             <author>Hanefi Mercan</author>
             <author>Cemal Yilmaz</author>
@@ -26,7 +40,7 @@
     </paper>
     <paper>
         <title>Towards automated bounded model checking of API implementations</title>
-        <pages from="28" to="39"/>
+        <pages from="31" to="42"/>
         <authors>
             <author>Daniel Neville</author>
             <author>Andrew Malton</author>
