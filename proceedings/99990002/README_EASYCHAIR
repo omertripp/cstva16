@@ -1,5 +1,5 @@
 LNCS Volume: 9999
-Paper: Keynote II: Leveraging Constraint Solvers to Build Reliable Multithreaded Software
+Paper: Keynote II: Leveraging Constraint Solvers in Building Reliable Multithreaded Software
 Pages: 2-2
 Command to create document: pdflatex paper.tex
 ----------------------------------------------------------------

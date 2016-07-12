@@ -7,7 +7,7 @@
         </authors>
     </paper>
     <paper>
-        <title>Keynote II: Leveraging Constraint Solvers to Build Reliable Multithreaded Software</title>
+        <title>Keynote II: Leveraging Constraint Solvers in Building Reliable Multithreaded Software</title>
         <pages from="2" to="2"/>
         <authors>
             <author>Murali Krishna Ramanathan </author>
