@@ -4,3 +4,5 @@
 *.pdf
 *.bbl
 *.blg
+
+proceedings/ceur-ws/temp.bib

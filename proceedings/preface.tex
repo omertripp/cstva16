@@ -1,0 +1,26 @@
+\documentclass[a4paper]{article}
+
+\usepackage{pdfpages}
+\usepackage[inner=3.5cm,outer=3.5cm]{geometry}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\footskip 50pt
+
+\newcounter{addchap}
+
+\newcommand{\add}[4][]{
+  \includepdf[#1,pages=-,scale=1.0,pagecommand={
+    },
+    addtotoc={1,chapter,1,,paper:#2}]{#2}
+  \addcontentsline{toc}{chapter}{\normalfont #3\dotfill\\\textit #4}  
+}
+
+\begin{document}
+\pagestyle{empty}
+
+\input{preface_content}
+
+\end{document}
